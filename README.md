@@ -1,5 +1,7 @@
 # google.fonts
 
+<img width="400" alt="google.fonts" src="https://github.com/user-attachments/assets/3678d2fb-0204-4753-9f9c-1cc52ead2b66">
+
 Google Fonts Metadata & Preview SVGs
 
 Used by [Grida](https://github.com/gridaco/grida) to display Font controls.
