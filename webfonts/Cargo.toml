@@ -1,0 +1,13 @@
+[package]
+name = "webfonts"
+version = "0.0.1"
+edition = "2024"
+description = "A Rust library for working with web fonts"
+license = "MIT"
+repository = "https://github.com/gridaco/google.fonts"
+documentation = "https://docs.rs/webfonts"
+readme = "README.md"
+keywords = ["fonts", "webfonts", "typography"]
+categories = ["text-processing", "web-programming"]
+
+[dependencies]
