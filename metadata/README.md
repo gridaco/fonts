@@ -11,6 +11,25 @@ This module provides tools to map PostScript names to Google Fonts variants and 
 
 ## 🔧 Commands
 
+### Available Commands
+
+```bash
+# Pre-validate fonts against Google Fonts API data
+python cli.py pre-validate --webfonts ./webfonts.json --fonts-dir ./fonts/ofl
+
+# Map actual PostScript names from font files
+python cli.py map --webfonts ./webfonts.json --fonts-dir ./fonts/ofl --family "Font Name"
+
+# Polyfill missing PostScript name mappings
+python cli.py polyfill --metadata webfonts.metadata.json --webfonts webfonts.json
+
+# Post-validate mapped PostScript names against font files
+python cli.py post-validate --metadata webfonts.metadata.json --fonts-dir ./fonts/ofl
+
+# Test a specific font family
+python cli.py test --webfonts ./webfonts.json --fonts-dir ./fonts/ofl "Font Name"
+```
+
 ### Map Command
 
 ```bash
@@ -18,9 +37,9 @@ python cli.py map --webfonts ./webfonts.json --fonts-dir ./fonts/ofl --family "F
 ```
 
 The `map` command:
-1. Reads font files and extracts PostScript names
-2. Maps them to variants from webfonts.json
-3. Creates a JSON mapping of PostScript names to variants and CDN URLs
+1. Reads font files and extracts actual PostScript names
+2. Maps them to variants from webfonts.json based on name patterns
+3. Creates a JSON mapping of actual PostScript names to variants and CDN URLs
 
 ### Polyfill Command
 
@@ -28,9 +47,10 @@ The `map` command:
 python cli.py polyfill --metadata webfonts.metadata.json --webfonts webfonts.json --output webfonts.metadata.json
 ```
 
-The `polyfill` command helps fill in missing mappings using two strategies:
+The `polyfill` command helps fill in missing mappings using three strategies:
 1. For empty mappings: If a font has exactly one PostScript name and one unused variant, map them together
 2. For unused variants: If a font has exactly one unmapped PostScript name and one unused variant, map them together
+3. Browser-style names: Adds standard browser-style PostScript names (e.g., "FontName-Regular", "FontName-Bold") for all variants in webfonts.json
 
 ## 📄 Example Output
 
@@ -41,13 +61,17 @@ The `polyfill` command helps fill in missing mappings using two strategies:
     "AlbertSans-Regular": "regular",
     "AlbertSans-Bold": "700",
     "AlbertSans-Italic": "italic",
-    "AlbertSans-BoldItalic": "700italic"
+    "AlbertSans-BoldItalic": "700italic",
+    "AlbertSans-Medium": "500",
+    "AlbertSans-MediumItalic": "500italic"
   },
   "files": {
     "regular": "https://fonts.gstatic.com/s/albertsans/v10/ABC.ttf",
     "700": "https://fonts.gstatic.com/s/albertsans/v10/DEF.ttf",
     "italic": "https://fonts.gstatic.com/s/albertsans/v10/GHI.ttf",
-    "700italic": "https://fonts.gstatic.com/s/albertsans/v10/JKL.ttf"
+    "700italic": "https://fonts.gstatic.com/s/albertsans/v10/JKL.ttf",
+    "500": "https://fonts.gstatic.com/s/albertsans/v10/MNO.ttf",
+    "500italic": "https://fonts.gstatic.com/s/albertsans/v10/PQR.ttf"
   }
 }
 ```

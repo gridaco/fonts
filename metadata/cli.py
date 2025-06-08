@@ -14,15 +14,6 @@ WEBFONTS_JSON = os.path.join(PROJECT_ROOT, 'webfonts.json')
 FONTS = os.path.join(PROJECT_ROOT, 'fonts')
 FONTS_OFL = os.path.join(PROJECT_ROOT, 'fonts', 'ofl')
 
-# Debug flag
-DEBUG_FONT = "zillaslabhighlight"
-
-
-def debug_print(message: str, font_dir: str = None):
-    """Print debug message only if font_dir matches DEBUG_FONT."""
-    if font_dir and font_dir.lower() == DEBUG_FONT:
-        click.echo(message)
-
 
 def load_webfonts_data(webfonts_path: str) -> Dict[str, Dict]:
     """Load and index the webfonts.json data by family name."""
@@ -224,7 +215,7 @@ def map_font_metadata(font_dir: str, webfonts_data: Dict[str, Dict]) -> Optional
         "files": api_data.get('files', {})
     }
 
-    # Get all PostScript names from font files
+    # Map actual PostScript names from font files
     postscript_names = set()
     for file in os.listdir(font_dir):
         if file.lower().endswith(('.ttf', '.otf')):
@@ -232,7 +223,7 @@ def map_font_metadata(font_dir: str, webfonts_data: Dict[str, Dict]) -> Optional
             names = get_actual_postscript_names(font_path)
             postscript_names.update(names)
 
-    # Map PostScript names to variants
+    # Map actual PostScript names to variants
     for name in sorted(postscript_names):
         # Try to determine variant from PostScript name
         variant = None
@@ -349,7 +340,7 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
 
     # Output invalid fonts to file
     if all_issues:
-        print("\nValidation Issues Found:")
+        click.echo("\nValidation Issues Found:")
         invalid_path = os.path.join(os.path.dirname(__file__), output)
 
         # Group issues by font family
@@ -386,19 +377,20 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
         # Print issues to console
         for path, level, message in all_issues:
             rel_path = Path(path).relative_to(PROJECT_ROOT)
-            print(f"[{level}] {rel_path}: {message}")
+            click.echo(f"[{level}] {rel_path}: {message}")
 
         # Print final message about invalid.csv
         rel_invalid_path = Path(invalid_path).relative_to(os.getcwd())
-        print(f"\n{invalid_fonts} invalid fonts reported at {rel_invalid_path}")
+        click.echo(
+            f"\n{invalid_fonts} invalid fonts reported at {rel_invalid_path}")
     else:
-        print("\nAll fonts validated successfully!")
+        click.echo("\nAll fonts validated successfully!")
 
     # Print summary
-    print("\nValidation Summary:")
-    print(f"Total fonts: {total_fonts}")
-    print(f"Successfully validated: {success_fonts}")
-    print(f"Invalid fonts: {invalid_fonts}")
+    click.echo("\nValidation Summary:")
+    click.echo(f"Total fonts: {total_fonts}")
+    click.echo(f"Successfully validated: {success_fonts}")
+    click.echo(f"Invalid fonts: {invalid_fonts}")
 
 
 @cli.command()
@@ -476,137 +468,205 @@ def map(webfonts: str, fonts_dir: str, family: Optional[str], output: str):
         click.echo(f"\nMappings written to {output_path}")
 
 
-def get_actual_postscript_names(font_path: str) -> Set[str]:
-    """Get actual PostScript names from a font file using fontTools."""
+def get_actual_postscript_names(font_path: str, verbose: bool = False) -> Set[str]:
+    """Get actual PostScript names from a font file using fontTools.
+
+    Args:
+        font_path: Path to the font file
+        verbose: If True, returns all names from nameIDs 4, 6, 17, 18 and fvar instances.
+                If False, only returns nameID 6 (PostScript name).
+    """
     try:
         font = TTFont(font_path)
         names = set()
+
+        # Check if it's a variable font
+        is_variable = 'fvar' in font
+
+        # Look at different name IDs
         for record in font['name'].names:
-            if record.nameID == 6:  # PostScript name
+            # In non-verbose mode, only get nameID 6 (PostScript name)
+            if not verbose and record.nameID != 6:
+                continue
+
+            # In verbose mode, get all relevant nameIDs
+            if verbose and record.nameID not in [4, 6, 17, 18]:
+                continue
+
+            try:
+                # Try UTF-16-BE first (most common for PostScript names)
                 try:
-                    # Try UTF-16-BE first (most common for PostScript names)
+                    name = record.string.decode('utf-16-be')
+                    # Validate the name - should be ASCII or Latin-1
+                    if all(ord(c) < 128 for c in name):
+                        names.add(name)
+                except UnicodeDecodeError:
+                    # Fallback to ASCII
                     try:
-                        name = record.string.decode('utf-16-be')
-                        # Validate the name - should be ASCII or Latin-1
-                        if all(ord(c) < 128 for c in name):
-                            names.add(name)
+                        name = record.string.decode('ascii')
+                        names.add(name)
                     except UnicodeDecodeError:
-                        # Fallback to ASCII
+                        # Last resort: try Latin-1
                         try:
-                            name = record.string.decode('ascii')
-                            names.add(name)
+                            name = record.string.decode('latin1')
+                            # Only add if it looks like a valid PostScript name
+                            if all(c.isalnum() or c in '-_' for c in name):
+                                names.add(name)
                         except UnicodeDecodeError:
-                            # Last resort: try Latin-1
-                            try:
-                                name = record.string.decode('latin1')
-                                # Only add if it looks like a valid PostScript name
-                                if all(c.isalnum() or c in '-_' for c in name):
-                                    names.add(name)
-                            except UnicodeDecodeError:
-                                debug_print(
-                                    f"Warning: Could not decode PostScript name in {font_path}", os.path.basename(os.path.dirname(font_path)))
+                            click.echo(
+                                f"Warning: Could not decode name in {font_path}")
+            except Exception as e:
+                click.echo(
+                    f"Warning: Error processing name in {font_path}: {str(e)}")
+
+        # For variable fonts, also look at fvar instances (only in verbose mode)
+        if verbose and is_variable and 'fvar' in font:
+            for instance in font['fvar'].instances:
+                try:
+                    # Get the instance name from name table
+                    name_record = font['name'].getName(
+                        instance.subfamilyNameID, 3, 1, 0x409)
+                    if name_record:
+                        name = name_record.string.decode('utf-16-be')
+                        names.add(name)
                 except Exception as e:
-                    debug_print(
-                        f"Warning: Error processing PostScript name in {font_path}: {str(e)}", os.path.basename(os.path.dirname(font_path)))
+                    click.echo(
+                        f"Warning: Error processing fvar instance name in {font_path}: {str(e)}")
+
         return names
     except Exception as e:
-        debug_print(f"Error reading font {font_path}: {str(e)}", os.path.basename(
-            os.path.dirname(font_path)))
+        click.echo(f"Error reading font {font_path}: {str(e)}")
         return set()
 
 
-def scan_font_directory(font_dir: str) -> Set[str]:
-    """Scan a font directory for all font files and get their PostScript names."""
-    all_names = set()
-    debug_print(f"\nScanning directory: {font_dir}", font_dir)
+def get_font_details(font_path: str) -> Dict:
+    """Get detailed font information including names and their sources."""
+    try:
+        font = TTFont(font_path)
+        details = {
+            'is_variable': 'fvar' in font,
+            'names': {},
+            'fvar_instances': []
+        }
+
+        if details['is_variable']:
+            details['axes'] = [axis.axisTag for axis in font['fvar'].axes]
+
+        # Get names from name table
+        for record in font['name'].names:
+            if record.nameID in [4, 6, 17, 18]:
+                try:
+                    name = record.string.decode('utf-16-be')
+                    if all(ord(c) < 128 for c in name):
+                        details['names'][name] = f"nameID {record.nameID}"
+                except Exception:
+                    pass
+
+        # Get fvar instance names
+        if details['is_variable'] and 'fvar' in font:
+            for instance in font['fvar'].instances:
+                try:
+                    name_record = font['name'].getName(
+                        instance.subfamilyNameID, 3, 1, 0x409)
+                    if name_record:
+                        name = name_record.string.decode('utf-16-be')
+                        details['fvar_instances'].append(name)
+                except Exception:
+                    pass
+
+        return details
+    except Exception as e:
+        return {'error': str(e)}
+
+
+@cli.command()
+@click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
+@click.option('--fonts-dir', default=FONTS_OFL, help='Path to fonts directory')
+@click.argument('folder')
+def test(webfonts: str, fonts_dir: str, folder: str):
+    """Test a specific font family by showing its PostScript names and variants."""
+    # Load webfonts data
+    webfonts_data = load_webfonts_data(webfonts)
+
+    # Get font directory
+    font_dir = os.path.join(fonts_dir, folder)
+    if not os.path.exists(font_dir):
+        click.echo(f"Error: Font directory not found at {font_dir}")
+        return
+
+    # Get family name from METADATA.pb
+    metadata_path = os.path.join(font_dir, 'METADATA.pb')
+    if not os.path.exists(metadata_path):
+        click.echo(f"Error: METADATA.pb not found at {metadata_path}")
+        return
+
+    local_fonts = parse_metadata_pb(metadata_path)
+    if not local_fonts:
+        click.echo("Error: No font data found in METADATA.pb")
+        return
+
+    family_name = local_fonts[0].get('name')
+    if not family_name:
+        click.echo("Error: Family name not found in METADATA.pb")
+        return
+
+    # Get font files and their details
+    font_files = []
+    postscript_names = set()
+    font_details = {}
     for file in os.listdir(font_dir):
         if file.lower().endswith(('.ttf', '.otf')):
             font_path = os.path.join(font_dir, file)
-            debug_print(f"  Processing file: {file}", font_dir)
-            names = get_actual_postscript_names(font_path)
-            all_names.update(names)
-    return all_names
+            # Use verbose mode for test command
+            names = get_actual_postscript_names(font_path, verbose=True)
+            postscript_names.update(names)
+            font_files.append(file)
+            font_details[file] = get_font_details(font_path)
 
+    # Get variants from webfonts.json
+    if family_name not in webfonts_data:
+        click.echo(f"Error: Family '{family_name}' not found in webfonts.json")
+        return
 
-def normalize_name(name: str) -> str:
-    """Normalize a name for comparison by removing spaces and special characters."""
-    return ''.join(c.lower() for c in name if c.isalnum())
+    api_data = webfonts_data[family_name]
+    api_variants = set(api_data.get('files', {}).keys())
 
+    # Print results
+    click.echo(f"\nTesting font family: {family_name}")
+    click.echo(f"Directory: {font_dir}")
 
-def find_family_in_metadata(font_dir: str, metadata: Dict) -> Optional[str]:
-    """Find the matching family name in metadata using normalized comparison."""
-    normalized_dir = normalize_name(font_dir)
-    for name in metadata:
-        if normalize_name(name) == normalized_dir:
-            return name
-    return None
+    click.echo("\nFont files found:")
+    for file in sorted(font_files):
+        click.echo(f"  - {file}")
+        details = font_details[file]
+        if 'error' in details:
+            click.echo(f"    Error: {details['error']}")
+        else:
+            click.echo(f"    Variable font: {details['is_variable']}")
+            if details['is_variable']:
+                click.echo(f"    Axes: {', '.join(details['axes'])}")
+            if details['names']:
+                click.echo("    Names found:")
+                for name, source in sorted(details['names'].items()):
+                    click.echo(f"      - {name} ({source})")
+            if details['fvar_instances']:
+                click.echo("    Fvar instances:")
+                for name in sorted(details['fvar_instances']):
+                    click.echo(f"      - {name}")
 
+    click.echo("\nPostScript names found in font files:")
+    for name in sorted(postscript_names):
+        click.echo(f"  - {name}")
 
-def get_valid_font_dirs(fonts_dir: str, invalid_fonts: Set[str]) -> List[Tuple[str, str]]:
-    """Get list of valid font directories and their full paths."""
-    valid_dirs = []
-    for font_dir in os.listdir(fonts_dir):
-        if font_dir in invalid_fonts:
-            continue
-        full_path = os.path.join(fonts_dir, font_dir)
-        if os.path.isdir(full_path):
-            valid_dirs.append((font_dir, full_path))
-    return sorted(valid_dirs)
+    click.echo("\nVariants defined in webfonts.json:")
+    for variant in sorted(api_variants):
+        click.echo(f"  - {variant}")
 
-
-def validate_font_family(font_dir: str, full_path: str, metadata: Dict) -> Optional[Dict]:
-    """Validate a single font family against metadata."""
-    debug_print(f"\nDebug for folder: {font_dir}", font_dir)
-    debug_print(f"Full path: {full_path}", font_dir)
-
-    family_name = find_family_in_metadata(font_dir, metadata)
-    if not family_name:
-        return None
-
-    actual_names = scan_font_directory(full_path)
-    expected_names = set(metadata[family_name]['post_script_names'].keys())
-
-    debug_print(f"Family name found: {family_name}", font_dir)
-    debug_print(
-        f"Actual names from font files: {sorted(actual_names)}", font_dir)
-    debug_print(
-        f"Expected names from metadata: {sorted(expected_names)}", font_dir)
-
-    # Find missing names (names in font files that aren't in metadata)
-    missing_names = set()
-    for name in actual_names:
-        if name not in expected_names:
-            missing_names.add(name)
-            debug_print(f"Missing: {name} (not found in metadata)", font_dir)
-
-    if not missing_names:
-        return {
-            'status': 'valid',
-            'family': family_name,
-            'actual_count': len(actual_names),
-            'expected_count': len(expected_names),
-            'matched_count': len(actual_names) - len(missing_names)
-        }
-
-    return {
-        'status': 'invalid',
-        'family': family_name,
-        'missing': sorted(missing_names),
-        'actual_count': len(actual_names),
-        'expected_count': len(expected_names),
-        'matched_count': len(actual_names) - len(missing_names)
-    }
-
-
-def is_cjk(char: str) -> bool:
-    """Check if a character is CJK (Chinese, Japanese, Korean)."""
-    return any('\u4e00' <= c <= '\u9fff' for c in char)
-
-
-def write_log(message: str, log_file):
-    """Write message to both console and log file."""
-    click.echo(message)
-    log_file.write(message + '\n')
+    # Print summary
+    click.echo(f"\nSummary:")
+    click.echo(f"  Font files: {len(font_files)}")
+    click.echo(f"  PostScript names: {len(postscript_names)}")
+    click.echo(f"  API variants: {len(api_variants)}")
 
 
 @cli.command()
@@ -645,11 +705,12 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
         'not_found': []
     }
 
-    # Track PostScript name statistics
-    total_actual_names = 0
-    total_expected_names = 0
-    total_matched_names = 0
-    total_unmatched_names = 0
+    # Track variant statistics
+    total_variants = 0
+    mapped_variants = 0
+    missing_variants = 0
+    total_api_variants = 0
+    unmapped_api_variants = 0
 
     # Open log file
     log_path = os.path.join(os.path.dirname(__file__), log)
@@ -663,11 +724,14 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
                 results['not_found'].append(font_dir)
             else:
                 results[result['status']].append(result)
-                total_actual_names += result['actual_count']
-                total_expected_names += result['expected_count']
-                total_matched_names += result['matched_count']
-                total_unmatched_names += (result['actual_count'] -
-                                          result['matched_count'])
+                # Update variant statistics
+                total_variants += result['actual_count']
+                total_api_variants += result['api_variants']
+                if result['status'] == 'valid':
+                    mapped_variants += result['matched_count']
+                else:
+                    missing_variants += len(result.get('missing', []))
+                    unmapped_api_variants += result['unmapped_variants']
 
         # Print results
         if results['not_found']:
@@ -686,6 +750,10 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
                         if not any(is_cjk(c) for c in name):
                             click.echo(f"    - {name}")
                         log_file.write(f"    - {name}\n")
+                if issue['unmapped']:
+                    write_log("  Unmapped API variants:", log_file)
+                    for variant in issue['unmapped']:
+                        write_log(f"    - {variant}", log_file)
         elif not results['not_found']:
             write_log("\nAll fonts validated successfully!", log_file)
 
@@ -698,19 +766,18 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
             write_log(
                 f"Fonts not found in metadata: {len(results['not_found'])}", log_file)
 
-        # Print PostScript name statistics
-        write_log("\nPostScript Name Statistics:", log_file)
+        # Print variant resolution statistics
+        write_log("\nVariant Resolution Statistics:", log_file)
+        write_log(f"Total variants in font files: {total_variants}", log_file)
+        write_log(f"Variants mapped in metadata: {mapped_variants}", log_file)
         write_log(
-            f"Total PostScript names in font files: {total_actual_names}", log_file)
-        write_log(
-            f"Total PostScript names in metadata: {total_expected_names}", log_file)
-        write_log(
-            f"Total matched PostScript names: {total_matched_names}", log_file)
-        write_log(
-            f"Total unmatched PostScript names: {total_unmatched_names}", log_file)
-        if total_actual_names > 0:
-            match_percentage = (total_matched_names / total_actual_names) * 100
-            write_log(f"Match percentage: {match_percentage:.1f}%", log_file)
+            f"Variants missing from metadata: {missing_variants}", log_file)
+        write_log(f"Total API variants: {total_api_variants}", log_file)
+        write_log(f"Unmapped API variants: {unmapped_api_variants}", log_file)
+        if total_variants > 0:
+            resolution_percentage = (mapped_variants / total_variants) * 100
+            write_log(
+                f"Variant resolution rate: {resolution_percentage:.1f}%", log_file)
 
         write_log(f"\nFull validation log written to: {log_path}", log_file)
 
@@ -736,7 +803,8 @@ def polyfill(metadata: str, webfonts: str, output: str):
     # Track changes
     changes = {
         'empty_mappings': [],
-        'unused_variants': []
+        'unused_variants': [],
+        'browser_style': []
     }
 
     # Process each font family
@@ -803,6 +871,34 @@ def polyfill(metadata: str, webfonts: str, output: str):
                         'variant': variant
                     })
 
+        # Strategy 3: Browser-style PostScript name population
+        # Add browser-style mappings for all variants in webfonts.json
+        base_name = family_name.replace(' ', '')
+        for variant in api_data.get('files', {}).keys():
+            # Generate the browser-style PostScript name
+            if variant == 'regular':
+                postscript_name = f"{base_name}-Regular"
+            elif variant == 'italic':
+                postscript_name = f"{base_name}-Italic"
+            else:
+                # Handle numeric weights
+                if variant.endswith('italic'):
+                    weight = variant[:-6]  # Remove 'italic'
+                    weight_name = get_weight_name(weight)
+                    postscript_name = f"{base_name}-{weight_name}Italic"
+                else:
+                    weight_name = get_weight_name(variant)
+                    postscript_name = f"{base_name}-{weight_name}"
+
+            # Only add if this PostScript name isn't already mapped
+            if postscript_name not in family_data['post_script_names']:
+                family_data['post_script_names'][postscript_name] = variant
+                changes['browser_style'].append({
+                    'family': family_name,
+                    'postscript_name': postscript_name,
+                    'variant': variant
+                })
+
     # Write updated metadata
     output_path = os.path.join(os.path.dirname(__file__), output)
     with open(output_path, 'w') as f:
@@ -812,6 +908,7 @@ def polyfill(metadata: str, webfonts: str, output: str):
     click.echo("\nPolyfill Summary:")
     click.echo(f"Empty mappings filled: {len(changes['empty_mappings'])}")
     click.echo(f"Unused variants mapped: {len(changes['unused_variants'])}")
+    click.echo(f"Browser-style names added: {len(changes['browser_style'])}")
 
     if changes['empty_mappings']:
         click.echo("\nEmpty mappings filled:")
@@ -825,7 +922,118 @@ def polyfill(metadata: str, webfonts: str, output: str):
             click.echo(
                 f"  {change['family']}: {change['postscript_name']} -> {change['variant']}")
 
+    if changes['browser_style']:
+        click.echo("\nBrowser-style names added:")
+        for change in changes['browser_style']:
+            click.echo(
+                f"  {change['family']}: {change['postscript_name']} -> {change['variant']}")
+
     click.echo(f"\nUpdated metadata written to: {output_path}")
+
+
+def write_log(message: str, log_file):
+    """Write message to both console and log file."""
+    click.echo(message)
+    log_file.write(message + '\n')
+
+
+def is_cjk(char: str) -> bool:
+    """Check if a character is CJK (Chinese, Japanese, Korean)."""
+    return any('\u4e00' <= c <= '\u9fff' for c in char)
+
+
+def get_valid_font_dirs(fonts_dir: str, invalid_fonts: Set[str]) -> List[Tuple[str, str]]:
+    """Get list of valid font directories and their full paths."""
+    valid_dirs = []
+    for font_dir in os.listdir(fonts_dir):
+        if font_dir in invalid_fonts:
+            continue
+        full_path = os.path.join(fonts_dir, font_dir)
+        if os.path.isdir(full_path):
+            valid_dirs.append((font_dir, full_path))
+    return sorted(valid_dirs)
+
+
+def validate_font_family(font_dir: str, full_path: str, metadata: Dict) -> Optional[Dict]:
+    """Validate a single font family against metadata."""
+    click.echo(f"\nDebug for folder: {font_dir}")
+    click.echo(f"Full path: {full_path}")
+
+    family_name = find_family_in_metadata(font_dir, metadata)
+    if not family_name:
+        return None
+
+    actual_names = scan_font_directory(full_path)
+    expected_names = set(metadata[family_name]['post_script_names'].keys())
+    api_variants = set(metadata[family_name]['files'].keys())
+    mapped_variants = set(metadata[family_name]['post_script_names'].values())
+    unmapped_variants = api_variants - mapped_variants
+
+    click.echo(f"Family name found: {family_name}")
+    click.echo(f"Actual names from font files: {sorted(actual_names)}")
+    click.echo(f"Expected names from metadata: {sorted(expected_names)}")
+    click.echo(f"API variants: {sorted(api_variants)}")
+    click.echo(f"Mapped variants: {sorted(mapped_variants)}")
+    click.echo(f"Unmapped variants: {sorted(unmapped_variants)}")
+
+    # Find missing names (names in font files that aren't in metadata)
+    missing_names = set()
+    for name in actual_names:
+        if name not in expected_names:
+            missing_names.add(name)
+            click.echo(f"Missing: {name} (not found in metadata)")
+
+    if not missing_names and not unmapped_variants:
+        return {
+            'status': 'valid',
+            'family': family_name,
+            'actual_count': len(actual_names),
+            'expected_count': len(expected_names),
+            'matched_count': len(actual_names) - len(missing_names),
+            'api_variants': len(api_variants),
+            'mapped_variants': len(mapped_variants),
+            'unmapped_variants': len(unmapped_variants)
+        }
+
+    return {
+        'status': 'invalid',
+        'family': family_name,
+        'missing': sorted(missing_names),
+        'unmapped': sorted(unmapped_variants),
+        'actual_count': len(actual_names),
+        'expected_count': len(expected_names),
+        'matched_count': len(actual_names) - len(missing_names),
+        'api_variants': len(api_variants),
+        'mapped_variants': len(mapped_variants),
+        'unmapped_variants': len(unmapped_variants)
+    }
+
+
+def scan_font_directory(font_dir: str) -> Set[str]:
+    """Scan a font directory for all font files and get their PostScript names."""
+    all_names = set()
+    click.echo(f"\nScanning directory: {font_dir}")
+    for file in os.listdir(font_dir):
+        if file.lower().endswith(('.ttf', '.otf')):
+            font_path = os.path.join(font_dir, file)
+            click.echo(f"  Processing file: {file}")
+            names = get_actual_postscript_names(font_path)
+            all_names.update(names)
+    return all_names
+
+
+def normalize_name(name: str) -> str:
+    """Normalize a name for comparison by removing spaces and special characters."""
+    return ''.join(c.lower() for c in name if c.isalnum())
+
+
+def find_family_in_metadata(font_dir: str, metadata: Dict) -> Optional[str]:
+    """Find the matching family name in metadata using normalized comparison."""
+    normalized_dir = normalize_name(font_dir)
+    for name in metadata:
+        if normalize_name(name) == normalized_dir:
+            return name
+    return None
 
 
 if __name__ == '__main__':
