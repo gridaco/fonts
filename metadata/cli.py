@@ -12,7 +12,9 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Define key paths
 WEBFONTS_JSON = os.path.join(PROJECT_ROOT, 'webfonts.json')
 FONTS = os.path.join(PROJECT_ROOT, 'fonts')
+FONTS_APACHE = os.path.join(PROJECT_ROOT, 'fonts', 'apache')
 FONTS_OFL = os.path.join(PROJECT_ROOT, 'fonts', 'ofl')
+FONTS_UFL = os.path.join(PROJECT_ROOT, 'fonts', 'ufl')
 
 
 def load_webfonts_data(webfonts_path: str) -> Dict[str, Dict]:
@@ -314,9 +316,8 @@ def cli():
 
 @cli.command()
 @click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
-@click.option('--fonts-dir', default=FONTS_OFL, help='Path to fonts directory')
 @click.option('--output', default='invalid.csv', help='Output CSV file name')
-def pre_validate(webfonts: str, fonts_dir: str, output: str):
+def pre_validate(webfonts: str, output: str):
     """Pre-validate fonts against Google Fonts API data."""
     # Load webfonts data
     webfonts_data = load_webfonts_data(webfonts)
@@ -324,14 +325,18 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
     # Process each font directory
     all_issues = []
     total_fonts = 0
-    for font_dir in os.listdir(fonts_dir):
-        full_path = os.path.join(fonts_dir, font_dir)
-        if os.path.isdir(full_path):
-            total_fonts += 1
-            issues = validate_font_mapping(full_path, webfonts_data)
-            # Store the full path with each issue
-            all_issues.extend([(full_path, level, message)
-                              for _, level, message in issues])
+    for base_dir in [FONTS_APACHE, FONTS_OFL, FONTS_UFL]:
+        if not os.path.exists(base_dir):
+            continue
+        for font_dir in os.listdir(base_dir):
+            full_path = os.path.join(base_dir, font_dir)
+            if os.path.isdir(full_path):
+                total_fonts += 1
+                issues = validate_font_mapping(full_path, webfonts_data)
+                # Store the full path, domain, and issues
+                domain = get_font_domain(full_path)
+                all_issues.extend([(full_path, domain, level, message)
+                                   for _, level, message in issues])
 
     # Calculate statistics
     invalid_fonts = len(
@@ -345,11 +350,12 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
 
         # Group issues by font family
         font_issues = {}
-        for path, level, message in all_issues:
+        for path, domain, level, message in all_issues:
             folder = os.path.basename(path)
             if folder not in font_issues:
                 font_issues[folder] = {
                     'folder': folder,
+                    'domain': domain,
                     'family': '',  # Initialize as empty string
                     'reasons': set()
                 }
@@ -365,17 +371,18 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
         # Write to CSV
         with open(invalid_path, 'w', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow(['folder', 'font family name', 'reason(s)'])
+            writer.writerow(
+                ['folder', 'domain', 'font family name', 'reason(s)'])
             for folder, data in sorted(font_issues.items()):
                 writer.writerow([
                     data['folder'],
-                    # Will be empty string if METADATA.pb not found
+                    data['domain'],
                     data['family'],
                     '; '.join(sorted(data['reasons']))
                 ])
 
         # Print issues to console
-        for path, level, message in all_issues:
+        for path, domain, level, message in all_issues:
             rel_path = Path(path).relative_to(PROJECT_ROOT)
             click.echo(f"[{level}] {rel_path}: {message}")
 
@@ -395,10 +402,9 @@ def pre_validate(webfonts: str, fonts_dir: str, output: str):
 
 @cli.command()
 @click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
-@click.option('--fonts-dir', default=FONTS_OFL, help='Path to fonts directory')
 @click.option('--family', help='Specific font family to map (optional)')
 @click.option('--output', default='webfonts.metadata.json', help='Output JSON file name')
-def map(webfonts: str, fonts_dir: str, family: Optional[str], output: str):
+def map(webfonts: str, family: Optional[str], output: str):
     """Map font metadata to generate METADATA.json structure."""
     # Load webfonts data
     webfonts_data = load_webfonts_data(webfonts)
@@ -417,17 +423,17 @@ def map(webfonts: str, fonts_dir: str, family: Optional[str], output: str):
             return
 
         # Process single family
-        font_dir = os.path.join(fonts_dir, family)
-        if not os.path.isdir(font_dir):
+        font_path = get_font_path(family.lower().replace(' ', ''))
+        if not font_path:
             click.echo(f"Error: Font family '{family}' not found")
             return
 
-        result = map_font_metadata(font_dir, webfonts_data)
+        full_path, domain = font_path
+        result = map_font_metadata(full_path, webfonts_data)
         if result:
             family_name = result['family']
             all_mappings[family_name] = result
-            click.echo(f"\nMapping for {family_name}:")
-            click.echo(json.dumps(result, indent=2))
+            click.echo(f"Mapping for '{family_name}'")
         else:
             click.echo(f"Error: Could not map font family '{family}'")
     else:
@@ -436,23 +442,25 @@ def map(webfonts: str, fonts_dir: str, family: Optional[str], output: str):
         mapped = 0
         skipped = 0
 
-        for font_dir in os.listdir(fonts_dir):
-            full_path = os.path.join(fonts_dir, font_dir)
-            if os.path.isdir(full_path):
-                total += 1
+        for base_dir in [FONTS_APACHE, FONTS_OFL, FONTS_UFL]:
+            if not os.path.exists(base_dir):
+                continue
+            for font_dir in os.listdir(base_dir):
+                full_path = os.path.join(base_dir, font_dir)
+                if os.path.isdir(full_path):
+                    total += 1
 
-                # Skip if in invalid list
-                if font_dir in invalid_fonts:
-                    skipped += 1
-                    continue
+                    # Skip if in invalid list
+                    if font_dir in invalid_fonts:
+                        skipped += 1
+                        continue
 
-                result = map_font_metadata(full_path, webfonts_data)
-                if result:
-                    mapped += 1
-                    family_name = result['family']
-                    all_mappings[family_name] = result
-                    click.echo(f"\nMapping for {family_name}:")
-                    click.echo(json.dumps(result, indent=2))
+                    result = map_font_metadata(full_path, webfonts_data)
+                    if result:
+                        mapped += 1
+                        family_name = result['family']
+                        all_mappings[family_name] = result
+                        click.echo(f"Mapping for '{family_name}'")
 
         click.echo(f"\nMapping Summary:")
         click.echo(f"Total fonts: {total}")
@@ -466,6 +474,31 @@ def map(webfonts: str, fonts_dir: str, family: Optional[str], output: str):
         with open(output_path, 'w') as f:
             json.dump(all_mappings, f, indent=2)
         click.echo(f"\nMappings written to {output_path}")
+
+
+def get_font_domain(font_dir: str) -> Optional[str]:
+    """Get the domain (apache/ofl/ufl) for a font directory."""
+    for domain, base_dir in [
+        ('apache', FONTS_APACHE),
+        ('ofl', FONTS_OFL),
+        ('ufl', FONTS_UFL)
+    ]:
+        if font_dir.startswith(base_dir):
+            return domain
+    return None
+
+
+def get_font_path(font_dir: str) -> Optional[Tuple[str, str]]:
+    """Get the full path and domain for a font directory name."""
+    for domain, base_dir in [
+        ('apache', FONTS_APACHE),
+        ('ofl', FONTS_OFL),
+        ('ufl', FONTS_UFL)
+    ]:
+        full_path = os.path.join(base_dir, font_dir)
+        if os.path.isdir(full_path):
+            return full_path, domain
+    return None
 
 
 def get_actual_postscript_names(font_path: str, verbose: bool = False) -> Set[str]:
@@ -671,11 +704,15 @@ def test(webfonts: str, fonts_dir: str, folder: str):
 
 @cli.command()
 @click.option('--metadata', default='webfonts.metadata.json', help='Path to webfonts.metadata.json')
-@click.option('--fonts-dir', default=FONTS_OFL, help='Path to fonts directory')
+@click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
 @click.option('--family', help='Specific font family to validate (optional)')
 @click.option('--log', default='validation.log', help='Log file name')
-def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str):
-    """Validate PostScript names in webfonts.metadata.json against actual font files."""
+@click.option('--verbose', is_flag=True, help='Verbose output')
+def post_validate(metadata: str, webfonts: str, family: Optional[str], log: str, verbose: bool):
+    """Validate PostScript names in webfonts.metadata.json against webfonts.json and actual font files."""
+    # Load webfonts data
+    webfonts_data = load_webfonts_data(webfonts)
+
     # Load metadata
     metadata_path = os.path.join(os.path.dirname(__file__), metadata)
     if not os.path.exists(metadata_path):
@@ -688,21 +725,23 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
     # Load invalid fonts
     invalid_fonts = load_invalid_fonts()
 
-    # Get valid font directories
+    # Get families to validate
     if family:
         if family in invalid_fonts:
             click.echo(
                 f"Error: Font family '{family}' is listed in invalid.csv and will be skipped")
             return
-        valid_dirs = [(family, os.path.join(fonts_dir, family))]
+        families_to_validate = [family]
     else:
-        valid_dirs = get_valid_font_dirs(fonts_dir, invalid_fonts)
+        # Start from webfonts.json families
+        families_to_validate = list(webfonts_data.keys())
 
     # Process fonts
     results = {
         'valid': [],
         'invalid': [],
-        'not_found': []
+        'not_found': [],
+        'missing_in_metadata': []  # New category for families missing in metadata
     }
 
     # Track variant statistics
@@ -715,11 +754,31 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
     # Open log file
     log_path = os.path.join(os.path.dirname(__file__), log)
     with open(log_path, 'w') as log_file:
-        for font_dir, full_path in valid_dirs:
-            if not os.path.isdir(full_path):
+        for family_name in families_to_validate:
+            if family_name in invalid_fonts:
                 continue
 
-            result = validate_font_family(font_dir, full_path, metadata)
+            # Check if family exists in metadata
+            if family_name not in metadata:
+                results['missing_in_metadata'].append(family_name)
+                continue
+
+            # Get font directory
+            font_dir = family_name.lower().replace(' ', '')
+            # Try to find the font directory in any of the font directories
+            full_path = None
+            for base_dir in [FONTS_APACHE, FONTS_OFL, FONTS_UFL]:
+                potential_path = os.path.join(base_dir, font_dir)
+                if os.path.isdir(potential_path):
+                    full_path = potential_path
+                    break
+
+            if not full_path:
+                results['not_found'].append(font_dir)
+                continue
+
+            result = validate_font_family(
+                font_dir, full_path, metadata, verbose)
             if result is None:
                 results['not_found'].append(font_dir)
             else:
@@ -734,8 +793,13 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
                     unmapped_api_variants += result['unmapped_variants']
 
         # Print results
+        if results['missing_in_metadata']:
+            write_log("\nFonts missing in metadata:", log_file)
+            for font in sorted(results['missing_in_metadata']):
+                write_log(f"  - {font}", log_file)
+
         if results['not_found']:
-            write_log("\nFonts not found in metadata:", log_file)
+            write_log("\nFonts not found in filesystem:", log_file)
             for font in sorted(results['not_found']):
                 write_log(f"  - {font}", log_file)
 
@@ -754,17 +818,20 @@ def post_validate(metadata: str, fonts_dir: str, family: Optional[str], log: str
                     write_log("  Unmapped API variants:", log_file)
                     for variant in issue['unmapped']:
                         write_log(f"    - {variant}", log_file)
-        elif not results['not_found']:
+        elif not results['not_found'] and not results['missing_in_metadata']:
             write_log("\nAll fonts validated successfully!", log_file)
 
         # Print summary
         write_log("\nValidation Summary:", log_file)
-        write_log(f"Total fonts: {len(valid_dirs)}", log_file)
+        write_log(
+            f"Total fonts in webfonts.json: {len(families_to_validate)}", log_file)
         write_log(f"Successfully validated: {len(results['valid'])}", log_file)
         write_log(f"Fonts with issues: {len(results['invalid'])}", log_file)
+        write_log(
+            f"Fonts missing in metadata: {len(results['missing_in_metadata'])}", log_file)
         if results['not_found']:
             write_log(
-                f"Fonts not found in metadata: {len(results['not_found'])}", log_file)
+                f"Fonts not found in filesystem: {len(results['not_found'])}", log_file)
 
         # Print variant resolution statistics
         write_log("\nVariant Resolution Statistics:", log_file)
@@ -954,10 +1021,8 @@ def get_valid_font_dirs(fonts_dir: str, invalid_fonts: Set[str]) -> List[Tuple[s
     return sorted(valid_dirs)
 
 
-def validate_font_family(font_dir: str, full_path: str, metadata: Dict) -> Optional[Dict]:
+def validate_font_family(font_dir: str, full_path: str, metadata: Dict, verbose: bool) -> Optional[Dict]:
     """Validate a single font family against metadata."""
-    click.echo(f"\nDebug for folder: {font_dir}")
-    click.echo(f"Full path: {full_path}")
 
     family_name = find_family_in_metadata(font_dir, metadata)
     if not family_name:
@@ -969,12 +1034,13 @@ def validate_font_family(font_dir: str, full_path: str, metadata: Dict) -> Optio
     mapped_variants = set(metadata[family_name]['post_script_names'].values())
     unmapped_variants = api_variants - mapped_variants
 
-    click.echo(f"Family name found: {family_name}")
-    click.echo(f"Actual names from font files: {sorted(actual_names)}")
-    click.echo(f"Expected names from metadata: {sorted(expected_names)}")
-    click.echo(f"API variants: {sorted(api_variants)}")
-    click.echo(f"Mapped variants: {sorted(mapped_variants)}")
-    click.echo(f"Unmapped variants: {sorted(unmapped_variants)}")
+    if verbose:
+        click.echo(f"Family name found: {family_name}")
+        click.echo(f"Actual names from font files: {sorted(actual_names)}")
+        click.echo(f"Expected names from metadata: {sorted(expected_names)}")
+        click.echo(f"API variants: {sorted(api_variants)}")
+        click.echo(f"Mapped variants: {sorted(mapped_variants)}")
+        click.echo(f"Unmapped variants: {sorted(unmapped_variants)}")
 
     # Find missing names (names in font files that aren't in metadata)
     missing_names = set()
@@ -1012,11 +1078,9 @@ def validate_font_family(font_dir: str, full_path: str, metadata: Dict) -> Optio
 def scan_font_directory(font_dir: str) -> Set[str]:
     """Scan a font directory for all font files and get their PostScript names."""
     all_names = set()
-    click.echo(f"\nScanning directory: {font_dir}")
     for file in os.listdir(font_dir):
         if file.lower().endswith(('.ttf', '.otf')):
             font_path = os.path.join(font_dir, file)
-            click.echo(f"  Processing file: {file}")
             names = get_actual_postscript_names(font_path)
             all_names.update(names)
     return all_names
@@ -1034,6 +1098,18 @@ def find_family_in_metadata(font_dir: str, metadata: Dict) -> Optional[str]:
         if normalize_name(name) == normalized_dir:
             return name
     return None
+
+
+def get_all_font_dirs() -> List[str]:
+    """Get all font directories from apache, ofl, and ufl."""
+    font_dirs = []
+    for base_dir in [FONTS_APACHE, FONTS_OFL, FONTS_UFL]:
+        if os.path.exists(base_dir):
+            for font_dir in os.listdir(base_dir):
+                full_path = os.path.join(base_dir, font_dir)
+                if os.path.isdir(full_path):
+                    font_dirs.append(full_path)
+    return sorted(font_dirs)
 
 
 if __name__ == '__main__':
