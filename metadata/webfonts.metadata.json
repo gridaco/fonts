@@ -1,4 +1,394 @@
 {
+  "Redressed": {
+    "family": "Redressed",
+    "post_script_names": {
+      "Redressed-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/redressed/v31/x3dickHUbrmJ7wMy9MsBfPACvy_1BA.ttf"
+    }
+  },
+  "Tinos": {
+    "family": "Tinos",
+    "post_script_names": {
+      "Tinos-Bold": "700",
+      "Tinos-BoldItalic": "700italic",
+      "Tinos-Italic": "italic",
+      "Tinos-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/tinos/v24/buE4poGnedXvwgX8dGVh8TI-.ttf",
+      "italic": "https://fonts.gstatic.com/s/tinos/v24/buE2poGnedXvwjX-fmFD9CI-4NU.ttf",
+      "700": "https://fonts.gstatic.com/s/tinos/v24/buE1poGnedXvwj1AW0Fp2i43-cxL.ttf",
+      "700italic": "https://fonts.gstatic.com/s/tinos/v24/buEzpoGnedXvwjX-Rt1s0CoV_NxLeiw.ttf"
+    }
+  },
+  "Kosugi": {
+    "family": "Kosugi",
+    "post_script_names": {
+      "Kosugi-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/kosugi/v18/pxiFyp4_v8FCjlI4NLr6f1pdEQ.ttf"
+    }
+  },
+  "Rochester": {
+    "family": "Rochester",
+    "post_script_names": {
+      "Rochester-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/rochester/v23/6ae-4KCqVa4Zy6Fif-Uy31vWNTMwoQ.ttf"
+    }
+  },
+  "Smokum": {
+    "family": "Smokum",
+    "post_script_names": {
+      "Smokum-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/smokum/v30/TK3iWkUbAhopmrdGHjUHte5fKg.ttf"
+    }
+  },
+  "Calligraffitti": {
+    "family": "Calligraffitti",
+    "post_script_names": {
+      "Calligraffitti-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/calligraffitti/v19/46k2lbT3XjDVqJw3DCmCFjE0vnFZM5ZBpYN-.ttf"
+    }
+  },
+  "Roboto Slab": {
+    "family": "Roboto Slab",
+    "post_script_names": {
+      "RobotoSlab-Regular": "regular",
+      "RobotoSlab-Thin": "100",
+      "RobotoSlab-ExtraLight": "200",
+      "RobotoSlab-Light": "300",
+      "RobotoSlab-Medium": "500",
+      "RobotoSlab-SemiBold": "600",
+      "RobotoSlab-Bold": "700",
+      "RobotoSlab-ExtraBold": "800",
+      "RobotoSlab-Black": "900"
+    },
+    "files": {
+      "100": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWWaG5iddG-1A.ttf",
+      "200": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISWaG5iddG-1A.ttf",
+      "300": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSWaG5iddG-1A.ttf",
+      "regular": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISWaG5iddG-1A.ttf",
+      "500": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSWaG5iddG-1A.ttf",
+      "600": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOWaG5iddG-1A.ttf",
+      "700": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4OWaG5iddG-1A.ttf",
+      "800": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOWaG5iddG-1A.ttf",
+      "900": "https://fonts.gstatic.com/s/robotoslab/v35/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOWaG5iddG-1A.ttf"
+    }
+  },
+  "Ultra": {
+    "family": "Ultra",
+    "post_script_names": {
+      "Ultra-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/ultra/v25/zOLy4prXmrtY-tT6yLOD6NxF.ttf"
+    }
+  },
+  "Syncopate": {
+    "family": "Syncopate",
+    "post_script_names": {
+      "Syncopate-Bold": "700",
+      "Syncopate-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/syncopate/v23/pe0sMIuPIYBCpEV5eFdyAv2-C99ycg.ttf",
+      "700": "https://fonts.gstatic.com/s/syncopate/v23/pe0pMIuPIYBCpEV5eFdKvtKaA_Rue1UwVg.ttf"
+    }
+  },
+  "Chewy": {
+    "family": "Chewy",
+    "post_script_names": {
+      "Chewy-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/chewy/v18/uK_94ruUb-k-wk5xIDMfO-ed.ttf"
+    }
+  },
+  "Homemade Apple": {
+    "family": "Homemade Apple",
+    "post_script_names": {
+      "HomemadeApple-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/homemadeapple/v23/Qw3EZQFXECDrI2q789EKQZJob3x9Vnksi4M7.ttf"
+    }
+  },
+  "Arimo": {
+    "family": "Arimo",
+    "post_script_names": {
+      "Arimo-Italic": "italic",
+      "Arimo-Regular": "regular",
+      "Arimo-Medium": "500",
+      "Arimo-SemiBold": "600",
+      "Arimo-Bold": "700",
+      "Arimo-MediumItalic": "500italic",
+      "Arimo-SemiBoldItalic": "600italic",
+      "Arimo-BoldItalic": "700italic"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/arimo/v34/P5sfzZCDf9_T_3cV7NCUECyoxNk37cxsBxDAVQI4aA.ttf",
+      "500": "https://fonts.gstatic.com/s/arimo/v34/P5sfzZCDf9_T_3cV7NCUECyoxNk338xsBxDAVQI4aA.ttf",
+      "600": "https://fonts.gstatic.com/s/arimo/v34/P5sfzZCDf9_T_3cV7NCUECyoxNk3M8tsBxDAVQI4aA.ttf",
+      "700": "https://fonts.gstatic.com/s/arimo/v34/P5sfzZCDf9_T_3cV7NCUECyoxNk3CstsBxDAVQI4aA.ttf",
+      "italic": "https://fonts.gstatic.com/s/arimo/v34/P5sdzZCDf9_T_10c3i9MeUcyat4iJY-ERBrEdwcoaKww.ttf",
+      "500italic": "https://fonts.gstatic.com/s/arimo/v34/P5sdzZCDf9_T_10c3i9MeUcyat4iJY-2RBrEdwcoaKww.ttf",
+      "600italic": "https://fonts.gstatic.com/s/arimo/v34/P5sdzZCDf9_T_10c3i9MeUcyat4iJY9aQxrEdwcoaKww.ttf",
+      "700italic": "https://fonts.gstatic.com/s/arimo/v34/P5sdzZCDf9_T_10c3i9MeUcyat4iJY9jQxrEdwcoaKww.ttf"
+    }
+  },
+  "Maiden Orange": {
+    "family": "Maiden Orange",
+    "post_script_names": {
+      "MaidenOrange-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/maidenorange/v31/kJE1BuIX7AUmhi2V4m08kb1XjOZdCZS8FY8.ttf"
+    }
+  },
+  "Unkempt": {
+    "family": "Unkempt",
+    "post_script_names": {
+      "Unkempt-Bold": "700",
+      "Unkempt-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/unkempt/v22/2EbnL-Z2DFZue0DSSYYf8z2Yt_c.ttf",
+      "700": "https://fonts.gstatic.com/s/unkempt/v22/2EbiL-Z2DFZue0DScTow1zWzq_5uT84.ttf"
+    }
+  },
+  "Montez": {
+    "family": "Montez",
+    "post_script_names": {
+      "Montez-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/montez/v24/845ZNMk5GoGIX8lm1LDeSd-R_g.ttf"
+    }
+  },
+  "Mountains of Christmas": {
+    "family": "Mountains of Christmas",
+    "post_script_names": {
+      "MountainsofChristmas-Bold": "700",
+      "MountainsofChristmas-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/mountainsofchristmas/v23/3y9w6a4zcCnn5X0FDyrKi2ZRUBIy8uxoUo7ePNamMPNpJpc.ttf",
+      "700": "https://fonts.gstatic.com/s/mountainsofchristmas/v23/3y9z6a4zcCnn5X0FDyrKi2ZRUBIy8uxoUo7eBGqJFPtCOp6IaEA.ttf"
+    }
+  },
+  "Luckiest Guy": {
+    "family": "Luckiest Guy",
+    "post_script_names": {
+      "LuckiestGuy-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/luckiestguy/v24/_gP_1RrxsjcxVyin9l9n_j2RStR3qDpraA.ttf"
+    }
+  },
+  "Just Another Hand": {
+    "family": "Just Another Hand",
+    "post_script_names": {
+      "JustAnotherHand-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/justanotherhand/v20/845CNN4-AJyIGvIou-6yJKyptyOpOcr_BmmlS5aw.ttf"
+    }
+  },
+  "Yellowtail": {
+    "family": "Yellowtail",
+    "post_script_names": {
+      "Yellowtail-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/yellowtail/v24/OZpGg_pnoDtINPfRIlLotlzNwED-b4g.ttf"
+    }
+  },
+  "Special Elite": {
+    "family": "Special Elite",
+    "post_script_names": {
+      "SpecialElite-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/specialelite/v19/XLYgIZbkc4JPUL5CVArUVL0nhncESXFtUsM.ttf"
+    }
+  },
+  "Aclonica": {
+    "family": "Aclonica",
+    "post_script_names": {
+      "Aclonica-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/aclonica/v24/K2FyfZJVlfNNSEBXGb7TCI6oBjLz.ttf"
+    }
+  },
+  "Rancho": {
+    "family": "Rancho",
+    "post_script_names": {
+      "Rancho-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/rancho/v22/46kulbzmXjLaqZRlbWXgd0RY1g.ttf"
+    }
+  },
+  "Kosugi Maru": {
+    "family": "Kosugi Maru",
+    "post_script_names": {
+      "KosugiMaru-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/kosugimaru/v16/0nksC9PgP_wGh21A2KeqGiTqivr9iBq_.ttf"
+    }
+  },
+  "Sunshiney": {
+    "family": "Sunshiney",
+    "post_script_names": {
+      "Sunshiney-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/sunshiney/v24/LDIwapGTLBwsS-wT4vcgE8moUePWkg.ttf"
+    }
+  },
+  "Walter Turncoat": {
+    "family": "Walter Turncoat",
+    "post_script_names": {
+      "WalterTurncoat-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/walterturncoat/v24/snfys0Gs98ln43n0d-14ULoToe67YB2dQ5ZPqQ.ttf"
+    }
+  },
+  "Cousine": {
+    "family": "Cousine",
+    "post_script_names": {
+      "Cousine-Bold": "700",
+      "Cousine-BoldItalic": "700italic",
+      "Cousine-Italic": "italic",
+      "Cousine-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/cousine/v28/d6lIkaiiRdih4SpPzSMlzTbtz9k.ttf",
+      "italic": "https://fonts.gstatic.com/s/cousine/v28/d6lKkaiiRdih4SpP_SEvyRTo39l8hw.ttf",
+      "700": "https://fonts.gstatic.com/s/cousine/v28/d6lNkaiiRdih4SpP9Z8K6T7G09BlnmQ.ttf",
+      "700italic": "https://fonts.gstatic.com/s/cousine/v28/d6lPkaiiRdih4SpP_SEXdTvM1_JgjmRpOA.ttf"
+    }
+  },
+  "Permanent Marker": {
+    "family": "Permanent Marker",
+    "post_script_names": {
+      "PermanentMarker-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/permanentmarker/v16/Fh4uPib9Iyv2ucM6pGQMWimMp004HaqIfrT5nlk.ttf"
+    }
+  },
+  "Cherry Cream Soda": {
+    "family": "Cherry Cream Soda",
+    "post_script_names": {
+      "CherryCreamSoda-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/cherrycreamsoda/v21/UMBIrOxBrW6w2FFyi9paG0fdVdRciTd6Cd47DJ7G.ttf"
+    }
+  },
+  "Satisfy": {
+    "family": "Satisfy",
+    "post_script_names": {
+      "Satisfy-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/satisfy/v22/rP2Hp2yn6lkG50LoOZSCHBeHFl0.ttf"
+    }
+  },
+  "Rock Salt": {
+    "family": "Rock Salt",
+    "post_script_names": {
+      "RockSalt-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/rocksalt/v23/MwQ0bhv11fWD6QsAVOZbsEk7hbBWrA.ttf"
+    }
+  },
+  "Irish Grover": {
+    "family": "Irish Grover",
+    "post_script_names": {
+      "IrishGrover-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/irishgrover/v23/buExpoi6YtLz2QW7LA4flVgf-P5Oaiw4cw.ttf"
+    }
+  },
+  "Coming Soon": {
+    "family": "Coming Soon",
+    "post_script_names": {
+      "ComingSoon-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/comingsoon/v19/qWcuB6mzpYL7AJ2VfdQR1u-SUjjzsykh.ttf"
+    }
+  },
+  "Crafty Girls": {
+    "family": "Crafty Girls",
+    "post_script_names": {
+      "CraftyGirls-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/craftygirls/v16/va9B4kXI39VaDdlPJo8N_NvuQR37fF3Wlg.ttf"
+    }
+  },
+  "Schoolbell": {
+    "family": "Schoolbell",
+    "post_script_names": {
+      "Schoolbell-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/schoolbell/v18/92zQtBZWOrcgoe-fgnJIVxIQ6mRqfiQ.ttf"
+    }
+  },
+  "Crushed": {
+    "family": "Crushed",
+    "post_script_names": {
+      "Crushed-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/crushed/v31/U9Mc6dym6WXImTlFT1kfuIqyLzA.ttf"
+    }
+  },
+  "Slackey": {
+    "family": "Slackey",
+    "post_script_names": {
+      "Slackey-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/slackey/v29/N0bV2SdQO-5yM0-dKlRaJdbWgdY.ttf"
+    }
+  },
+  "Kranky": {
+    "family": "Kranky",
+    "post_script_names": {
+      "Kranky-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/kranky/v29/hESw6XVgJzlPsFnMpheEZo_H_w.ttf"
+    }
+  },
+  "Fontdiner Swanky": {
+    "family": "Fontdiner Swanky",
+    "post_script_names": {
+      "FontdinerSwanky-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/fontdinerswanky/v24/ijwOs4XgRNsiaI5-hcVb4hQgMvCD4uEfKiGvxts.ttf"
+    }
+  },
   "Noto Sans Kharoshthi": {
     "family": "Noto Sans Kharoshthi",
     "post_script_names": {
@@ -26408,6 +26798,115 @@
     },
     "files": {
       "regular": "https://fonts.gstatic.com/s/notosansyi/v19/sJoD3LFXjsSdcnzn071rO3apxVDJNVgSNg.ttf"
+    }
+  },
+  "Ubuntu Mono": {
+    "family": "Ubuntu Mono",
+    "post_script_names": {
+      "UbuntuMono-Bold": "700",
+      "UbuntuMono-BoldItalic": "700italic",
+      "UbuntuMono-Italic": "italic",
+      "UbuntuMono-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/ubuntumono/v18/KFOjCneDtsqEr0keqCMhbBc9AMX6lJBP.ttf",
+      "italic": "https://fonts.gstatic.com/s/ubuntumono/v18/KFOhCneDtsqEr0keqCMhbCc_CsHYkYBPY3o.ttf",
+      "700": "https://fonts.gstatic.com/s/ubuntumono/v18/KFO-CneDtsqEr0keqCMhbC-BL-Hyv4xGemO1.ttf",
+      "700italic": "https://fonts.gstatic.com/s/ubuntumono/v18/KFO8CneDtsqEr0keqCMhbCc_Mn33tYhkf3O1GVg.ttf"
+    }
+  },
+  "Ubuntu Sans Mono": {
+    "family": "Ubuntu Sans Mono",
+    "post_script_names": {
+      "UbuntuSansMono-Italic": "italic",
+      "UbuntuSansMono-Regular": "regular",
+      "UbuntuSansMono-Medium": "500",
+      "UbuntuSansMono-SemiBold": "600",
+      "UbuntuSansMono-Bold": "700",
+      "UbuntuSansMono-MediumItalic": "500italic",
+      "UbuntuSansMono-SemiBoldItalic": "600italic",
+      "UbuntuSansMono-BoldItalic": "700italic"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyc7mzgBHrR5yE7ZyRg0QRJMKI4zAbgjc1t-pKe27Ev_kYRiqcZu3n0.ttf",
+      "500": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyc7mzgBHrR5yE7ZyRg0QRJMKI4zAbgjc1t-pKe27Ed_kYRiqcZu3n0.ttf",
+      "600": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyc7mzgBHrR5yE7ZyRg0QRJMKI4zAbgjc1t-pKe27Hx-UYRiqcZu3n0.ttf",
+      "700": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyc7mzgBHrR5yE7ZyRg0QRJMKI4zAbgjc1t-pKe27HI-UYRiqcZu3n0.ttf",
+      "italic": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyi7mzgBHrR5yE7ZyRg0QRJMKI45g_SchUEkQgw3KTnva5SgKM7vmn0BLE.ttf",
+      "500italic": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyi7mzgBHrR5yE7ZyRg0QRJMKI45g_SchUEkQgw3KTnvZxSgKM7vmn0BLE.ttf",
+      "600italic": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyi7mzgBHrR5yE7ZyRg0QRJMKI45g_SchUEkQgw3KTnvXBVgKM7vmn0BLE.ttf",
+      "700italic": "https://fonts.gstatic.com/s/ubuntusansmono/v2/jVyi7mzgBHrR5yE7ZyRg0QRJMKI45g_SchUEkQgw3KTnvUlVgKM7vmn0BLE.ttf"
+    }
+  },
+  "Ubuntu Condensed": {
+    "family": "Ubuntu Condensed",
+    "post_script_names": {
+      "UbuntuCondensed-Regular": "regular"
+    },
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/ubuntucondensed/v16/u-4k0rCzjgs5J7oXnJcM_0kACGMtf-fVqvHoJXw.ttf"
+    }
+  },
+  "Ubuntu Sans": {
+    "family": "Ubuntu Sans",
+    "post_script_names": {
+      "UbuntuSans-Italic": "italic",
+      "UbuntuSans-Regular": "regular",
+      "UbuntuSans-Thin": "100",
+      "UbuntuSans-ExtraLight": "200",
+      "UbuntuSans-Light": "300",
+      "UbuntuSans-Medium": "500",
+      "UbuntuSans-SemiBold": "600",
+      "UbuntuSans-Bold": "700",
+      "UbuntuSans-ExtraBold": "800",
+      "UbuntuSans-ThinItalic": "100italic",
+      "UbuntuSans-ExtraLightItalic": "200italic",
+      "UbuntuSans-LightItalic": "300italic",
+      "UbuntuSans-MediumItalic": "500italic",
+      "UbuntuSans-SemiBoldItalic": "600italic",
+      "UbuntuSans-BoldItalic": "700italic",
+      "UbuntuSans-ExtraBoldItalic": "800italic"
+    },
+    "files": {
+      "100": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbujzt7CfqLVLT9mgk.ttf",
+      "200": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbuj7t6CfqLVLT9mgk.ttf",
+      "300": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbuj2V6CfqLVLT9mgk.ttf",
+      "regular": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbujzt6CfqLVLT9mgk.ttf",
+      "500": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbujwl6CfqLVLT9mgk.ttf",
+      "600": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbuj-V9CfqLVLT9mgk.ttf",
+      "700": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbuj9x9CfqLVLT9mgk.ttf",
+      "800": "https://fonts.gstatic.com/s/ubuntusans/v3/co3omWd6mSRtB7_9UaLWwJnCq5ALePfPu1tPcW235R53LqrCPWbuj7t9CfqLVLT9mgk.ttf",
+      "100italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM54biBUJb4iglIHg.ttf",
+      "200italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM5YbmBUJb4iglIHg.ttf",
+      "300italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM5v7mBUJb4iglIHg.ttf",
+      "italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM54bmBUJb4iglIHg.ttf",
+      "500italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM507mBUJb4iglIHg.ttf",
+      "600italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM5P76BUJb4iglIHg.ttf",
+      "700italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM5Br6BUJb4iglIHg.ttf",
+      "800italic": "https://fonts.gstatic.com/s/ubuntusans/v3/co3mmWd6mSRtB7_9UaLWwLPLmXPrAaRZFVxauS9FrCyI9sOpp8jpmvM5Yb6BUJb4iglIHg.ttf"
+    }
+  },
+  "Ubuntu": {
+    "family": "Ubuntu",
+    "post_script_names": {
+      "Ubuntu-Bold": "700",
+      "Ubuntu-BoldItalic": "700italic",
+      "Ubuntu-Italic": "italic",
+      "Ubuntu-Light": "300",
+      "Ubuntu-LightItalic": "300italic",
+      "Ubuntu-Medium": "500",
+      "Ubuntu-MediumItalic": "500italic",
+      "Ubuntu-Regular": "regular"
+    },
+    "files": {
+      "300": "https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoC1CzTt2aMH4V_gg.ttf",
+      "300italic": "https://fonts.gstatic.com/s/ubuntu/v20/4iCp6KVjbNBYlgoKejZftWyIPYBvgpUI.ttf",
+      "regular": "https://fonts.gstatic.com/s/ubuntu/v20/4iCs6KVjbNBYlgo6eAT3v02QFg.ttf",
+      "italic": "https://fonts.gstatic.com/s/ubuntu/v20/4iCu6KVjbNBYlgoKeg7znUiAFpxm.ttf",
+      "500": "https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCjC3Tt2aMH4V_gg.ttf",
+      "500italic": "https://fonts.gstatic.com/s/ubuntu/v20/4iCp6KVjbNBYlgoKejYHtGyIPYBvgpUI.ttf",
+      "700": "https://fonts.gstatic.com/s/ubuntu/v20/4iCv6KVjbNBYlgoCxCvTt2aMH4V_gg.ttf",
+      "700italic": "https://fonts.gstatic.com/s/ubuntu/v20/4iCp6KVjbNBYlgoKejZPsmyIPYBvgpUI.ttf"
     }
   }
 }
