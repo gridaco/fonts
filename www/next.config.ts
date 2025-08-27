@@ -1,21 +1,29 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /** @type {import('next').NextConfig} */
-
   async headers() {
     return [
+      // default: all files get CORS
       {
-        // match all files under /public
-        source: "/:all*(svg|jpg|png|woff|woff2|ttf|otf|json)",
+        source: "/:all*",
         headers: [
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Access-Control-Allow-Methods", value: "GET, OPTIONS" },
+        ],
+      },
+      // svg/:path -> CORS + cache + content-type
+      {
+        source: "/svg/:path*.svg",
+        headers: [
+          { key: "Access-Control-Allow-Origin", value: "*" },
+          { key: "Access-Control-Allow-Methods", value: "GET, OPTIONS" },
           {
-            key: "Access-Control-Allow-Origin",
-            value: "*", // or "https://grida.co" (let's decide ths later)
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
           },
           {
-            key: "Access-Control-Allow-Methods",
-            value: "GET, OPTIONS",
+            key: "Content-Type",
+            value: "image/svg+xml; charset=utf-8",
           },
         ],
       },
