@@ -132,7 +132,7 @@ def text_to_svg_path(text, font_url, output_path, font_size=14):  # Default font
 @click.argument('fonts_json', type=click.Path(exists=True))
 @click.argument('output_folder', type=click.Path(exists=True))
 @click.option('--skip', is_flag=True, help="Skip fonts if SVG already exists.")
-@click.option('--font-size', default=14, help="Set the font size for SVG rendering.", type=int)
+@click.option('--font-size', default=16, help="Set the font size for SVG rendering.", type=int)
 @click.option('--subset', default='latin', help="Specify the subset to use. Defaults to 'latin'.")
 def generate_svgs(fonts_json, output_folder, skip, font_size, subset):
     with open(fonts_json, 'r') as file:
