@@ -106,6 +106,13 @@ dist
 # TernJS port file
 .tern-port
 
+
+# Python
+venv/
+__pycache__
+
 out
 fonts
 fonts-main.zip
+
+
