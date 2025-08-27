@@ -11,6 +11,20 @@ from scour import scour
 import re
 
 
+def normalize_family_name(family_name: str) -> str:
+    """
+    Convert family name to font ID format:
+    - Remove all spaces
+    - Convert to lowercase
+    """
+    if not family_name:
+        return ""
+
+    # Remove all spaces and convert to lowercase
+    normalized = re.sub(r'\s+', '', family_name.lower())
+    return normalized
+
+
 def load_font_from_url(url):
     response = requests.get(url)
     response.raise_for_status()
@@ -122,17 +136,16 @@ def text_to_svg_path(text, font_url, output_path, font_size=14):  # Default font
 @click.option('--subset', default='latin', help="Specify the subset to use. Defaults to 'latin'.")
 def generate_svgs(fonts_json, output_folder, skip, font_size, subset):
     with open(fonts_json, 'r') as file:
-        fonts_data = json.load(file)
+        webfontlist = json.load(file)
+        fonts_data = webfontlist.get('items')
 
-    for font_id, font_info in tqdm(fonts_data.items(), desc="Processing fonts"):
+    for font_info in tqdm(fonts_data, desc="Processing fonts"):
+        # Generate font_id from family name using the same logic as the assertion script
+        family = font_info['family']
+        font_id = normalize_family_name(family)
+
         try:
-            family = font_info['family']
             font_url = None
-
-            # First attempt to use weight 400, otherwise fall back to any available weight
-            available_weights = font_info['variants'].keys()
-            selected_weight = '400' if '400' in available_weights else next(
-                iter(available_weights))
 
             # Check if the subset is available, warn and skip if not
             if subset not in font_info.get("subsets", []):
@@ -140,9 +153,15 @@ def generate_svgs(fonts_json, output_folder, skip, font_size, subset):
                 tqdm.write(f"Warning: Subset '{subset}' not found for font '{font_id}', skipping.")
                 continue
 
-            # Find an available URL for the specified subset and selected weight
-            if font_info['variants'][selected_weight]['normal'].get(subset):
-                font_url = font_info['variants'][selected_weight]['normal'][subset]['url']['truetype']
+            # Get available variants and files
+            variants = font_info.get('variants', [])
+            files = font_info.get('files', {})
+
+            # First attempt to use 'regular', otherwise fall back to first available variant
+            selected_variant = 'regular' if 'regular' in variants else (variants[0] if variants else None)
+
+            if selected_variant and selected_variant in files:
+                font_url = files[selected_variant]
 
             if font_url is None:
                 tqdm.write(f"No usable variant for {font_id}, skipping.")

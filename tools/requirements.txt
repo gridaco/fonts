@@ -1,3 +1,5 @@
+svgwrite
 gftools
 protobuf
 click
+scour
