@@ -87,8 +87,8 @@ def find_variable_fonts(font_dir: str, verbose: bool = False) -> List[Dict]:
 @click.command()
 @click.option(
     '--fonts-dir',
-    default='./fonts',
-    help='Base directory containing font directories (default: ./fonts)'
+    default='./vendor/google',
+    help='Base directory containing font directories (default: ./vendor/google)'
 )
 @click.option(
     '--verbose', '-v',
@@ -130,7 +130,7 @@ def main(fonts_dir, verbose, output, format):
     
     if not font_directories:
         print(f"Error: No font directories found in {fonts_dir}")
-        print("Expected structure: fonts/{ofl,apache,ufl}/*/")
+        print("Expected structure: vendor/google/{ofl,apache,ufl}/*/")
         print("Or point directly to a font directory")
         sys.exit(1)
     

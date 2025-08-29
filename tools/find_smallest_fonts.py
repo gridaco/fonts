@@ -11,7 +11,7 @@ import glob
 from pathlib import Path
 
 
-def find_smallest_fonts(fonts_dir="fonts", output_file="smallest_fonts_top100.txt", top_n=100):
+def find_smallest_fonts(fonts_dir="vendor/google", output_file="smallest_fonts_top100.txt", top_n=100):
     """
     Find the top N smallest font files in the given directory.
 
