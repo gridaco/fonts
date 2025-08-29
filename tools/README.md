@@ -13,7 +13,7 @@ Validates font metadata - ensures all fonts have `METADATA.pb` files with only "
 python assert_style.py
 
 # Validate specific directory
-python assert_style.py --fonts-dir ./fonts/ofl
+python assert_style.py --fonts-dir ./vendor/google/ofl
 
 # Verbose output
 python assert_style.py --verbose
@@ -31,7 +31,7 @@ Asserts that there can only be up to 2 variable fonts per family.
 python assert_max_vf_2.py
 
 # Validate specific directory
-python assert_max_vf_2.py --fonts-dir ./fonts/ofl
+python assert_max_vf_2.py --fonts-dir ./vendor/google/ofl
 
 # Verbose output with detailed breakdown
 python assert_max_vf_2.py --verbose
@@ -43,7 +43,7 @@ python assert_max_vf_2.py --output violations.csv
 ## Options
 
 Both scripts support:
-- `--fonts-dir`: Font directory (default: `./fonts`)
+- `--fonts-dir`: Font directory (default: `./vendor/google`)
 - `--verbose, -v`: Verbose output
 - `--output`: Save results to CSV file
 

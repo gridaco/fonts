@@ -11,10 +11,10 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Define key paths
 WEBFONTS_JSON = os.path.join(PROJECT_ROOT, 'webfonts.json')
-FONTS = os.path.join(PROJECT_ROOT, 'fonts')
-FONTS_APACHE = os.path.join(PROJECT_ROOT, 'fonts', 'apache')
-FONTS_OFL = os.path.join(PROJECT_ROOT, 'fonts', 'ofl')
-FONTS_UFL = os.path.join(PROJECT_ROOT, 'fonts', 'ufl')
+FONTS = os.path.join(PROJECT_ROOT, 'vendor', 'google')
+FONTS_APACHE = os.path.join(FONTS, 'apache')
+FONTS_OFL = os.path.join(FONTS, 'ofl')
+FONTS_UFL = os.path.join(FONTS, 'ufl')
 
 
 def load_webfonts_data(webfonts_path: str) -> Dict[str, Dict]:

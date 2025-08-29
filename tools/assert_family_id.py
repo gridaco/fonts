@@ -130,8 +130,8 @@ def scan_font_directories(base_dir: str, verbose: bool = False) -> List[str]:
 @click.command()
 @click.option(
     '--fonts-dir',
-    default='./fonts',
-    help='Base directory containing font directories (default: ./fonts)'
+    default='./vendor/google',
+    help='Base directory containing font directories (default: ./vendor/google)'
 )
 @click.option(
     '--verbose', '-v',
@@ -167,7 +167,7 @@ def main(fonts_dir, verbose, output):
 
     if not font_directories:
         print(f"Error: No font directories found in {fonts_dir}")
-        print("Expected structure: fonts/{ofl,apache,ufl}/*/METADATA.pb")
+        print("Expected structure: vendor/google/{ofl,apache,ufl}/*/METADATA.pb")
         print("Or point directly to a font directory containing METADATA.pb")
         sys.exit(1)
 
