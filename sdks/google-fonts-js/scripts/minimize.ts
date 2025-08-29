@@ -5,7 +5,7 @@ function main() {
   const minimized = fulljson.items.map(minimize_item);
   const jsonstr = JSON.stringify(minimized);
   fs.writeFile(
-    __dirname + "/out/google-fonts-latest.min.json",
+    __dirname + "../out/google-fonts-latest.min.json",
     jsonstr,
     function (err) {
       if (err) {
