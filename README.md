@@ -8,6 +8,7 @@ A utility repository that enhances Google Fonts for design tools by providing:
 
 - 🎨 **Baked SVG Previews**: Pre-rendered SVG previews of all Google Fonts variants
 - 📊 **Enhanced Metadata**: Additional metadata for design tools, including PostScript name mappings
+- 🎭 **Apple Color Emoji PNG Files**: High-quality emoji images for consistent cross-platform rendering
 
 ## Features
 

@@ -182,6 +182,119 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Apple Color Emoji PNG Files */}
+        <div className="bg-card rounded-lg shadow-sm border border-border p-4 sm:p-8 mb-6 sm:mb-8">
+          <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 sm:mb-6">
+            Apple Color Emoji PNG Files
+          </h2>
+          <p className="text-muted-foreground mb-4 sm:mb-6 text-sm sm:text-base">
+            We serve Apple Color Emoji PNG files for Linux compatibility. These
+            are high-quality emoji images that can be used in applications
+            requiring consistent emoji rendering across platforms.
+          </p>
+
+          <div className="bg-accent border border-accent-foreground/20 rounded-md p-3 sm:p-4 mb-4 sm:mb-6">
+            <h3 className="text-sm font-medium text-accent-foreground mb-2">
+              Important Notice
+            </h3>
+            <p className="text-xs sm:text-sm text-accent-foreground/80">
+              We do not serve AppleColorEmoji.ttf font files as they are
+              proprietary and protected by Apple&apos;s EULA. We respect
+              Apple&apos;s intellectual property rights and only provide the
+              open-source PNG implementation for Linux compatibility.
+            </p>
+          </div>
+
+          <h3 className="text-base sm:text-lg font-medium text-foreground mb-3 sm:mb-4">
+            Access Pattern
+          </h3>
+          <p className="text-muted-foreground mb-3 text-sm sm:text-base">
+            Access emoji PNG files using the following URL pattern:
+          </p>
+
+          <div className="bg-muted rounded-md p-3 sm:p-4 mb-4 sm:mb-6">
+            <code className="text-xs sm:text-sm text-foreground break-all">
+              https://fonts.grida.co/apple/emoji/160/[unicode].png
+            </code>
+          </div>
+
+          <h3 className="text-base sm:text-lg font-medium text-foreground mb-3 sm:mb-4">
+            Examples
+          </h3>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            {/* Example 1 */}
+            <div className="border border-border rounded-lg p-4">
+              <h4 className="font-medium text-foreground mb-2">
+                Copyright Symbol
+              </h4>
+              <div className="bg-muted rounded p-3 mb-3 flex items-center justify-center">
+                <Image
+                  src="/apple/emoji/160/00a9.png"
+                  alt="Copyright emoji"
+                  width={64}
+                  height={64}
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
+              <code className="text-xs text-muted-foreground block">
+                /apple/emoji/160/00a9.png
+              </code>
+            </div>
+
+            {/* Example 2 */}
+            <div className="border border-border rounded-lg p-4">
+              <h4 className="font-medium text-foreground mb-2">Heart Symbol</h4>
+              <div className="bg-muted rounded p-3 mb-3 flex items-center justify-center">
+                <Image
+                  src="/apple/emoji/160/2764.png"
+                  alt="Heart emoji"
+                  width={64}
+                  height={64}
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
+              <code className="text-xs text-muted-foreground block">
+                /apple/emoji/160/2764.png
+              </code>
+            </div>
+
+            {/* Example 3 */}
+            <div className="border border-border rounded-lg p-4">
+              <h4 className="font-medium text-foreground mb-2">Smile Face</h4>
+              <div className="bg-muted rounded p-3 mb-3 flex items-center justify-center">
+                <Image
+                  src="/apple/emoji/160/1f642.png"
+                  alt="Smile emoji"
+                  width={64}
+                  height={64}
+                  className="w-12 h-12 object-contain"
+                />
+              </div>
+              <code className="text-xs text-muted-foreground block">
+                /apple/emoji/160/1f642.png
+              </code>
+            </div>
+          </div>
+
+          <div className="mt-6 p-4 bg-muted rounded-lg">
+            <h4 className="text-sm font-medium text-foreground mb-2">
+              Usage in CSS
+            </h4>
+            <p className="text-xs text-muted-foreground mb-2">
+              You can use these emoji PNG files in your CSS for consistent emoji
+              rendering:
+            </p>
+            <div className="bg-background rounded p-3">
+              <code className="text-xs text-foreground">
+                .emoji-heart {"{"} background-image:
+                url(&apos;https://fonts.grida.co/apple/emoji/160/2764.png&apos;);{" "}
+                {"}"}
+              </code>
+            </div>
+          </div>
+        </div>
+
         {/* Usage Instructions */}
         <div className="bg-card rounded-lg shadow-sm border border-border p-4 sm:p-8 mb-6 sm:mb-8">
           <h2 className="text-xl sm:text-2xl font-semibold text-foreground mb-4 sm:mb-6">
