@@ -128,6 +128,15 @@ Example:
 }
 ```
 
+## Vendors
+
+This repository includes font data from the following vendors:
+
+| Vendor            | Source                                                    | Description                                   | Notes                                                                                                                                                                                                                                          |
+| ----------------- | --------------------------------------------------------- | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Google Fonts      | [`/vendor/google`](./vendor/google)                       | Official Google Fonts repository              | Contains all Google Fonts families, variants, and metadata                                                                                                                                                                                     |
+| Apple Emoji Linux | [`/vendor/apple-emoji-linux`](./vendor/apple-emoji-linux) | AppleColorEmoji font implementation for Linux | **Important**: We do not serve AppleColorEmoji.ttf files as they are proprietary and protected by Apple's EULA. We respect Apple's intellectual property rights and only provide the open-source implementation tools for Linux compatibility. |
+
 ## Usage
 
 This repository and its S3 bucket are primarily intended for internal use by Grida. However, we welcome other design tool providers to use it. Please note that the structure and content may change without notice.

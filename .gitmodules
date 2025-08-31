@@ -1,3 +1,6 @@
 [submodule "vendor/google"]
 	path = vendor/google
 	url = https://github.com/google/fonts
+[submodule "vendor/apple-emoji-linux"]
+	path = vendor/apple-emoji-linux
+	url = https://github.com/samuelngs/apple-emoji-linux
