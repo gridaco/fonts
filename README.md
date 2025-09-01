@@ -163,4 +163,5 @@ See the [metadata/README.md](metadata/README.md) for development tools and comma
 
 ## See also
 
-- [smallest google fonts (file size)](https://gist.github.com/softmarshmallow/11902f1ef4676e02c85ff796639cef58)
+- [google fonts by file size](https://gist.github.com/softmarshmallow/11902f1ef4676e02c85ff796639cef58)
+- [google fonts by subset support](https://gist.github.com/softmarshmallow/eaf533ea44e1629e628186835a170df7)
