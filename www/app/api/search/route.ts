@@ -10,8 +10,8 @@ export async function GET(request: NextRequest) {
     const property = searchParams.get("property"); // "variable" or "static"
     const category = searchParams.get("category"); // "sans-serif", "serif", etc.
 
-    // Read the webfonts-vf.json file
-    const webfontsPath = path.join(process.cwd(), "..", "webfonts-vf.json");
+    // Read the webfonts-vf.json file from public directory
+    const webfontsPath = path.join(process.cwd(), "public", "webfonts-vf.json");
     const webfontsData: WebfontsResponse = JSON.parse(
       fs.readFileSync(webfontsPath, "utf8")
     );

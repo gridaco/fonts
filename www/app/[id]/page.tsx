@@ -19,9 +19,13 @@ async function getFontData(fontId: string): Promise<Font | null> {
     // Convert font ID back to family name
     const familyName = idToFamily(fontId);
 
-    // Read both JSON files
-    const webfontsVfPath = path.join(process.cwd(), "..", "webfonts-vf.json");
-    const webfontsPath = path.join(process.cwd(), "..", "webfonts.json");
+    // Read both JSON files from public directory
+    const webfontsVfPath = path.join(
+      process.cwd(),
+      "public",
+      "webfonts-vf.json"
+    );
+    const webfontsPath = path.join(process.cwd(), "public", "webfonts.json");
 
     const webfontsVfData: WebfontsResponse = JSON.parse(
       fs.readFileSync(webfontsVfPath, "utf8")
