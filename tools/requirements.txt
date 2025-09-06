@@ -3,3 +3,5 @@ gftools
 protobuf
 click
 scour
+fonttools
+tqdm

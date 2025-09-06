@@ -1,0 +1,225 @@
+{
+  "kind": "fonts.grida.co#languages",
+  "description": "Organized by cultural and linguistic relationships rather than technical Unicode categories, making it more intuitive for users to find relevant fonts for their language or region.",
+  "bugs": "https://github.com/gridaco/fonts/issues",
+  "items": {
+    "latin": {
+      "display_name": "Latin",
+      "description": "Scripts based on the Latin alphabet, used by most European languages and many others worldwide",
+      "subsets": {
+        "primary": ["latin", "latin-ext"],
+        "secondary": []
+      }
+    },
+    "cyrillic": {
+      "display_name": "Cyrillic",
+      "description": "Scripts based on the Cyrillic alphabet, used by Slavic and other Eastern European languages",
+      "subsets": {
+        "primary": ["cyrillic", "cyrillic-ext"],
+        "secondary": []
+      }
+    },
+    "greek": {
+      "display_name": "Greek",
+      "description": "Scripts based on the Greek alphabet, used by Greek and some other languages",
+      "subsets": {
+        "primary": ["greek", "greek-ext"],
+        "secondary": []
+      }
+    },
+    "arabic": {
+      "display_name": "Arabic",
+      "description": "Scripts based on the Arabic alphabet, used by Arabic, Persian, Urdu, and many other languages",
+      "subsets": {
+        "primary": ["arabic"],
+        "secondary": []
+      }
+    },
+    "hebrew": {
+      "display_name": "Hebrew",
+      "description": "Scripts based on the Hebrew alphabet, used by Hebrew and some other languages",
+      "subsets": {
+        "primary": ["hebrew"],
+        "secondary": []
+      }
+    },
+    "chinese_simplified": {
+      "display_name": "Chinese Simplified",
+      "description": "Writing systems used for Chinese languages in simplified form, primarily used in mainland China and Singapore",
+      "subsets": {
+        "primary": ["chinese-simplified"],
+        "secondary": ["chinese-traditional", "chinese-hongkong"]
+      }
+    },
+    "chinese_traditional": {
+      "display_name": "Chinese Traditional",
+      "description": "Writing systems used for Chinese languages in traditional form, primarily used in Taiwan and other regions",
+      "subsets": {
+        "primary": ["chinese-traditional"],
+        "secondary": ["chinese-simplified", "chinese-hongkong"]
+      }
+    },
+    "chinese_hongkong": {
+      "display_name": "Chinese Hong Kong",
+      "description": "Writing systems used for Chinese languages in Hong Kong variant",
+      "subsets": {
+        "primary": ["chinese-hongkong"],
+        "secondary": ["chinese-simplified", "chinese-traditional"]
+      }
+    },
+    "japanese": {
+      "display_name": "Japanese",
+      "description": "Writing systems used for Japanese language",
+      "subsets": {
+        "primary": ["japanese"],
+        "secondary": []
+      }
+    },
+    "korean": {
+      "display_name": "Korean",
+      "description": "Writing systems used for Korean language",
+      "subsets": {
+        "primary": ["korean"],
+        "secondary": []
+      }
+    },
+    "indian": {
+      "display_name": "Indian",
+      "description": "Writing systems used for major languages spoken in India",
+      "subsets": {
+        "primary": [
+          "devanagari",
+          "bengali",
+          "gujarati",
+          "gurmukhi",
+          "kannada",
+          "malayalam",
+          "oriya",
+          "tamil",
+          "telugu"
+        ],
+        "secondary": []
+      }
+    },
+    "sri_lankan": {
+      "display_name": "Sri Lankan",
+      "description": "Writing systems used in Sri Lanka",
+      "subsets": {
+        "primary": ["sinhala"],
+        "secondary": []
+      }
+    },
+    "thai": {
+      "display_name": "Thai",
+      "description": "Writing systems used for Thai language",
+      "subsets": {
+        "primary": ["thai"],
+        "secondary": []
+      }
+    },
+    "khmer": {
+      "display_name": "Khmer",
+      "description": "Writing systems used for Khmer (Cambodian) language",
+      "subsets": {
+        "primary": ["khmer"],
+        "secondary": []
+      }
+    },
+    "lao": {
+      "display_name": "Lao",
+      "description": "Writing systems used for Lao language",
+      "subsets": {
+        "primary": ["lao"],
+        "secondary": []
+      }
+    },
+    "myanmar": {
+      "display_name": "Myanmar",
+      "description": "Writing systems used for Myanmar (Burmese) language",
+      "subsets": {
+        "primary": ["myanmar"],
+        "secondary": []
+      }
+    },
+    "vietnamese": {
+      "display_name": "Vietnamese",
+      "description": "Writing systems used for Vietnamese language",
+      "subsets": {
+        "primary": ["vietnamese"],
+        "secondary": []
+      }
+    },
+    "armenian_georgian": {
+      "display_name": "Armenian & Georgian",
+      "description": "Unique writing systems of the Caucasus region",
+      "subsets": {
+        "primary": ["armenian", "georgian"],
+        "secondary": []
+      }
+    },
+    "ethiopic": {
+      "display_name": "Ethiopic",
+      "description": "Writing systems used in Ethiopia and Eritrea",
+      "subsets": {
+        "primary": ["ethiopic"],
+        "secondary": []
+      }
+    },
+    "tibetan_mongolian": {
+      "display_name": "Tibetan & Mongolian",
+      "description": "Writing systems used in Tibet, Mongolia, and surrounding regions",
+      "subsets": {
+        "primary": ["tibetan", "mongolian", "zanabazar-square"],
+        "secondary": []
+      }
+    },
+    "african": {
+      "display_name": "African",
+      "description": "Indigenous writing systems of Africa",
+      "subsets": {
+        "primary": ["adlam", "tifinagh", "vai", "osmanya"],
+        "secondary": []
+      }
+    },
+    "native_american": {
+      "display_name": "Native American",
+      "description": "Writing systems created by Native American communities",
+      "subsets": {
+        "primary": ["cherokee", "osage"],
+        "secondary": []
+      }
+    },
+    "specialized_symbols": {
+      "display_name": "Specialized Symbols",
+      "description": "Symbols and notation systems for specific purposes",
+      "subsets": {
+        "primary": ["math", "music", "braille", "symbols", "symbols2"],
+        "secondary": []
+      }
+    },
+    "emoji_pictographs": {
+      "display_name": "Emoji & Pictographs",
+      "description": "Emoji, pictographs, and ideographic symbols",
+      "subsets": {
+        "primary": ["emoji"],
+        "secondary": []
+      }
+    },
+    "historical": {
+      "display_name": "Historical",
+      "description": "Ancient and historical writing systems",
+      "subsets": {
+        "primary": [
+          "cuneiform",
+          "egyptian-hieroglyphs",
+          "phoenician",
+          "gothic",
+          "runic",
+          "old-italic",
+          "glagolitic"
+        ],
+        "secondary": []
+      }
+    }
+  }
+}
