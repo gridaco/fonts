@@ -1,73 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import fs from "fs";
-import path from "path";
 import { Button } from "@/components/ui/button";
 import { Header } from "@/components/header";
 import { InteractiveSection } from "./interactive-section";
 import { FontStylesheet } from "@/components/font-stylesheet";
-import { Font, StaticFont, WebfontsResponse } from "@/types";
-import { idToFamily } from "@/lib/fontid";
+import { getFontData } from "@/lib/fonts-actions";
 
 interface FontDetailProps {
   params: Promise<{ id: string }>;
-}
-
-async function getFontData(fontId: string): Promise<Font | null> {
-  try {
-    // Convert font ID back to family name
-    const familyName = idToFamily(fontId);
-
-    // Read both JSON files from public directory
-    const webfontsVfPath = path.join(
-      process.cwd(),
-      "public",
-      "webfonts-vf.json"
-    );
-    const webfontsPath = path.join(process.cwd(), "public", "webfonts.json");
-
-    const webfontsVfData: WebfontsResponse = JSON.parse(
-      fs.readFileSync(webfontsVfPath, "utf8")
-    );
-    const webfontsData: WebfontsResponse = JSON.parse(
-      fs.readFileSync(webfontsPath, "utf8")
-    );
-
-    // Find font in webfonts-vf.json (primary lookup)
-    const vfFont =
-      webfontsVfData.items.find(
-        (font: Font) => font.family.toLowerCase() === familyName.toLowerCase()
-      ) ||
-      webfontsVfData.items.find((font: Font) =>
-        font.family.toLowerCase().includes(familyName.toLowerCase())
-      );
-
-    if (!vfFont) {
-      return null;
-    }
-
-    // Find corresponding font in webfonts.json
-    const staticFont =
-      webfontsData.items.find(
-        (font: StaticFont) =>
-          font.family.toLowerCase() === familyName.toLowerCase()
-      ) ||
-      webfontsData.items.find((font: StaticFont) =>
-        font.family.toLowerCase().includes(familyName.toLowerCase())
-      );
-
-    // Combine the data
-    const combinedFont: Font = {
-      ...vfFont, // webfonts-vf.json data (primary)
-      static: staticFont || null, // webfonts.json data (additional)
-    };
-
-    return combinedFont;
-  } catch (error) {
-    console.error("Error fetching font data:", error);
-    return null;
-  }
 }
 
 export default async function FontDetail({ params }: FontDetailProps) {
@@ -96,10 +37,10 @@ export default async function FontDetail({ params }: FontDetailProps) {
           </Link>
         </div>
 
-        <div className="bg-card border border-border rounded-lg p-8">
+        <div className="bg-card rounded-lg">
           <div className="mb-8">
             {/* Font Preview */}
-            <div className="bg-muted/20 rounded-lg p-8 mb-6">
+            <div className="rounded-lg mb-6">
               <Image
                 src={`/svg/${font.family
                   .toLowerCase()
@@ -131,61 +72,72 @@ export default async function FontDetail({ params }: FontDetailProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h2 className="text-xl font-semibold mb-4">Font Details</h2>
-              <div className="space-y-3">
-                <div>
-                  <span className="font-medium">Family:</span> {font.family}
-                </div>
-                <div>
-                  <span className="font-medium">Category:</span> {font.category}
-                </div>
-                <div>
-                  <span className="font-medium">Type:</span>{" "}
-                  {font.axes && Object.keys(font.axes).length > 0
-                    ? "Variable Font"
-                    : "Static Font"}
-                </div>
-                <div>
-                  <span className="font-medium">Styles:</span>{" "}
-                  {font.variants.length}
-                </div>
-              </div>
+              <h2 className="text-sm font-semibold mb-2">Font Details</h2>
+              <table className="text-xs text-muted-foreground border-collapse w-full">
+                <tbody>
+                  <tr className="border-b border-border/50">
+                    <td className="font-medium pr-4 py-2">Family:</td>
+                    <td className="py-2">{font.family}</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="font-medium pr-4 py-2">Category:</td>
+                    <td className="py-2">{font.category}</td>
+                  </tr>
+                  <tr className="border-b border-border/50">
+                    <td className="font-medium pr-4 py-2">Type:</td>
+                    <td className="py-2">
+                      {font.axes && Object.keys(font.axes).length > 0
+                        ? "Variable Font"
+                        : "Static Font"}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="font-medium pr-4 py-2">Styles:</td>
+                    <td className="py-2">{font.variants.length}</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
 
             <div>
-              <h2 className="text-xl font-semibold mb-4">Available Styles</h2>
-              <div className="grid grid-cols-2 gap-2">
-                {(font.static?.variants || font.variants).map((variant) => (
-                  <div
-                    key={variant}
-                    className="bg-muted/50 rounded px-3 py-2 text-sm text-center"
-                  >
-                    {variant}
-                  </div>
-                ))}
+              <h2 className="text-sm font-semibold mb-2">
+                Styles ({(font.static?.variants || font.variants).length} ttf)
+              </h2>
+              <div className="text-xs text-muted-foreground">
+                {(font.static?.variants || font.variants).join(", ")}
               </div>
             </div>
           </div>
 
-          {font.axes && Object.keys(font.axes).length > 0 && (
+          {font.axes && font.axes.length > 0 && (
             <div className="mt-8">
-              <h2 className="text-xl font-semibold mb-4">Variable Font Axes</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {Object.keys(font.axes).map((axis) => (
-                  <div
-                    key={axis}
-                    className="bg-muted/50 rounded px-3 py-2 text-sm text-center"
-                  >
-                    {axis}
-                  </div>
-                ))}
-              </div>
+              <h2 className="text-sm font-semibold mb-2">Variable Font Axes</h2>
+              <table className="text-xs text-muted-foreground border-collapse w-full">
+                <tbody>
+                  {font.axes.map((axis, index) => (
+                    <tr
+                      key={axis.tag}
+                      className={
+                        index < (font.axes?.length || 0) - 1
+                          ? "border-b border-border/50"
+                          : ""
+                      }
+                    >
+                      <td className="font-medium pr-4 py-2">{axis.tag}</td>
+                      <td className="py-2">{axis.start}</td>
+                      <td className="py-2">{axis.end}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
             </div>
           )}
         </div>
 
         {/* Interactive Section - Client Component */}
-        <InteractiveSection font={font} />
+        <div className="mt-32">
+          <InteractiveSection font={font} />
+        </div>
       </main>
 
       {/* Footer */}

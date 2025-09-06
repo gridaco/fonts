@@ -16,7 +16,7 @@ export function InteractiveSection({ font }: InteractiveSectionProps) {
   return (
     <div className="mt-12">
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-semibold">Try Each Style</h2>
+        <h2 className="text-2xl font-semibold">Styles</h2>
         <div className="flex items-center gap-4">
           <span className="text-sm text-muted-foreground">
             Font Size: {fontSize}px

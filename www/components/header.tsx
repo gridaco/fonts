@@ -10,12 +10,10 @@ export function Header() {
           <div>
             <Link
               href="/"
-              className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
             >
-              <GridaLogo size={32} />
-              <h1 className="text-2xl sm:text-3xl font-bold text-foreground">
-                Fonts
-              </h1>
+              <GridaLogo size={20} />
+              <h1 className="text-xl font-bold text-foreground">Fonts</h1>
             </Link>
           </div>
           <div className="text-left sm:text-right flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
