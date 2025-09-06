@@ -167,3 +167,4 @@ See the [metadata/README.md](metadata/README.md) for development tools and comma
 - [google fonts by subset support](https://gist.github.com/softmarshmallow/eaf533ea44e1629e628186835a170df7)
 - [google fonts list of regular italic variable fonts](https://gist.github.com/softmarshmallow/02982976f1f72dba5aaad4dc80befbfb)
 - [google fonts list with slant axes](https://gist.github.com/softmarshmallow/5e89a878092af47c750a0a297a814b29)
+- [google fonts list with extracted postscript names](https://gist.github.com/softmarshmallow/8da7fb3fead5dcc69f7f36f150d88864)
