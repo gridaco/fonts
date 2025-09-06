@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import {
   Select,
@@ -10,25 +8,29 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { Header } from "@/components/header";
+import { InfiniteFontList } from "@/components/infinite-font-list";
 import { useFontsList } from "@/hooks/use-fonts-list";
 import { ListBulletIcon, GridIcon } from "@radix-ui/react-icons";
-import { familyToId } from "@/lib/fontid";
 
 export default function Home() {
   const {
     searchQuery,
+    allFonts,
     isSearching,
     selectedCategory,
     selectedProperty,
-    fontsToShow,
     viewMode,
+    total,
+    fontlist_count,
+    hasMore,
     setSelectedCategory,
     setSelectedProperty,
     setViewMode,
     handleSearch,
     handleFilterChange,
+    loadMore,
   } = useFontsList();
 
   return (
@@ -70,9 +72,9 @@ export default function Home() {
             {/* Filter Dropdowns */}
             <div className="flex gap-3">
               <Select
-                value={selectedCategory || undefined}
+                value={selectedCategory || "all"}
                 onValueChange={(value) => {
-                  setSelectedCategory(value);
+                  setSelectedCategory(value === "all" ? "" : value);
                   handleFilterChange();
                 }}
               >
@@ -80,6 +82,7 @@ export default function Home() {
                   <SelectValue placeholder="Categories" />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="all">All Categories</SelectItem>
                   <SelectItem value="sans-serif">Sans Serif</SelectItem>
                   <SelectItem value="serif">Serif</SelectItem>
                   <SelectItem value="display">Display</SelectItem>
@@ -88,9 +91,9 @@ export default function Home() {
               </Select>
 
               <Select
-                value={selectedProperty || undefined}
+                value={selectedProperty || "all"}
                 onValueChange={(value) => {
-                  setSelectedProperty(value);
+                  setSelectedProperty(value === "all" ? "" : value);
                   handleFilterChange();
                 }}
               >
@@ -98,6 +101,7 @@ export default function Home() {
                   <SelectValue placeholder="Properties" />
                 </SelectTrigger>
                 <SelectContent>
+                  <SelectItem value="all">All Properties</SelectItem>
                   <SelectItem value="variable">Variable</SelectItem>
                   <SelectItem value="static">Static</SelectItem>
                 </SelectContent>
@@ -108,124 +112,44 @@ export default function Home() {
           {/* Font Count and View Options */}
           <div className="flex items-center justify-between mb-6">
             <span className="text-sm text-muted-foreground">
-              {fontsToShow.length} fonts
+              {total === fontlist_count
+                ? `${total} fonts`
+                : `${total} / ${fontlist_count} fonts`}
             </span>
-            <div className="flex items-center gap-2">
-              <Button
-                variant={viewMode === "list" ? "default" : "ghost"}
-                size="sm"
-                onClick={() => setViewMode("list")}
-                title="List view"
-              >
+            <ToggleGroup
+              type="single"
+              value={viewMode}
+              onValueChange={(value) =>
+                value && setViewMode(value as "list" | "grid")
+              }
+              size="sm"
+            >
+              <ToggleGroupItem value="list" title="List view">
                 <ListBulletIcon className="w-4 h-4" />
-              </Button>
-              <Button
-                variant={viewMode === "grid" ? "default" : "ghost"}
-                size="sm"
-                onClick={() => setViewMode("grid")}
-                title="Grid view"
-              >
+              </ToggleGroupItem>
+              <ToggleGroupItem value="grid" title="Grid view">
                 <GridIcon className="w-4 h-4" />
-              </Button>
-            </div>
+              </ToggleGroupItem>
+            </ToggleGroup>
           </div>
         </div>
 
         {/* Font Display */}
-        {fontsToShow.length === 0 && !isSearching ? (
+        {isSearching && allFonts.length === 0 ? (
+          <div className="text-center py-12">
+            <p className="text-sm text-muted-foreground">Loading...</p>
+          </div>
+        ) : allFonts.length === 0 ? (
           <div className="text-center py-12">
             <p className="text-muted-foreground">No fonts found</p>
           </div>
-        ) : viewMode === "list" ? (
-          /* List View */
-          <div className="space-y-4">
-            {fontsToShow.map((font) => {
-              const fontId = familyToId(font.family);
-              return (
-                <Link
-                  key={font.family}
-                  href={`/${fontId}`}
-                  className="block border border-border rounded-lg p-6 hover:bg-muted/50 transition-colors"
-                >
-                  <div className="flex items-start justify-between">
-                    <div className="flex-1">
-                      <div className="mb-4">
-                        <Image
-                          src={`/svg/${font.family
-                            .toLowerCase()
-                            .replace(/\s+/g, "")}.svg`}
-                          alt={`${font.family} font preview`}
-                          width={300}
-                          height={80}
-                          className="h-20 object-contain object-left"
-                        />
-                      </div>
-                      <div className="mb-2">
-                        <h3 className="text-lg font-semibold text-foreground">
-                          {font.family}
-                        </h3>
-                      </div>
-                      <p className="text-sm text-muted-foreground mb-2">
-                        {font.category}
-                      </p>
-                      <div className="flex items-center gap-4 text-xs text-muted-foreground">
-                        <span>{font.variants.length} styles</span>
-                        <span>
-                          {font.axes && Object.keys(font.axes).length > 0
-                            ? "Variable"
-                            : "Static"}
-                        </span>
-                        <span>Open Source</span>
-                      </div>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
         ) : (
-          /* Grid View */
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {fontsToShow.map((font) => {
-              const fontId = familyToId(font.family);
-              return (
-                <Link
-                  key={font.family}
-                  href={`/${fontId}`}
-                  className="block border border-border rounded-lg p-4 hover:bg-muted/50 transition-colors"
-                >
-                  <div className="mb-3">
-                    <Image
-                      src={`/svg/${font.family
-                        .toLowerCase()
-                        .replace(/\s+/g, "")}.svg`}
-                      alt={`${font.family} font preview`}
-                      width={200}
-                      height={60}
-                      className="h-16 object-contain object-left w-full"
-                    />
-                  </div>
-                  <div className="mb-2">
-                    <h3 className="text-sm font-semibold text-foreground truncate">
-                      {font.family}
-                    </h3>
-                  </div>
-                  <p className="text-xs text-muted-foreground mb-2 capitalize">
-                    {font.category}
-                  </p>
-                  <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                    <span>{font.variants.length} styles</span>
-                    <span>•</span>
-                    <span>
-                      {font.axes && Object.keys(font.axes).length > 0
-                        ? "Variable"
-                        : "Static"}
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+          <InfiniteFontList
+            fonts={allFonts}
+            hasNextPage={hasMore}
+            loadNextPage={loadMore}
+            viewMode={viewMode}
+          />
         )}
       </main>
 

@@ -9,6 +9,8 @@ export async function GET(request: NextRequest) {
     const query = searchParams.get("q");
     const property = searchParams.get("property"); // "variable" or "static"
     const category = searchParams.get("category"); // "sans-serif", "serif", etc.
+    const page = parseInt(searchParams.get("page") || "1");
+    const limit = parseInt(searchParams.get("limit") || "100");
 
     // Read the webfonts-vf.json file from public directory
     const webfontsPath = path.join(process.cwd(), "public", "webfonts-vf.json");
@@ -53,12 +55,23 @@ export async function GET(request: NextRequest) {
       });
     }
 
-    // Limit results to 100 for performance
-    const limitedResults = filteredFonts.slice(0, 100);
+    // Calculate pagination
+    const total = filteredFonts.length;
+    const fontlist_count = webfontsData.items.length; // Grand total of all fonts
+    const totalPages = Math.ceil(total / limit);
+    const startIndex = (page - 1) * limit;
+    const endIndex = startIndex + limit;
+    const paginatedResults = filteredFonts.slice(startIndex, endIndex);
 
     return NextResponse.json({
-      fonts: limitedResults,
-      total: filteredFonts.length,
+      fonts: paginatedResults,
+      total,
+      fontlist_count,
+      page,
+      limit,
+      totalPages,
+      hasNextPage: page < totalPages,
+      hasPreviousPage: page > 1,
       query: query,
       filters: {
         property,

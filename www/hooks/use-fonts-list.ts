@@ -1,151 +1,123 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Font } from "@/types";
 
-const defaultFonts: Font[] = [
-  {
-    family: "Roboto",
-    category: "sans-serif",
-    variants: ["300", "400", "500", "700"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: { "300": "url", "400": "url", "500": "url", "700": "url" },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-  {
-    family: "Open Sans",
-    category: "sans-serif",
-    variants: ["300", "400", "600", "700"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: { "300": "url", "400": "url", "600": "url", "700": "url" },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-  {
-    family: "Lato",
-    category: "sans-serif",
-    variants: ["300", "400", "700", "900"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: { "300": "url", "400": "url", "700": "url", "900": "url" },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-  {
-    family: "Poppins",
-    category: "sans-serif",
-    variants: ["300", "400", "500", "600", "700"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: {
-      "300": "url",
-      "400": "url",
-      "500": "url",
-      "600": "url",
-      "700": "url",
-    },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-  {
-    family: "Inter",
-    category: "sans-serif",
-    variants: ["400", "500", "600", "700"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: { "400": "url", "500": "url", "600": "url", "700": "url" },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-  {
-    family: "Montserrat",
-    category: "sans-serif",
-    variants: ["300", "400", "500", "600", "700"],
-    subsets: ["latin"],
-    version: "v1",
-    lastModified: "2025-01-01",
-    files: {
-      "300": "url",
-      "400": "url",
-      "500": "url",
-      "600": "url",
-      "700": "url",
-    },
-    kind: "webfonts#webfont",
-    menu: "url",
-    axes: [{ tag: "wght", start: 100, end: 900 }], // Variable font
-  },
-];
+interface SearchResponse {
+  fonts: Font[];
+  total: number;
+  fontlist_count: number;
+  page: number;
+  limit: number;
+  totalPages: number;
+  hasNextPage: boolean;
+  hasPreviousPage: boolean;
+  query?: string;
+  filters: {
+    property?: string;
+    category?: string;
+  };
+}
 
 export function useFontsList() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState<Font[]>([]);
+  const [allFonts, setAllFonts] = useState<Font[]>([]);
   const [isSearching, setIsSearching] = useState(false);
-  const [showSearchResults, setShowSearchResults] = useState(false);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedProperty, setSelectedProperty] = useState<string>("");
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
+  const [total, setTotal] = useState(0);
+  const [fontlist_count, setFontlist_count] = useState(0);
+  const [hasMore, setHasMore] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
 
-  // Default fonts to show when not searching
+  const loadFonts = useCallback(
+    async (page: number = 1, reset: boolean = false) => {
+      if (reset) {
+        setIsSearching(true);
+        setCurrentPage(1);
+      } else {
+        setIsLoadingMore(true);
+      }
 
-  const handleSearch = async (query: string) => {
+      try {
+        const params = new URLSearchParams();
+        if (searchQuery.trim()) params.append("q", searchQuery);
+        if (selectedCategory && selectedCategory !== "")
+          params.append("category", selectedCategory);
+        if (selectedProperty && selectedProperty !== "")
+          params.append("property", selectedProperty);
+        params.append("page", page.toString());
+        params.append("limit", "100");
+
+        const response = await fetch(`/api/search?${params.toString()}`);
+        const data: SearchResponse = await response.json();
+
+        if (reset) {
+          setAllFonts(data.fonts || []);
+        } else {
+          setAllFonts((prev) => [...prev, ...(data.fonts || [])]);
+        }
+
+        setTotal(data.total);
+        setFontlist_count(data.fontlist_count);
+        setHasMore(data.hasNextPage);
+        setCurrentPage(page);
+      } catch (error) {
+        console.error("Search error:", error);
+        if (reset) {
+          setAllFonts([]);
+        }
+      } finally {
+        setIsSearching(false);
+        setIsLoadingMore(false);
+      }
+    },
+    [searchQuery, selectedCategory, selectedProperty]
+  );
+
+  const handleSearch = useCallback((query: string) => {
     setSearchQuery(query);
+  }, []);
 
-    if (!query.trim() && !selectedCategory && !selectedProperty) {
-      setShowSearchResults(false);
-      setSearchResults([]);
-      return;
+  const handleFilterChange = useCallback(() => {
+    loadFonts(1, true);
+  }, [loadFonts]);
+
+  const loadMore = useCallback(() => {
+    if (!isLoadingMore && hasMore) {
+      loadFonts(currentPage + 1, false);
     }
+  }, [loadFonts, currentPage, isLoadingMore, hasMore]);
 
-    setIsSearching(true);
-    try {
-      const params = new URLSearchParams();
-      if (query.trim()) params.append("q", query);
-      if (selectedCategory && selectedCategory !== "")
-        params.append("category", selectedCategory);
-      if (selectedProperty && selectedProperty !== "")
-        params.append("property", selectedProperty);
+  // Load initial fonts on mount
+  useEffect(() => {
+    loadFonts(1, true);
+  }, [loadFonts]);
 
-      const response = await fetch(`/api/search?${params.toString()}`);
-      const data = await response.json();
-      setSearchResults(data.fonts || []);
-      setShowSearchResults(true);
-    } catch (error) {
-      console.error("Search error:", error);
-      setSearchResults([]);
-    } finally {
-      setIsSearching(false);
-    }
-  };
+  // Reset and reload when search query changes
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      loadFonts(1, true);
+    }, 300); // Debounce search
 
-  const handleFilterChange = () => {
-    handleSearch(searchQuery);
-  };
+    return () => clearTimeout(timeoutId);
+  }, [searchQuery, loadFonts]);
 
-  const fontsToShow = showSearchResults ? searchResults : defaultFonts;
+  const fontsToShow = allFonts;
 
   return {
     // State
     searchQuery,
-    searchResults,
+    allFonts,
     isSearching,
-    showSearchResults,
+    isLoadingMore,
     selectedCategory,
     selectedProperty,
-    defaultFonts,
     fontsToShow,
     viewMode,
+    total,
+    fontlist_count,
+    hasMore,
 
     // Actions
     setSearchQuery,
@@ -154,5 +126,6 @@ export function useFontsList() {
     setViewMode,
     handleSearch,
     handleFilterChange,
+    loadMore,
   };
 }
