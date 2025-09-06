@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { FontListProvider } from "@/contexts/font-list-context";
+import { getInitialFontsData } from "@/lib/fonts-actions";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,17 +19,25 @@ export const metadata: Metadata = {
   description: "Grida Fonts",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const initialData = await getInitialFontsData();
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <FontListProvider
+          initialFonts={initialData.fonts}
+          initialTotal={initialData.total}
+          initialFontlistCount={initialData.fontlist_count}
+        >
+          {children}
+        </FontListProvider>
       </body>
     </html>
   );

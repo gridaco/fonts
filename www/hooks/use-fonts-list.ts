@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { Font } from "@/types";
+import { useFontListContext } from "@/contexts/font-list-context";
 
 interface SearchResponse {
   fonts: Font[];
@@ -18,16 +19,19 @@ interface SearchResponse {
 }
 
 export function useFontsList() {
+  const { initialFonts, initialTotal, initialFontlistCount } =
+    useFontListContext();
+
   const [searchQuery, setSearchQuery] = useState("");
-  const [allFonts, setAllFonts] = useState<Font[]>([]);
+  const [allFonts, setAllFonts] = useState<Font[]>(initialFonts);
   const [isSearching, setIsSearching] = useState(false);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedProperty, setSelectedProperty] = useState<string>("");
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
-  const [total, setTotal] = useState(0);
-  const [fontlist_count, setFontlist_count] = useState(0);
-  const [hasMore, setHasMore] = useState(true);
+  const [total, setTotal] = useState(initialTotal);
+  const [fontlist_count, setFontlist_count] = useState(initialFontlistCount);
+  const [hasMore, setHasMore] = useState(initialFonts.length < initialTotal);
   const [currentPage, setCurrentPage] = useState(1);
 
   const loadFonts = useCallback(
@@ -89,10 +93,7 @@ export function useFontsList() {
     }
   }, [loadFonts, currentPage, isLoadingMore, hasMore]);
 
-  // Load initial fonts on mount
-  useEffect(() => {
-    loadFonts(1, true);
-  }, [loadFonts]);
+  // No need to load initial fonts on mount since we have them from context
 
   // Reset and reload when search query changes
   useEffect(() => {

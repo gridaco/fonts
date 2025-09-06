@@ -40,7 +40,7 @@ export function InfiniteFontList({
   return (
     <div
       data-view-mode={viewMode}
-      className="data-[view-mode=list]:space-y-4 data-[view-mode=grid]:grid data-[view-mode=grid]:grid-cols-1 data-[view-mode=grid]:sm:grid-cols-2 data-[view-mode=grid]:lg:grid-cols-3 data-[view-mode=grid]:xl:grid-cols-4 data-[view-mode=grid]:gap-6"
+      className="data-[view-mode=list]:space-y-4 data-[view-mode=grid]:grid data-[view-mode=grid]:grid-cols-1 data-[view-mode=grid]:sm:grid-cols-2 data-[view-mode=grid]:lg:grid-cols-3 data-[view-mode=grid]:gap-6"
     >
       {fonts.map((font) => {
         const fontId = familyToId(font.family);
