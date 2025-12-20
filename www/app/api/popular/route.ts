@@ -1,13 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import statsData from "./stats.json";
-
-interface FontStats {
-  family: string;
-  rate: number;
-  total_views: number;
-  year_views: number;
-  year_change: number;
-}
+import { getPopularStats } from "@/lib/popular-utils";
 
 export async function GET(request: NextRequest) {
   try {
@@ -26,7 +18,7 @@ export async function GET(request: NextRequest) {
       ? (sortByParam as (typeof validSortFields)[number])
       : "rate";
 
-    const fontsData = statsData as FontStats[];
+    const fontsData = getPopularStats();
 
     // Sort by the requested field (default: rate, descending)
     const sortedStats = [...fontsData].sort((a, b) => {

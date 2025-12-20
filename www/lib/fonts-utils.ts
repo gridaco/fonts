@@ -1,10 +1,58 @@
 import fs from "fs";
 import path from "path";
 import { Font, WebfontsResponse } from "@/types";
+import { getPopularRankMap } from "./popular-utils";
 
 export function getWebfontsData(): WebfontsResponse {
   const webfontsPath = path.join(process.cwd(), "public", "webfonts-vf.json");
   return JSON.parse(fs.readFileSync(webfontsPath, "utf8"));
+}
+
+/**
+ * Validate and normalize sort parameter.
+ * @param sortParam - Sort parameter from query string
+ * @param defaultSort - Default sort if invalid (defaults to "popular")
+ * @returns Validated sort value: "alphabetical" or "popular"
+ */
+export function validateSort(
+  sortParam: string | null,
+  defaultSort: "alphabetical" | "popular" = "popular"
+): "alphabetical" | "popular" {
+  return sortParam === "popular" || sortParam === "alphabetical"
+    ? sortParam
+    : defaultSort;
+}
+
+/**
+ * Sort fonts by the specified sort method.
+ * @param fonts - Array of fonts to sort
+ * @param sort - Sort method: "alphabetical" or "popular"
+ * @returns Sorted array of fonts (mutates the input array)
+ */
+export function sortFonts(
+  fonts: Font[],
+  sort: "alphabetical" | "popular"
+): Font[] {
+  if (sort === "popular") {
+    const rankMap = getPopularRankMap();
+    fonts.sort((a, b) => {
+      const rankA = rankMap.get(a.family.toLowerCase()) ?? Infinity;
+      const rankB = rankMap.get(b.family.toLowerCase()) ?? Infinity;
+
+      if (rankA !== rankB) {
+        return rankA - rankB; // Lower rank = more popular
+      }
+      // If same rank (both Infinity or same rank), sort alphabetically
+      return a.family.toLowerCase().localeCompare(b.family.toLowerCase());
+    });
+  } else {
+    // Alphabetical sorting
+    fonts.sort((a, b) =>
+      a.family.toLowerCase().localeCompare(b.family.toLowerCase())
+    );
+  }
+
+  return fonts;
 }
 
 export function filterFonts(

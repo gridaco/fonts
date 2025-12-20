@@ -1,6 +1,6 @@
 "use server";
 
-import { getWebfontsData, paginateFonts } from "./fonts-utils";
+import { getWebfontsData, paginateFonts, sortFonts } from "./fonts-utils";
 import fs from "fs";
 import path from "path";
 import { Font, StaticFont, WebfontsResponse } from "@/types";
@@ -11,7 +11,9 @@ export async function getInitialFontsData() {
     const webfontsData = getWebfontsData();
 
     // Get all fonts (no filters for initial load)
-    const allFonts = webfontsData.items;
+    // Apply popular sorting to match the default client-side behavior
+    const allFonts = [...webfontsData.items] as Font[];
+    sortFonts(allFonts, "popular");
 
     // Get first 100 fonts for initial load
     const paginated = paginateFonts(allFonts, 1, 100);

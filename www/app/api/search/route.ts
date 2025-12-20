@@ -1,5 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getWebfontsData, filterFonts, paginateFonts } from "@/lib/fonts-utils";
+import {
+  getWebfontsData,
+  filterFonts,
+  paginateFonts,
+  sortFonts,
+  validateSort,
+} from "@/lib/fonts-utils";
+import { Font } from "@/types";
 
 export async function GET(request: NextRequest) {
   try {
@@ -7,6 +14,7 @@ export async function GET(request: NextRequest) {
     const query = searchParams.get("q");
     const property = searchParams.get("property"); // "variable" or "static"
     const category = searchParams.get("category"); // "sans-serif", "serif", etc.
+    const sort = validateSort(searchParams.get("sort"), "popular");
     const page = parseInt(searchParams.get("page") || "1");
     const limit = parseInt(searchParams.get("limit") || "100");
 
@@ -19,7 +27,10 @@ export async function GET(request: NextRequest) {
       query || undefined,
       property || undefined,
       category || undefined
-    );
+    ) as Font[];
+
+    // Apply sorting BEFORE pagination using shared utility
+    sortFonts(filteredFonts, sort);
 
     // Paginate using shared utility
     const paginated = paginateFonts(filteredFonts, page, limit);
@@ -36,6 +47,7 @@ export async function GET(request: NextRequest) {
       hasNextPage: paginated.hasNextPage,
       hasPreviousPage: paginated.hasPreviousPage,
       query: query,
+      sort,
       filters: {
         property,
         category,

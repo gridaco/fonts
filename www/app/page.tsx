@@ -21,12 +21,14 @@ export default function Home() {
     isSearching,
     selectedCategory,
     selectedProperty,
+    sortBy,
     viewMode,
     total,
     fontlist_count,
     hasMore,
     setSelectedCategory,
     setSelectedProperty,
+    setSortBy,
     setViewMode,
     handleSearch,
     handleFilterChange,
@@ -104,6 +106,22 @@ export default function Home() {
                   <SelectItem value="all">All Properties</SelectItem>
                   <SelectItem value="variable">Variable</SelectItem>
                   <SelectItem value="static">Static</SelectItem>
+                </SelectContent>
+              </Select>
+
+              <Select
+                value={sortBy}
+                onValueChange={(value) => {
+                  setSortBy(value as "alphabetical" | "popular");
+                  handleFilterChange();
+                }}
+              >
+                <SelectTrigger className="w-[140px]">
+                  <SelectValue placeholder="Sort by" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="alphabetical">Alphabetically</SelectItem>
+                  <SelectItem value="popular">Popular</SelectItem>
                 </SelectContent>
               </Select>
             </div>

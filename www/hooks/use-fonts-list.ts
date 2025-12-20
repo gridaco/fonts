@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { Font } from "@/types";
 import { useFontListContext } from "@/contexts/font-list-context";
 
@@ -12,6 +12,7 @@ interface SearchResponse {
   hasNextPage: boolean;
   hasPreviousPage: boolean;
   query?: string;
+  sort?: "alphabetical" | "popular";
   filters: {
     property?: string;
     category?: string;
@@ -28,11 +29,13 @@ export function useFontsList() {
   const [isLoadingMore, setIsLoadingMore] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [selectedProperty, setSelectedProperty] = useState<string>("");
+  const [sortBy, setSortBy] = useState<"alphabetical" | "popular">("popular");
   const [viewMode, setViewMode] = useState<"list" | "grid">("list");
   const [total, setTotal] = useState(initialTotal);
   const [fontlist_count, setFontlist_count] = useState(initialFontlistCount);
   const [hasMore, setHasMore] = useState(initialFonts.length < initialTotal);
   const [currentPage, setCurrentPage] = useState(1);
+  const isInitialMount = useRef(true);
 
   const loadFonts = useCallback(
     async (page: number = 1, reset: boolean = false) => {
@@ -50,6 +53,7 @@ export function useFontsList() {
           params.append("category", selectedCategory);
         if (selectedProperty && selectedProperty !== "")
           params.append("property", selectedProperty);
+        params.append("sort", sortBy);
         params.append("page", page.toString());
         params.append("limit", "100");
 
@@ -76,7 +80,7 @@ export function useFontsList() {
         setIsLoadingMore(false);
       }
     },
-    [searchQuery, selectedCategory, selectedProperty]
+    [searchQuery, selectedCategory, selectedProperty, sortBy]
   );
 
   const handleSearch = useCallback((query: string) => {
@@ -93,10 +97,14 @@ export function useFontsList() {
     }
   }, [loadFonts, currentPage, isLoadingMore, hasMore]);
 
-  // No need to load initial fonts on mount since we have them from context
-
-  // Reset and reload when search query changes
+  // Reset and reload when search query changes (but skip initial mount)
   useEffect(() => {
+    // Skip the initial mount - we already have initial fonts from context
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+
     const timeoutId = setTimeout(() => {
       loadFonts(1, true);
     }, 300); // Debounce search
@@ -114,6 +122,7 @@ export function useFontsList() {
     isLoadingMore,
     selectedCategory,
     selectedProperty,
+    sortBy,
     fontsToShow,
     viewMode,
     total,
@@ -124,6 +133,7 @@ export function useFontsList() {
     setSearchQuery,
     setSelectedCategory,
     setSelectedProperty,
+    setSortBy,
     setViewMode,
     handleSearch,
     handleFilterChange,
