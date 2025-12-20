@@ -86,6 +86,24 @@ python d_psnames.py --verbose
 - **Pattern analysis**: Analyzes common naming patterns
 - **Click-based CLI**: Modern command-line interface
 
+### google_fonts_metadata_stats.py
+
+Fetches font statistics from [Google Fonts Analytics](https://fonts.google.com/analytics) metadata API and extracts relevant fields (family, rate, total_views, year_views, year_change). Used for manually, periodically updating "popular" data served by our own API.
+
+```bash
+# Output as JSON to stdout (default)
+uv run python google_fonts_metadata_stats.py
+
+# Output as JSON to file
+uv run python google_fonts_metadata_stats.py --output stats.json
+
+# Output as CSV to stdout
+uv run python google_fonts_metadata_stats.py --format csv
+
+# Output as CSV to file
+uv run python google_fonts_metadata_stats.py --format csv --output stats.csv
+```
+
 ## Options
 
 Both scripts support:
@@ -101,5 +119,5 @@ Both scripts support:
 ## Dependencies
 
 ```bash
-pip install gftools protobuf click fonttools tqdm
+pip install gftools protobuf click fonttools tqdm requests
 ```
