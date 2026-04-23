@@ -1,0 +1,1319 @@
+{
+  "generated_at": "2026-04-23T12:56:58.587509+00:00",
+  "vendor_google_sha": "47831f08ec6d6d7ad6b465f23dc9f9a890a2a04b",
+  "counts": {
+    "families_in_api": 1938,
+    "families_in_metadata": 1918,
+    "broken": 131,
+    "missing_from_metadata": 20,
+    "pre_validate_invalid": 113,
+    "svg_render_failed": 1
+  },
+  "broken": [
+    {
+      "family": "42dot Sans",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "42dotsans"
+    },
+    {
+      "family": "Adobe Blank",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "adobeblank"
+    },
+    {
+      "family": "Allkin",
+      "reasons": [
+        "svg_render_failed:Font does not support family name 'Allkin' and no sample text available"
+      ],
+      "sources": [
+        "fonts2svg"
+      ]
+    },
+    {
+      "family": "Alumni Sans Collegiate One SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "alumnisanscollegiateonesc"
+    },
+    {
+      "family": "Batang",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "batang"
+    },
+    {
+      "family": "BatangChe",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "batangche"
+    },
+    {
+      "family": "Betania Patmos Guide Line",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "betaniapatmosguideline"
+    },
+    {
+      "family": "Bhavuka",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bhavuka"
+    },
+    {
+      "family": "Big Shoulders Display",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersdisplay"
+    },
+    {
+      "family": "Big Shoulders Display SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersdisplaysc"
+    },
+    {
+      "family": "Big Shoulders Inline Display",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersinlinedisplay"
+    },
+    {
+      "family": "Big Shoulders Inline Display SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersinlinedisplaysc"
+    },
+    {
+      "family": "Big Shoulders Inline Text",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersinlinetext"
+    },
+    {
+      "family": "Big Shoulders Inline Text SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersinlinetextsc"
+    },
+    {
+      "family": "Big Shoulders Stencil Display",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersstencildisplay"
+    },
+    {
+      "family": "Big Shoulders Stencil Display SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersstencildisplaysc"
+    },
+    {
+      "family": "Big Shoulders Stencil Text",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersstenciltext"
+    },
+    {
+      "family": "Big Shoulders Stencil Text SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshouldersstenciltextsc"
+    },
+    {
+      "family": "Big Shoulders Text",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshoulderstext"
+    },
+    {
+      "family": "Big Shoulders Text SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bigshoulderstextsc"
+    },
+    {
+      "family": "Briem Hand",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "briemhand"
+    },
+    {
+      "family": "Bungee Color",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "bungeecolor"
+    },
+    {
+      "family": "Creepster Caps",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "creepstercaps"
+    },
+    {
+      "family": "Dhyana",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "dhyana"
+    },
+    {
+      "family": "Digital Numbers",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "digitalnumbers"
+    },
+    {
+      "family": "Dotum",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "dotum"
+    },
+    {
+      "family": "DotumChe",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "dotumche"
+    },
+    {
+      "family": "Edu NSW ACT Cursive",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Edu NSW ACT Hand Pre",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Edu QLD Hand",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Edu SA Hand",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Edu VIC WA NT Hand",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Edu VIC WA NT Hand Pre",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Ek Mukta",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "ekmukta"
+    },
+    {
+      "family": "Estedad",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "estedad"
+    },
+    {
+      "family": "Fragment Mono SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "fragmentmonosc"
+    },
+    {
+      "family": "Geist",
+      "reasons": [
+        "missing_from_metadata",
+        "pre_validate:Variant italic not found in API for Geist-Italic[wght].ttf"
+      ],
+      "sources": [
+        "map",
+        "pre-validate"
+      ],
+      "folder": "geist"
+    },
+    {
+      "family": "Geist Mono",
+      "reasons": [
+        "missing_from_metadata",
+        "pre_validate:Variant italic not found in API for GeistMono-Italic[wght].ttf"
+      ],
+      "sources": [
+        "map",
+        "pre-validate"
+      ],
+      "folder": "geistmono"
+    },
+    {
+      "family": "Google Sans",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Google Sans Flex",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Gulim",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "gulim"
+    },
+    {
+      "family": "GulimChe",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "gulimche"
+    },
+    {
+      "family": "Gungsuh",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "gungsuh"
+    },
+    {
+      "family": "GungsuhChe",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "gungsuhche"
+    },
+    {
+      "family": "Hermeneus One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hermeneusone"
+    },
+    {
+      "family": "Hind Colombo",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hindcolombo"
+    },
+    {
+      "family": "Hind Jalandhar",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hindjalandhar"
+    },
+    {
+      "family": "Hind Kochi",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hindkochi"
+    },
+    {
+      "family": "Lato",
+      "reasons": [
+        "missing_from_metadata",
+        "pre_validate:Variant 200 not found in API for Lato-ExtraLight.ttf",
+        "pre_validate:Variant 200italic not found in API for Lato-ExtraLightItalic.ttf",
+        "pre_validate:Variant 500 not found in API for Lato-Medium.ttf",
+        "pre_validate:Variant 500italic not found in API for Lato-MediumItalic.ttf",
+        "pre_validate:Variant 600 not found in API for Lato-SemiBold.ttf",
+        "pre_validate:Variant 600italic not found in API for Lato-SemiBoldItalic.ttf",
+        "pre_validate:Variant 800 not found in API for Lato-ExtraBold.ttf",
+        "pre_validate:Variant 800italic not found in API for Lato-ExtraBoldItalic.ttf"
+      ],
+      "sources": [
+        "map",
+        "pre-validate"
+      ],
+      "folder": "lato"
+    },
+    {
+      "family": "Lohit Bengali",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "lohitbengali"
+    },
+    {
+      "family": "Lohit Tamil",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "lohittamil"
+    },
+    {
+      "family": "Material Icons",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Icons Outlined",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Icons Round",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Icons Sharp",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Icons Two Tone",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Symbols",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Symbols Outlined",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Symbols Rounded",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Material Symbols Sharp",
+      "reasons": [
+        "missing_from_metadata"
+      ],
+      "sources": [
+        "map"
+      ]
+    },
+    {
+      "family": "Merge One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "mergeone"
+    },
+    {
+      "family": "Mervale Script",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "mervalescript"
+    },
+    {
+      "family": "Miama",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "miama"
+    },
+    {
+      "family": "Montserrat Subrayada",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "montserratsubrayada"
+    },
+    {
+      "family": "NATS",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "nats"
+    },
+    {
+      "family": "Nosifer Caps",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "nosifercaps"
+    },
+    {
+      "family": "Noto Color Emoji Compat Test",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notocoloremojicompattest"
+    },
+    {
+      "family": "Noto Naskh Arabic UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notonaskharabicui"
+    },
+    {
+      "family": "Noto Sans Arabic UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansarabicui"
+    },
+    {
+      "family": "Noto Sans Bengali UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansbengaliui"
+    },
+    {
+      "family": "Noto Sans Devanagari UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansdevanagariui"
+    },
+    {
+      "family": "Noto Sans Gujarati UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansgujaratiui"
+    },
+    {
+      "family": "Noto Sans Gurmukhi UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansgurmukhiui"
+    },
+    {
+      "family": "Noto Sans Kannada UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosanskannadaui"
+    },
+    {
+      "family": "Noto Sans Khmer UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosanskhmerui"
+    },
+    {
+      "family": "Noto Sans Lao UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosanslaoui"
+    },
+    {
+      "family": "Noto Sans Malayalam UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansmalayalamui"
+    },
+    {
+      "family": "Noto Sans Myanmar UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansmyanmarui"
+    },
+    {
+      "family": "Noto Sans N Ko",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansnko_todelist"
+    },
+    {
+      "family": "Noto Sans Oriya UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansoriyaui"
+    },
+    {
+      "family": "Noto Sans Sinhala UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosanssinhalaui"
+    },
+    {
+      "family": "Noto Sans Tamil UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosanstamilui"
+    },
+    {
+      "family": "Noto Sans Telugu UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansteluguui"
+    },
+    {
+      "family": "Noto Sans Thai UI",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notosansthaiui"
+    },
+    {
+      "family": "Noto Serif Nyiakeng Puachue Hmong",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "notoserifnyiakengpuachuehmong"
+    },
+    {
+      "family": "OFL Sorts Mill Goudy TT",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "oflsortsmillgoudytt"
+    },
+    {
+      "family": "Otomanopee One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "otomanopeeone"
+    },
+    {
+      "family": "Porter Sans Block",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "portersansblock"
+    },
+    {
+      "family": "Pushster",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "pushster"
+    },
+    {
+      "family": "Rubik One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "rubikone"
+    },
+    {
+      "family": "STIX Two Math",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "stixtwomath"
+    },
+    {
+      "family": "Sansita One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "sansitaone"
+    },
+    {
+      "family": "Signika Negative SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "signikanegativesc"
+    },
+    {
+      "family": "Signika SC",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "signikasc"
+    },
+    {
+      "family": "Sitara",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "sitara"
+    },
+    {
+      "family": "Strichpunkt Sans",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "strichpunktsans"
+    },
+    {
+      "family": "Strong",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "strong"
+    },
+    {
+      "family": "Thabit",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "thabit"
+    },
+    {
+      "family": "Yaldevi Colombo",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "yaldevicolombo"
+    },
+    {
+      "family": "Yinmar",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "yinmar"
+    },
+    {
+      "family": "aksarabaligalang",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "aksarabaligalang"
+    },
+    {
+      "family": "amstelvaralpha",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "amstelvaralpha"
+    },
+    {
+      "family": "decovaralpha",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "decovaralpha"
+    },
+    {
+      "family": "hanna",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hanna"
+    },
+    {
+      "family": "hannari",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hannari"
+    },
+    {
+      "family": "jejugothic",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jejugothic"
+    },
+    {
+      "family": "jejuhallasan",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jejuhallasan"
+    },
+    {
+      "family": "jejumyeongjo",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jejumyeongjo"
+    },
+    {
+      "family": "jsMath cmbx10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmbx10"
+    },
+    {
+      "family": "jsMath cmex10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmex10"
+    },
+    {
+      "family": "jsMath cmmi10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmmi10"
+    },
+    {
+      "family": "jsMath cmr10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmr10"
+    },
+    {
+      "family": "jsMath cmsy10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmsy10"
+    },
+    {
+      "family": "jsMath cmti10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "jsmathcmti10"
+    },
+    {
+      "family": "khyay",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "khyay"
+    },
+    {
+      "family": "kokoro",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "kokoro"
+    },
+    {
+      "family": "kopubbatang",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "kopubbatang"
+    },
+    {
+      "family": "lemonadavfbeta",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "lemonadavfbeta"
+    },
+    {
+      "family": "lohitdevanagari",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "lohitdevanagari"
+    },
+    {
+      "family": "markazitextvfbeta",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "markazitextvfbeta"
+    },
+    {
+      "family": "mavenprovfbeta",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "mavenprovfbeta"
+    },
+    {
+      "family": "myanmarsanspro",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "myanmarsanspro"
+    },
+    {
+      "family": "nicomoji",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "nicomoji"
+    },
+    {
+      "family": "nikukyu",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "nikukyu"
+    },
+    {
+      "family": "opensanshebrew",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "opensanshebrew"
+    },
+    {
+      "family": "opensanshebrewcondensed",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "opensanshebrewcondensed"
+    },
+    {
+      "family": "podkovavfbeta",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "podkovavfbeta"
+    },
+    {
+      "family": "rokkittvfbeta",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "rokkittvfbeta"
+    },
+    {
+      "family": "roundedmplus1c",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "roundedmplus1c"
+    },
+    {
+      "family": "souliyo",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "souliyo"
+    },
+    {
+      "family": "tharlon",
+      "reasons": [
+        "pre_validate:METADATA.pb not found"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "tharlon"
+    }
+  ]
+}

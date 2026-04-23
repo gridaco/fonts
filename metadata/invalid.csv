@@ -1,10 +1,12 @@
 folder,domain,font family name,reason(s)
+42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
 batang,ofl,Batang,Family not found in webfonts.json
 batangche,ofl,BatangChe,Family not found in webfonts.json
+betaniapatmosguideline,ofl,Betania Patmos Guide Line,Family not found in webfonts.json
 bhavuka,ofl,Bhavuka,Family not found in webfonts.json
 bigshouldersdisplay,ofl,Big Shoulders Display,Family not found in webfonts.json
 bigshouldersdisplaysc,ofl,Big Shoulders Display SC,Family not found in webfonts.json
@@ -18,17 +20,8 @@ bigshouldersstenciltext,ofl,Big Shoulders Stencil Text,Family not found in webfo
 bigshouldersstenciltextsc,ofl,Big Shoulders Stencil Text SC,Family not found in webfonts.json
 bigshoulderstext,ofl,Big Shoulders Text,Family not found in webfonts.json
 bigshoulderstextsc,ofl,Big Shoulders Text SC,Family not found in webfonts.json
-bitcount,ofl,Bitcount,Family not found in webfonts.json
-bitcountgriddouble,ofl,Bitcount Grid Double,Family not found in webfonts.json
-bitcountgridsingle,ofl,Bitcount Grid Single,Family not found in webfonts.json
-bitcountpropdouble,ofl,Bitcount Prop Double,Family not found in webfonts.json
-bitcountpropsingle,ofl,Bitcount Prop Single,Family not found in webfonts.json
-bitcountpropsingleink,ofl,Bitcount Prop Single Ink,Family not found in webfonts.json
-bitcountsingle,ofl,Bitcount Single,Family not found in webfonts.json
-bitcountsingleink,ofl,Bitcount Single Ink,Family not found in webfonts.json
 briemhand,ofl,Briem Hand,Family not found in webfonts.json
 bungeecolor,ofl,Bungee Color,Family not found in webfonts.json
-chironsunghk,ofl,Chiron Sung HK,Family not found in webfonts.json
 creepstercaps,apache,Creepster Caps,Family not found in webfonts.json
 decovaralpha,ofl,,METADATA.pb not found
 dhyana,ofl,Dhyana,Family not found in webfonts.json
@@ -36,9 +29,10 @@ digitalnumbers,ofl,Digital Numbers,Family not found in webfonts.json
 dotum,ofl,Dotum,Family not found in webfonts.json
 dotumche,ofl,DotumChe,Family not found in webfonts.json
 ekmukta,ofl,Ek Mukta,Family not found in webfonts.json
-epundasans,ofl,Epunda Sans,Family not found in webfonts.json
-epundaslab,ofl,Epunda Slab,Family not found in webfonts.json
+estedad,ofl,Estedad,Family not found in webfonts.json
 fragmentmonosc,ofl,Fragment Mono SC,Family not found in webfonts.json
+geist,ofl,Geist,Variant italic not found in API for Geist-Italic[wght].ttf
+geistmono,ofl,Geist Mono,Variant italic not found in API for GeistMono-Italic[wght].ttf
 gulim,ofl,Gulim,Family not found in webfonts.json
 gulimche,ofl,GulimChe,Family not found in webfonts.json
 gungsuh,ofl,Gungsuh,Family not found in webfonts.json
@@ -49,8 +43,6 @@ hermeneusone,ofl,Hermeneus One,Family not found in webfonts.json
 hindcolombo,ofl,Hind Colombo,Family not found in webfonts.json
 hindjalandhar,ofl,Hind Jalandhar,Family not found in webfonts.json
 hindkochi,ofl,Hind Kochi,Family not found in webfonts.json
-huninn,ofl,Huninn,Family not found in webfonts.json
-intelonemono,ofl,Intel One Mono,Family not found in webfonts.json
 jejugothic,ofl,,METADATA.pb not found
 jejuhallasan,ofl,,METADATA.pb not found
 jejumyeongjo,ofl,,METADATA.pb not found
@@ -65,17 +57,11 @@ kokoro,ofl,,METADATA.pb not found
 kopubbatang,ofl,,METADATA.pb not found
 lato,ofl,Lato,Variant 200 not found in API for Lato-ExtraLight.ttf; Variant 200italic not found in API for Lato-ExtraLightItalic.ttf; Variant 500 not found in API for Lato-Medium.ttf; Variant 500italic not found in API for Lato-MediumItalic.ttf; Variant 600 not found in API for Lato-SemiBold.ttf; Variant 600italic not found in API for Lato-SemiBoldItalic.ttf; Variant 800 not found in API for Lato-ExtraBold.ttf; Variant 800italic not found in API for Lato-ExtraBoldItalic.ttf
 lemonadavfbeta,ofl,,METADATA.pb not found
-libertinusmath,ofl,Libertinus Math,Family not found in webfonts.json
-libertinusmono,ofl,Libertinus Mono,Family not found in webfonts.json
 lohitbengali,ofl,Lohit Bengali,Family not found in webfonts.json
 lohitdevanagari,ofl,,METADATA.pb not found
 lohittamil,ofl,Lohit Tamil,Family not found in webfonts.json
-lxgwmarkergothic,ofl,LXGW Marker Gothic,Family not found in webfonts.json
-manufacturingconsent,ofl,Manufacturing Consent,Family not found in webfonts.json
 markazitextvfbeta,ofl,,METADATA.pb not found
-matangi,ofl,Matangi,Family not found in webfonts.json
 mavenprovfbeta,ofl,,METADATA.pb not found
-menbere,ofl,Menbere,Family not found in webfonts.json
 mergeone,ofl,Merge One,Family not found in webfonts.json
 mervalescript,ofl,Mervale Script,Family not found in webfonts.json
 miama,ofl,Miama,Family not found in webfonts.json
@@ -120,10 +106,9 @@ signikasc,ofl,Signika SC,Family not found in webfonts.json
 sitara,ofl,Sitara,Family not found in webfonts.json
 souliyo,ofl,,METADATA.pb not found
 stixtwomath,ofl,STIX Two Math,Family not found in webfonts.json
+strichpunktsans,ofl,Strichpunkt Sans,Family not found in webfonts.json
 strong,ofl,Strong,Family not found in webfonts.json
 thabit,ofl,Thabit,Family not found in webfonts.json
 tharlon,ofl,,METADATA.pb not found
-wdxllubrifontjpn,ofl,WDXL Lubrifont JP N,Family not found in webfonts.json
-wdxllubrifontsc,ofl,WDXL Lubrifont SC,Family not found in webfonts.json
 yaldevicolombo,ofl,Yaldevi Colombo,Family not found in webfonts.json
 yinmar,ofl,Yinmar,Family not found in webfonts.json
