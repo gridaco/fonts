@@ -474,7 +474,7 @@ def map(webfonts: str, family: Optional[str], output: str):
         output_path = output
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w') as f:
-            json.dump(all_mappings, f, indent=2)
+            json.dump(all_mappings, f, indent=2, sort_keys=True)
         click.echo(f"\nMappings written to {output_path}")
 
 
@@ -972,7 +972,7 @@ def polyfill(metadata: str, webfonts: str, output: str):
     output_path = output
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:
-        json.dump(metadata, f, indent=2)
+        json.dump(metadata, f, indent=2, sort_keys=True)
 
     # Print summary
     click.echo("\nPolyfill Summary:")

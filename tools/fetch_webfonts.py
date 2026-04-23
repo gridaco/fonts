@@ -64,9 +64,13 @@ def main(api_key: str, out_dir: str, sort: str):
             click.echo(f"ERROR fetching {filename}: {e}", err=True)
             sys.exit(1)
 
+        # Sort items by family so diffs are stable across runs; consumers
+        # always look up by family name, so array order is never load-bearing.
+        data["items"].sort(key=lambda item: item["family"])
+
         path = os.path.join(out_dir, filename)
         with open(path, "w") as f:
-            json.dump(data, f, indent=2)
+            json.dump(data, f, indent=2, sort_keys=True)
         click.echo(f"  wrote {path} ({len(data['items'])} items)", err=True)
 
 
