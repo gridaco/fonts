@@ -11,3 +11,11 @@ www-copy-apple-emoji:
 # Clean Apple emoji PNG files from public directory
 www-clean-apple-emoji:
 	rm -rf www/public/apple/emoji/
+
+# Refresh all generated fonts data in-place. Requires GOOGLE_FONTS_API_KEY.
+refresh *ARGS:
+	./tools/refresh.sh {{ARGS}}
+
+# Refresh without fetching (reuses the existing webfonts.json on disk).
+refresh-offline:
+	./tools/refresh.sh --skip-fetch
