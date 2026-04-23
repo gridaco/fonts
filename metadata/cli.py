@@ -11,6 +11,7 @@ PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Define key paths
 WEBFONTS_JSON = os.path.join(PROJECT_ROOT, 'webfonts.json')
+METADATA_JSON = os.path.join(PROJECT_ROOT, 'www', 'public', 'webfonts.metadata.json')
 FONTS = os.path.join(PROJECT_ROOT, 'vendor', 'google')
 FONTS_APACHE = os.path.join(FONTS, 'apache')
 FONTS_OFL = os.path.join(FONTS, 'ofl')
@@ -403,7 +404,7 @@ def pre_validate(webfonts: str, output: str):
 @cli.command()
 @click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
 @click.option('--family', help='Specific font family to map (optional)')
-@click.option('--output', default='webfonts.metadata.json', help='Output JSON file name')
+@click.option('--output', default=METADATA_JSON, help='Output JSON file path')
 def map(webfonts: str, family: Optional[str], output: str):
     """Map font metadata to generate METADATA.json structure."""
     # Load webfonts data
@@ -470,7 +471,8 @@ def map(webfonts: str, family: Optional[str], output: str):
 
     # Write all mappings to output file
     if all_mappings:
-        output_path = os.path.join(os.path.dirname(__file__), output)
+        output_path = output
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         with open(output_path, 'w') as f:
             json.dump(all_mappings, f, indent=2)
         click.echo(f"\nMappings written to {output_path}")
@@ -703,7 +705,7 @@ def test(webfonts: str, fonts_dir: str, folder: str):
 
 
 @cli.command()
-@click.option('--metadata', default='webfonts.metadata.json', help='Path to webfonts.metadata.json')
+@click.option('--metadata', default=METADATA_JSON, help='Path to webfonts.metadata.json')
 @click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
 @click.option('--family', help='Specific font family to validate (optional)')
 @click.option('--log', default='validation.log', help='Log file name')
@@ -714,7 +716,7 @@ def post_validate(metadata: str, webfonts: str, family: Optional[str], log: str,
     webfonts_data = load_webfonts_data(webfonts)
 
     # Load metadata
-    metadata_path = os.path.join(os.path.dirname(__file__), metadata)
+    metadata_path = metadata
     if not os.path.exists(metadata_path):
         click.echo(f"Error: Metadata file not found at {metadata_path}")
         return
@@ -850,13 +852,13 @@ def post_validate(metadata: str, webfonts: str, family: Optional[str], log: str,
 
 
 @cli.command()
-@click.option('--metadata', default='webfonts.metadata.json', help='Path to webfonts.metadata.json')
+@click.option('--metadata', default=METADATA_JSON, help='Path to webfonts.metadata.json')
 @click.option('--webfonts', default=WEBFONTS_JSON, help='Path to webfonts.json')
-@click.option('--output', default='webfonts.metadata.json', help='Output JSON file name')
+@click.option('--output', default=METADATA_JSON, help='Output JSON file path')
 def polyfill(metadata: str, webfonts: str, output: str):
     """Polyfill missing PostScript name mappings in webfonts.metadata.json."""
     # Load metadata
-    metadata_path = os.path.join(os.path.dirname(__file__), metadata)
+    metadata_path = metadata
     if not os.path.exists(metadata_path):
         click.echo(f"Error: Metadata file not found at {metadata_path}")
         return
@@ -967,7 +969,8 @@ def polyfill(metadata: str, webfonts: str, output: str):
                 })
 
     # Write updated metadata
-    output_path = os.path.join(os.path.dirname(__file__), output)
+    output_path = output
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w') as f:
         json.dump(metadata, f, indent=2)
 

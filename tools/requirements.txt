@@ -1,8 +1,11 @@
-svgwrite
-gftools
-protobuf
-click
-scour
-fonttools
-tqdm
-requests
+# Upper bounds are conservative guards against a major-version break
+# drifting into the weekly unattended run. Tighten via Dependabot / human
+# review; do not remove without replacing with explicit pins.
+click>=8,<9
+requests>=2.28,<3
+fonttools>=4.40,<5
+tqdm>=4.60,<5
+protobuf>=4.23,<6
+svgwrite>=1.4,<2
+scour>=0.38,<1
+gftools>=0.9,<1
