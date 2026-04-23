@@ -268,20 +268,12 @@ def generate_svgs(fonts_json, output_folder, overwrite, font_size, subset, log_f
                 'timestamp': __import__('datetime').datetime.now().isoformat()
             })
 
-    # Write failed fonts to log file
+    # Write failed fonts to log file as a JSON array — consumed by
+    # tools/build_lockfile.py to produce broken.lock.json.
     if failed_fonts:
         with open(log_file, 'w') as f:
-            f.write(
-                f"Failed fonts log - Generated on {__import__('datetime').datetime.now().isoformat()}\n")
-            f.write(f"Total failed fonts: {len(failed_fonts)}\n")
-            f.write("=" * 80 + "\n\n")
-            for failed in failed_fonts:
-                f.write(f"Font ID: {failed['font_id']}\n")
-                f.write(f"Family: {failed['family']}\n")
-                f.write(f"Error: {failed['error']}\n")
-                f.write(f"Timestamp: {failed['timestamp']}\n")
-                f.write("-" * 40 + "\n")
-        tqdm.write(f"\nFailed fonts logged to: {log_file}")
+            json.dump(failed_fonts, f, indent=2, ensure_ascii=False)
+        tqdm.write(f"\nFailed fonts logged to: {log_file} ({len(failed_fonts)} failures)")
     else:
         tqdm.write(f"\nNo failed fonts to log.")
 
