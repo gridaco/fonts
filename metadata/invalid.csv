@@ -2,6 +2,8 @@ folder,domain,font family name,reason(s)
 42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
+akt,ofl,Akt,Family not found in webfonts.json
+alienblock,ofl,Alien Block,Family not found in webfonts.json
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
 batang,ofl,Batang,Family not found in webfonts.json
@@ -30,6 +32,8 @@ dotum,ofl,Dotum,Family not found in webfonts.json
 dotumche,ofl,DotumChe,Family not found in webfonts.json
 ekmukta,ofl,Ek Mukta,Family not found in webfonts.json
 estedad,ofl,Estedad,Family not found in webfonts.json
+finlandicaheadline,ofl,Finlandica Headline,Family not found in webfonts.json
+finlandicatext,ofl,Finlandica Text,Family not found in webfonts.json
 fragmentmonosc,ofl,Fragment Mono SC,Family not found in webfonts.json
 geist,ofl,Geist,Variant italic not found in API for Geist-Italic[wght].ttf
 geistmono,ofl,Geist Mono,Variant italic not found in API for GeistMono-Italic[wght].ttf
@@ -66,6 +70,7 @@ mergeone,ofl,Merge One,Family not found in webfonts.json
 mervalescript,ofl,Mervale Script,Family not found in webfonts.json
 miama,ofl,Miama,Family not found in webfonts.json
 montserratsubrayada,ofl,Montserrat Subrayada,Family not found in webfonts.json
+mplusu,ofl,M PLUS U,Family not found in webfonts.json
 myanmarsanspro,ofl,,METADATA.pb not found
 nats,ofl,NATS,Family not found in webfonts.json
 nicomoji,ofl,,METADATA.pb not found

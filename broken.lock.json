@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-23T13:18:29.503638+00:00",
-  "vendor_google_sha": "47831f08ec6d6d7ad6b465f23dc9f9a890a2a04b",
+  "generated_at": "2026-05-04T07:19:12.156656+00:00",
+  "vendor_google_sha": "7a23c80c17f403896540f1f68c02f59d8f3d3482",
   "counts": {
     "families_in_api": 1938,
     "families_in_metadata": 1918,
-    "broken": 131,
+    "broken": 136,
     "missing_from_metadata": 20,
-    "pre_validate_invalid": 113,
+    "pre_validate_invalid": 118,
     "svg_render_failed": 1
   },
   "broken": [
@@ -29,6 +29,26 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
+    },
+    {
+      "family": "Akt",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "akt"
+    },
+    {
+      "family": "Alien Block",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "alienblock"
     },
     {
       "family": "Allkin",
@@ -354,6 +374,26 @@
       "folder": "estedad"
     },
     {
+      "family": "Finlandica Headline",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "finlandicaheadline"
+    },
+    {
+      "family": "Finlandica Text",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "finlandicatext"
+    },
+    {
       "family": "Fragment Mono SC",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -523,6 +563,16 @@
         "pre-validate"
       ],
       "folder": "lohittamil"
+    },
+    {
+      "family": "M PLUS U",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "mplusu"
     },
     {
       "family": "Material Icons",
