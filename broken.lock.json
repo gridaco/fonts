@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-04T07:19:12.156656+00:00",
-  "vendor_google_sha": "7a23c80c17f403896540f1f68c02f59d8f3d3482",
+  "generated_at": "2026-05-11T07:31:39.122101+00:00",
+  "vendor_google_sha": "b1aaa41a6990f651f2685a149a55c4a3fc02d28b",
   "counts": {
-    "families_in_api": 1938,
-    "families_in_metadata": 1918,
-    "broken": 136,
+    "families_in_api": 1939,
+    "families_in_metadata": 1919,
+    "broken": 135,
     "missing_from_metadata": 20,
-    "pre_validate_invalid": 118,
+    "pre_validate_invalid": 117,
     "svg_render_failed": 1
   },
   "broken": [
@@ -954,16 +954,6 @@
         "pre-validate"
       ],
       "folder": "rubikone"
-    },
-    {
-      "family": "STIX Two Math",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "stixtwomath"
     },
     {
       "family": "Sansita One",

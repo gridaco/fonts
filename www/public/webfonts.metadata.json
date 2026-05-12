@@ -12635,7 +12635,7 @@
   "Libertinus Math": {
     "family": "Libertinus Math",
     "files": {
-      "regular": "https://fonts.gstatic.com/s/libertinusmath/v1/Gw6iwc3770TVMoHVurPejWtfenRLv_KJt3R-2Q.ttf"
+      "regular": "https://fonts.gstatic.com/s/libertinusmath/v2/Gw6iwc3770TVMoHVurPejWtfenRLv_KJt3R-2Q.ttf"
     },
     "post_script_names": {
       "LibertinusMath-Regular": "regular"
@@ -16868,7 +16868,7 @@
   "Noto Sans Math": {
     "family": "Noto Sans Math",
     "files": {
-      "regular": "https://fonts.gstatic.com/s/notosansmath/v18/7Aump_cpkSecTWaHRlH2hyV5UHkG-V048PW0.ttf"
+      "regular": "https://fonts.gstatic.com/s/notosansmath/v19/7Aump_cpkSecTWaHRlH2hyV5UHkG-V048PW0.ttf"
     },
     "post_script_names": {
       "NotoSansMath-Regular": "regular"
@@ -23739,6 +23739,15 @@
       "SNPro-Regular": "regular",
       "SNPro-SemiBold": "600",
       "SNPro-SemiBoldItalic": "600italic"
+    }
+  },
+  "STIX Two Math": {
+    "family": "STIX Two Math",
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/stixtwomath/v12/pONg1hwwL_6M9EkZySr_yteUi1rADEcF1pY.ttf"
+    },
+    "post_script_names": {
+      "STIXTwoMath-Regular": "regular"
     }
   },
   "STIX Two Text": {
