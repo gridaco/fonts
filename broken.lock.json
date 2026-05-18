@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-11T07:31:39.122101+00:00",
-  "vendor_google_sha": "b1aaa41a6990f651f2685a149a55c4a3fc02d28b",
+  "generated_at": "2026-05-18T07:43:04.798108+00:00",
+  "vendor_google_sha": "de88e79a24337aa0209f3abcc044d2500ca07021",
   "counts": {
-    "families_in_api": 1939,
-    "families_in_metadata": 1919,
-    "broken": 135,
-    "missing_from_metadata": 20,
-    "pre_validate_invalid": 117,
+    "families_in_api": 1943,
+    "families_in_metadata": 1925,
+    "broken": 129,
+    "missing_from_metadata": 18,
+    "pre_validate_invalid": 111,
     "svg_render_failed": 1
   },
   "broken": [
@@ -29,16 +29,6 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
-    },
-    {
-      "family": "Akt",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "akt"
     },
     {
       "family": "Alien Block",
@@ -364,34 +354,14 @@
       "folder": "ekmukta"
     },
     {
-      "family": "Estedad",
+      "family": "Finlandica",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
       ],
       "sources": [
         "pre-validate"
       ],
-      "folder": "estedad"
-    },
-    {
-      "family": "Finlandica Headline",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "finlandicaheadline"
-    },
-    {
-      "family": "Finlandica Text",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "finlandicatext"
+      "folder": "finlandica"
     },
     {
       "family": "Fragment Mono SC",
@@ -402,30 +372,6 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
-    },
-    {
-      "family": "Geist",
-      "reasons": [
-        "missing_from_metadata",
-        "pre_validate:Variant italic not found in API for Geist-Italic[wght].ttf"
-      ],
-      "sources": [
-        "map",
-        "pre-validate"
-      ],
-      "folder": "geist"
-    },
-    {
-      "family": "Geist Mono",
-      "reasons": [
-        "missing_from_metadata",
-        "pre_validate:Variant italic not found in API for GeistMono-Italic[wght].ttf"
-      ],
-      "sources": [
-        "map",
-        "pre-validate"
-      ],
-      "folder": "geistmono"
     },
     {
       "family": "Google Sans",
@@ -563,16 +509,6 @@
         "pre-validate"
       ],
       "folder": "lohittamil"
-    },
-    {
-      "family": "M PLUS U",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "mplusu"
     },
     {
       "family": "Material Icons",
@@ -956,6 +892,16 @@
       "folder": "rubikone"
     },
     {
+      "family": "Saira Stencil One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "sairastencilone"
+    },
+    {
       "family": "Sansita One",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -994,16 +940,6 @@
         "pre-validate"
       ],
       "folder": "sitara"
-    },
-    {
-      "family": "Strichpunkt Sans",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "strichpunktsans"
     },
     {
       "family": "Strong",

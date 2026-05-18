@@ -2,7 +2,6 @@ folder,domain,font family name,reason(s)
 42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
-akt,ofl,Akt,Family not found in webfonts.json
 alienblock,ofl,Alien Block,Family not found in webfonts.json
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
@@ -31,12 +30,8 @@ digitalnumbers,ofl,Digital Numbers,Family not found in webfonts.json
 dotum,ofl,Dotum,Family not found in webfonts.json
 dotumche,ofl,DotumChe,Family not found in webfonts.json
 ekmukta,ofl,Ek Mukta,Family not found in webfonts.json
-estedad,ofl,Estedad,Family not found in webfonts.json
-finlandicaheadline,ofl,Finlandica Headline,Family not found in webfonts.json
-finlandicatext,ofl,Finlandica Text,Family not found in webfonts.json
+finlandica,ofl,Finlandica,Family not found in webfonts.json
 fragmentmonosc,ofl,Fragment Mono SC,Family not found in webfonts.json
-geist,ofl,Geist,Variant italic not found in API for Geist-Italic[wght].ttf
-geistmono,ofl,Geist Mono,Variant italic not found in API for GeistMono-Italic[wght].ttf
 gulim,ofl,Gulim,Family not found in webfonts.json
 gulimche,ofl,GulimChe,Family not found in webfonts.json
 gungsuh,ofl,Gungsuh,Family not found in webfonts.json
@@ -70,7 +65,6 @@ mergeone,ofl,Merge One,Family not found in webfonts.json
 mervalescript,ofl,Mervale Script,Family not found in webfonts.json
 miama,ofl,Miama,Family not found in webfonts.json
 montserratsubrayada,ofl,Montserrat Subrayada,Family not found in webfonts.json
-mplusu,ofl,M PLUS U,Family not found in webfonts.json
 myanmarsanspro,ofl,,METADATA.pb not found
 nats,ofl,NATS,Family not found in webfonts.json
 nicomoji,ofl,,METADATA.pb not found
@@ -105,12 +99,12 @@ pushster,ofl,Pushster,Family not found in webfonts.json
 rokkittvfbeta,ofl,,METADATA.pb not found
 roundedmplus1c,ofl,,METADATA.pb not found
 rubikone,ofl,Rubik One,Family not found in webfonts.json
+sairastencilone,ofl,Saira Stencil One,Family not found in webfonts.json
 sansitaone,ofl,Sansita One,Family not found in webfonts.json
 signikanegativesc,ofl,Signika Negative SC,Family not found in webfonts.json
 signikasc,ofl,Signika SC,Family not found in webfonts.json
 sitara,ofl,Sitara,Family not found in webfonts.json
 souliyo,ofl,,METADATA.pb not found
-strichpunktsans,ofl,Strichpunkt Sans,Family not found in webfonts.json
 strong,ofl,Strong,Family not found in webfonts.json
 thabit,ofl,Thabit,Family not found in webfonts.json
 tharlon,ofl,,METADATA.pb not found
