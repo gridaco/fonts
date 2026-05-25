@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-18T07:43:04.798108+00:00",
-  "vendor_google_sha": "de88e79a24337aa0209f3abcc044d2500ca07021",
+  "generated_at": "2026-05-25T07:53:28.549881+00:00",
+  "vendor_google_sha": "c5b52261e8fde2d3b2592fa9d26ac525939c5e4c",
   "counts": {
     "families_in_api": 1943,
     "families_in_metadata": 1925,
-    "broken": 129,
+    "broken": 130,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 111,
+    "pre_validate_invalid": 112,
     "svg_render_failed": 1
   },
   "broken": [
@@ -860,6 +860,16 @@
         "pre-validate"
       ],
       "folder": "otomanopeeone"
+    },
+    {
+      "family": "Pliant",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "pliant"
     },
     {
       "family": "Porter Sans Block",
