@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-05-25T07:53:28.549881+00:00",
-  "vendor_google_sha": "c5b52261e8fde2d3b2592fa9d26ac525939c5e4c",
+  "generated_at": "2026-06-01T08:09:11.188945+00:00",
+  "vendor_google_sha": "fafaa09e4abf799c185f85e9b6eacb7db31ca5ed",
   "counts": {
     "families_in_api": 1943,
     "families_in_metadata": 1925,
-    "broken": 130,
+    "broken": 131,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 112,
+    "pre_validate_invalid": 113,
     "svg_render_failed": 1
   },
   "broken": [
@@ -620,6 +620,16 @@
         "pre-validate"
       ],
       "folder": "miama"
+    },
+    {
+      "family": "Montenegrin Gothic One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "montenegringothicone"
     },
     {
       "family": "Montserrat Subrayada",
