@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-06-01T08:09:11.188945+00:00",
-  "vendor_google_sha": "fafaa09e4abf799c185f85e9b6eacb7db31ca5ed",
+  "generated_at": "2026-06-08T08:02:44.886552+00:00",
+  "vendor_google_sha": "c89741abbf4eeabce432c3ed2fd7dc28b022701e",
   "counts": {
     "families_in_api": 1943,
     "families_in_metadata": 1925,
-    "broken": 131,
+    "broken": 132,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 113,
+    "pre_validate_invalid": 114,
     "svg_render_failed": 1
   },
   "broken": [
@@ -372,6 +372,16 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
+    },
+    {
+      "family": "Geist Pixel",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "geistpixel"
     },
     {
       "family": "Google Sans",
