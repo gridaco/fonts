@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-08T08:02:44.886552+00:00",
-  "vendor_google_sha": "c89741abbf4eeabce432c3ed2fd7dc28b022701e",
+  "generated_at": "2026-06-15T08:20:57.122659+00:00",
+  "vendor_google_sha": "5457e22d106dd3b693c4f9eca2551a615341ea86",
   "counts": {
-    "families_in_api": 1943,
-    "families_in_metadata": 1925,
+    "families_in_api": 1945,
+    "families_in_metadata": 1927,
     "broken": 132,
     "missing_from_metadata": 18,
     "pre_validate_invalid": 114,
@@ -29,16 +29,6 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
-    },
-    {
-      "family": "Alien Block",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "alienblock"
     },
     {
       "family": "Allkin",
@@ -882,16 +872,6 @@
       "folder": "otomanopeeone"
     },
     {
-      "family": "Pliant",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "pliant"
-    },
-    {
       "family": "Porter Sans Block",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -1010,6 +990,26 @@
         "pre-validate"
       ],
       "folder": "yinmar"
+    },
+    {
+      "family": "Yuyu",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "yuyu"
+    },
+    {
+      "family": "Yuyu Short",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "yuyushort"
     },
     {
       "family": "aksarabaligalang",

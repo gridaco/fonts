@@ -2,7 +2,6 @@ folder,domain,font family name,reason(s)
 42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
-alienblock,ofl,Alien Block,Family not found in webfonts.json
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
 batang,ofl,Batang,Family not found in webfonts.json
@@ -95,7 +94,6 @@ oflsortsmillgoudytt,ofl,OFL Sorts Mill Goudy TT,Family not found in webfonts.jso
 opensanshebrew,apache,,METADATA.pb not found
 opensanshebrewcondensed,apache,,METADATA.pb not found
 otomanopeeone,ofl,Otomanopee One,Family not found in webfonts.json
-pliant,ofl,Pliant,Family not found in webfonts.json
 podkovavfbeta,ofl,,METADATA.pb not found
 portersansblock,ofl,Porter Sans Block,Family not found in webfonts.json
 pushster,ofl,Pushster,Family not found in webfonts.json
@@ -113,3 +111,5 @@ thabit,ofl,Thabit,Family not found in webfonts.json
 tharlon,ofl,,METADATA.pb not found
 yaldevicolombo,ofl,Yaldevi Colombo,Family not found in webfonts.json
 yinmar,ofl,Yinmar,Family not found in webfonts.json
+yuyu,ofl,Yuyu,Family not found in webfonts.json
+yuyushort,ofl,Yuyu Short,Family not found in webfonts.json
