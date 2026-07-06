@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T08:21:49.732560+00:00",
-  "vendor_google_sha": "cf28404eac0c6f9753bef3510bbe271952e4154d",
+  "generated_at": "2026-07-06T07:48:37.434218+00:00",
+  "vendor_google_sha": "e4572de925a4c3be12f1f9983ee0adbe1eb6e9fe",
   "counts": {
-    "families_in_api": 1945,
-    "families_in_metadata": 1927,
+    "families_in_api": 1949,
+    "families_in_metadata": 1931,
     "broken": 132,
     "missing_from_metadata": 18,
     "pre_validate_invalid": 114,
@@ -230,6 +230,16 @@
       "folder": "bungeecolor"
     },
     {
+      "family": "Caacupe One",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "caacupeone"
+    },
+    {
       "family": "Creepster Caps",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -364,14 +374,14 @@
       "folder": "fragmentmonosc"
     },
     {
-      "family": "Geist Pixel",
+      "family": "Geomini",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
       ],
       "sources": [
         "pre-validate"
       ],
-      "folder": "geistpixel"
+      "folder": "geomini"
     },
     {
       "family": "Google Sans",
@@ -440,6 +450,16 @@
         "pre-validate"
       ],
       "folder": "hermeneusone"
+    },
+    {
+      "family": "Hibur Mono",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "hiburmono"
     },
     {
       "family": "Hind Colombo",
@@ -620,16 +640,6 @@
         "pre-validate"
       ],
       "folder": "miama"
-    },
-    {
-      "family": "Montenegrin Gothic One",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "montenegringothicone"
     },
     {
       "family": "Montserrat Subrayada",
@@ -922,6 +932,16 @@
       "folder": "sansitaone"
     },
     {
+      "family": "Scoutie Sans",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "scoutiesans"
+    },
+    {
       "family": "Signika Negative SC",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -990,26 +1010,6 @@
         "pre-validate"
       ],
       "folder": "yinmar"
-    },
-    {
-      "family": "Yuyu",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "yuyu"
-    },
-    {
-      "family": "Yuyu Short",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "yuyushort"
     },
     {
       "family": "aksarabaligalang",
