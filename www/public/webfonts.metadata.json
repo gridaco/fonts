@@ -8786,6 +8786,27 @@
       "Geom-SemiBoldItalic": "600italic"
     }
   },
+  "Geomini": {
+    "family": "Geomini",
+    "files": {
+      "200": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb4OqPCy2Ynlhe6L.ttf",
+      "300": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb7QqPCy2Ynlhe6L.ttf",
+      "500": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb68qPCy2Ynlhe6L.ttf",
+      "600": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb5Qr_Cy2Ynlhe6L.ttf",
+      "700": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb5pr_Cy2Ynlhe6L.ttf",
+      "800": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb4Or_Cy2Ynlhe6L.ttf",
+      "regular": "https://fonts.gstatic.com/s/geomini/v2/Yq6L-L2BVyv2_q37mTVoSDbHLBc5Sb6OqPCy2Ynlhe6L.ttf"
+    },
+    "post_script_names": {
+      "Geomini-Bold": "700",
+      "Geomini-ExtraBold": "800",
+      "Geomini-ExtraLight": "200",
+      "Geomini-Light": "300",
+      "Geomini-Medium": "500",
+      "Geomini-Regular": "regular",
+      "Geomini-SemiBold": "600"
+    }
+  },
   "Georama": {
     "family": "Georama",
     "files": {
@@ -9763,6 +9784,15 @@
     },
     "post_script_names": {
       "HiMelody-Regular": "regular"
+    }
+  },
+  "Hibur Mono": {
+    "family": "Hibur Mono",
+    "files": {
+      "regular": "https://fonts.gstatic.com/s/hiburmono/v1/R70fjyoFkv6fKPKNWxXXuCq-Uzv4V5Q.ttf"
+    },
+    "post_script_names": {
+      "HiburMono-Regular": "regular"
     }
   },
   "Hina Mincho": {
@@ -18787,7 +18817,7 @@
   "Noto Serif Old Uyghur": {
     "family": "Noto Serif Old Uyghur",
     "files": {
-      "regular": "https://fonts.gstatic.com/s/notoserifolduyghur/v4/v6-KGZbLJFKIhClqUYqXDiGnrVoFRCW6JdwnKumeF2yVgA.ttf"
+      "regular": "https://fonts.gstatic.com/s/notoserifolduyghur/v5/v6-KGZbLJFKIhClqUYqXDiGnrVoFRCW6JdwnKumeF2yVgA.ttf"
     },
     "post_script_names": {
       "NotoSerifOldUyghur-Regular": "regular"
