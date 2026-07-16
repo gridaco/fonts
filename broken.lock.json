@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-06T07:48:37.434218+00:00",
-  "vendor_google_sha": "e4572de925a4c3be12f1f9983ee0adbe1eb6e9fe",
+  "generated_at": "2026-07-13T09:41:15.873339+00:00",
+  "vendor_google_sha": "ec0464b978de222073645d6d3366f3fdf03376d8",
   "counts": {
-    "families_in_api": 1949,
-    "families_in_metadata": 1931,
-    "broken": 132,
+    "families_in_api": 1951,
+    "families_in_metadata": 1933,
+    "broken": 130,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 114,
+    "pre_validate_invalid": 112,
     "svg_render_failed": 1
   },
   "broken": [
@@ -374,16 +374,6 @@
       "folder": "fragmentmonosc"
     },
     {
-      "family": "Geomini",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "geomini"
-    },
-    {
       "family": "Google Sans",
       "reasons": [
         "missing_from_metadata"
@@ -450,16 +440,6 @@
         "pre-validate"
       ],
       "folder": "hermeneusone"
-    },
-    {
-      "family": "Hibur Mono",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "hiburmono"
     },
     {
       "family": "Hind Colombo",
