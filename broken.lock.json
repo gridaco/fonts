@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-07-13T09:41:15.873339+00:00",
-  "vendor_google_sha": "ec0464b978de222073645d6d3366f3fdf03376d8",
+  "generated_at": "2026-08-31T13:23:37.235026+00:00",
+  "vendor_google_sha": "ade3d1533e06b2b1462ffcde8e08b129627ca360",
   "counts": {
-    "families_in_api": 1951,
-    "families_in_metadata": 1933,
-    "broken": 130,
+    "families_in_api": 1955,
+    "families_in_metadata": 1937,
+    "broken": 129,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 112,
+    "pre_validate_invalid": 111,
     "svg_render_failed": 1
   },
   "broken": [
@@ -228,16 +228,6 @@
         "pre-validate"
       ],
       "folder": "bungeecolor"
-    },
-    {
-      "family": "Caacupe One",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "caacupeone"
     },
     {
       "family": "Creepster Caps",
@@ -642,6 +632,16 @@
       "folder": "nats"
     },
     {
+      "family": "Nevermind",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "nevermind"
+    },
+    {
       "family": "Nosifer Caps",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -910,16 +910,6 @@
         "pre-validate"
       ],
       "folder": "sansitaone"
-    },
-    {
-      "family": "Scoutie Sans",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "scoutiesans"
     },
     {
       "family": "Signika Negative SC",
