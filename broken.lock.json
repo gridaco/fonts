@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-31T13:23:37.235026+00:00",
-  "vendor_google_sha": "ade3d1533e06b2b1462ffcde8e08b129627ca360",
+  "generated_at": "2026-09-07T12:12:52.850294+00:00",
+  "vendor_google_sha": "5e35378e6bda803962ee6fd257e444a7d459660d",
   "counts": {
     "families_in_api": 1955,
     "families_in_metadata": 1937,
-    "broken": 129,
+    "broken": 133,
     "missing_from_metadata": 18,
-    "pre_validate_invalid": 111,
+    "pre_validate_invalid": 115,
     "svg_render_failed": 1
   },
   "broken": [
@@ -228,6 +228,16 @@
         "pre-validate"
       ],
       "folder": "bungeecolor"
+    },
+    {
+      "family": "Clarity City",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "claritycity"
     },
     {
       "family": "Creepster Caps",
@@ -462,6 +472,26 @@
       "folder": "hindkochi"
     },
     {
+      "family": "Isometra",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "isometra"
+    },
+    {
+      "family": "Kripa",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "kripa"
+    },
+    {
       "family": "Lato",
       "reasons": [
         "missing_from_metadata",
@@ -479,6 +509,16 @@
         "pre-validate"
       ],
       "folder": "lato"
+    },
+    {
+      "family": "Libre Caslon Condensed",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "librecasloncondensed"
     },
     {
       "family": "Lohit Bengali",
