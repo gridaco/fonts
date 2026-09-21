@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-31T13:23:37.235026+00:00",
-  "vendor_google_sha": "ade3d1533e06b2b1462ffcde8e08b129627ca360",
+  "generated_at": "2026-09-21T12:35:50.724702+00:00",
+  "vendor_google_sha": "e44c4b011a820c2cbe2fd2cfa8052037d7edb571",
   "counts": {
     "families_in_api": 1955,
-    "families_in_metadata": 1937,
-    "broken": 129,
-    "missing_from_metadata": 18,
-    "pre_validate_invalid": 111,
+    "families_in_metadata": 1939,
+    "broken": 132,
+    "missing_from_metadata": 16,
+    "pre_validate_invalid": 116,
     "svg_render_failed": 1
   },
   "broken": [
@@ -230,6 +230,16 @@
       "folder": "bungeecolor"
     },
     {
+      "family": "Clarity City",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "claritycity"
+    },
+    {
       "family": "Creepster Caps",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -364,24 +374,6 @@
       "folder": "fragmentmonosc"
     },
     {
-      "family": "Google Sans",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
-    },
-    {
-      "family": "Google Sans Flex",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
-    },
-    {
       "family": "Gulim",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -462,6 +454,26 @@
       "folder": "hindkochi"
     },
     {
+      "family": "Isometra",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "isometra"
+    },
+    {
+      "family": "Kripa",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "kripa"
+    },
+    {
       "family": "Lato",
       "reasons": [
         "missing_from_metadata",
@@ -479,6 +491,16 @@
         "pre-validate"
       ],
       "folder": "lato"
+    },
+    {
+      "family": "Libre Caslon Condensed",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "librecasloncondensed"
     },
     {
       "family": "Lohit Bengali",
@@ -960,6 +982,16 @@
         "pre-validate"
       ],
       "folder": "thabit"
+    },
+    {
+      "family": "Tiny5 Duo",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "tiny5duo"
     },
     {
       "family": "Yaldevi Colombo",
