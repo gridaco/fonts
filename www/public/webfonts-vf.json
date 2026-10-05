@@ -508,6 +508,11 @@
     {
       "axes": [
         {
+          "end": 100,
+          "start": 0,
+          "tag": "CTRS"
+        },
+        {
           "end": 700,
           "start": 300,
           "tag": "wght"
@@ -516,11 +521,11 @@
       "category": "sans-serif",
       "family": "Akshar",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/akshar/v17/Yq6V-LyHWTfz9rGyoxRktOdClg.ttf"
+        "regular": "https://fonts.gstatic.com/s/akshar/v20/Yq6V-LyHWTfz9rGyoxRktOdClg.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-08",
-      "menu": "https://fonts.gstatic.com/s/akshar/v17/Yq6I-LyHWTfz9rGoqDaUbHvhkAUsSXYF-9GS8w.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/akshar/v20/Yq6_-LyHWTfz9rGoqDazGDfAkwUsSb5G0du6B11wP_GfX0ftL6cpoQk.ttf",
       "subsets": [
         "devanagari",
         "latin",
@@ -529,7 +534,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v17"
+      "version": "v20"
     },
     {
       "axes": [
@@ -6503,11 +6508,11 @@
       "category": "sans-serif",
       "family": "Bpmf Huninn",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/bpmfhuninn/v6/taiOGmRuFJa3qsALi5gn1K6o05E5abe_.ttf"
+        "regular": "https://fonts.gstatic.com/s/bpmfhuninn/v7/taiOGmRuFJa3qsALi5gn1K6o05E5abe_.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/bpmfhuninn/v6/taiOGmRuFJa3qsALi5gn1J6p2ZU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/bpmfhuninn/v7/taiOGmRuFJa3qsALi5gn1J6p2ZU.ttf",
       "subsets": [
         "chinese-traditional",
         "latin",
@@ -6516,17 +6521,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v6"
+      "version": "v7"
     },
     {
       "category": "handwriting",
       "family": "Bpmf Iansui",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/bpmfiansui/v6/yMJWMIp-dJTO0T8F_WnJPghxoNFxW0Hz.ttf"
+        "regular": "https://fonts.gstatic.com/s/bpmfiansui/v7/yMJWMIp-dJTO0T8F_WnJPghxoNFxW0Hz.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/bpmfiansui/v6/yMJWMIp-dJTO0T8F_WnJPjhwqtU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/bpmfiansui/v7/yMJWMIp-dJTO0T8F_WnJPjhwqtU.ttf",
       "subsets": [
         "chinese-traditional",
         "latin",
@@ -6535,17 +6540,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v6"
+      "version": "v7"
     },
     {
       "category": "sans-serif",
       "family": "Bpmf Zihi Kai Std",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/bpmfzihikaistd/v6/9XU_lIdmjlbGWCXAeHssPRoh5OLaAgzG5SMtfj3e.ttf"
+        "regular": "https://fonts.gstatic.com/s/bpmfzihikaistd/v7/9XU_lIdmjlbGWCXAeHssPRoh5OLaAgzG5SMtfj3e.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/bpmfzihikaistd/v6/9XU_lIdmjlbGWCXAeHssPRoh5OLaAjzH7yc.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/bpmfzihikaistd/v7/9XU_lIdmjlbGWCXAeHssPRoh5OLaAjzH7yc.ttf",
       "subsets": [
         "chinese-traditional",
         "latin",
@@ -6554,7 +6559,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v6"
+      "version": "v7"
     },
     {
       "category": "sans-serif",
@@ -7087,11 +7092,11 @@
       "category": "serif",
       "family": "Cactus Classical Serif",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/cactusclassicalserif/v15/sZlVdQ6K-zJOCzUaS90zMNN-Ep-OoC8dZr0JFuBIFX-pv-E.ttf"
+        "regular": "https://fonts.gstatic.com/s/cactusclassicalserif/v16/sZlVdQ6K-zJOCzUaS90zMNN-Ep-OoC8dZr0JFuBIFX-pv-E.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/cactusclassicalserif/v15/sZlVdQ6K-zJOCzUaS90zMNN-Ep-OoC8dZr0JJuFCEQ.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/cactusclassicalserif/v16/sZlVdQ6K-zJOCzUaS90zMNN-Ep-OoC8dZr0JJuFCEQ.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -7102,7 +7107,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v15"
+      "version": "v16"
     },
     {
       "category": "display",
@@ -8280,11 +8285,11 @@
       "category": "sans-serif",
       "family": "Chiron GoRound TC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/chirongoroundtc/v4/tss3AopDbiwZ4xauFDX3yQ3Ywoaj6lla8dMgPgBu.ttf"
+        "regular": "https://fonts.gstatic.com/s/chirongoroundtc/v5/tss3AopDbiwZ4xauFDX3yQ3Ywoaj6lla8dMgPgBu.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/chirongoroundtc/v4/tssEAopDbiwZ4xauFDX3yQ3Ywoaj6kNR0yP4oqNo8RKqbBq5HQUj.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/chirongoroundtc/v5/tssEAopDbiwZ4xauFDX3yQ3Ywoaj6kNR0yP4oqNo8RKqbBq5HQUj.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -8296,7 +8301,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v4"
+      "version": "v5"
     },
     {
       "axes": [
@@ -8309,12 +8314,12 @@
       "category": "sans-serif",
       "family": "Chiron Hei HK",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/chironheihk/v6/wXKzE3MSr44vpVKPvzqVJaxhjXUTtfLWhot33w.ttf",
-        "regular": "https://fonts.gstatic.com/s/chironheihk/v6/wXKtE3MSr44vpVKPvzqVJaxhvXcZsdDTlos.ttf"
+        "italic": "https://fonts.gstatic.com/s/chironheihk/v7/wXKzE3MSr44vpVKPvzqVJaxhjXUTtfLWhot33w.ttf",
+        "regular": "https://fonts.gstatic.com/s/chironheihk/v7/wXKtE3MSr44vpVKPvzqVJaxhvXcZsdDTlos.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-07-23",
-      "menu": "https://fonts.gstatic.com/s/chironheihk/v6/wXK-E3MSr44vpVKPvzqVJaxhp3w7QQhPNY163lJtr28NmzU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/chironheihk/v7/wXK-E3MSr44vpVKPvzqVJaxhp3w7QQhPNY163lJtr28NmzU.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -8330,7 +8335,7 @@
         "regular",
         "italic"
       ],
-      "version": "v6"
+      "version": "v7"
     },
     {
       "axes": [
@@ -8425,11 +8430,11 @@
       "category": "sans-serif",
       "family": "Chocolate Classical Sans",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/chocolateclassicalsans/v16/nuFqD-PLTZX4XIgT-P2ToCDudWHHflqUpTpfjWdDPI2J9mHITw.ttf"
+        "regular": "https://fonts.gstatic.com/s/chocolateclassicalsans/v17/nuFqD-PLTZX4XIgT-P2ToCDudWHHflqUpTpfjWdDPI2J9mHITw.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/chocolateclassicalsans/v16/nuFqD-PLTZX4XIgT-P2ToCDudWHHflqUpTpfjWdzPYeN.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/chocolateclassicalsans/v17/nuFqD-PLTZX4XIgT-P2ToCDudWHHflqUpTpfjWdzPYeN.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -8440,7 +8445,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v16"
+      "version": "v17"
     },
     {
       "category": "display",
@@ -8528,6 +8533,33 @@
         "900"
       ],
       "version": "v19"
+    },
+    {
+      "axes": [
+        {
+          "end": 900,
+          "start": 100,
+          "tag": "wght"
+        }
+      ],
+      "category": "sans-serif",
+      "family": "Clarity City",
+      "files": {
+        "italic": "https://fonts.gstatic.com/s/claritycity/v3/DdT_798JtW81ZAlzEm0KSqPfYpP7b-639v9i.ttf",
+        "regular": "https://fonts.gstatic.com/s/claritycity/v3/DdTh798JtW81ZAlzEm0KSqPvYJn_Teun9g.ttf"
+      },
+      "kind": "webfonts#webfont",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/claritycity/v3/DdT0798JtW81ZAlzEm0KSqP1a7sPlXcE8PJjH9P3o9rMKw.ttf",
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variants": [
+        "regular",
+        "italic"
+      ],
+      "version": "v3"
     },
     {
       "category": "handwriting",
@@ -10389,11 +10421,11 @@
       "category": "sans-serif",
       "family": "DotGothic16",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/dotgothic16/v21/v6-QGYjBJFKgyw5nSoDAGE7L435YPFrT.ttf"
+        "regular": "https://fonts.gstatic.com/s/dotgothic16/v22/v6-QGYjBJFKgyw5nSoDAGE7L435YPFrT.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/dotgothic16/v21/v6-QGYjBJFKgyw5nSoDAGH7K6Xo.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/dotgothic16/v22/v6-QGYjBJFKgyw5nSoDAGH7K6Xo.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -10403,7 +10435,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v21"
+      "version": "v22"
     },
     {
       "axes": [
@@ -14230,12 +14262,12 @@
       "category": "sans-serif",
       "family": "Google Sans",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/googlesans/v70/4UaErENHsxJlGDuGo1OIlL3LwpteLwtHJlc.ttf",
-        "regular": "https://fonts.gstatic.com/s/googlesans/v70/4UaGrENHsxJlGDuGo1OIlI3JyJ98KhtH.ttf"
+        "italic": "https://fonts.gstatic.com/s/googlesans/v71/4UaErENHsxJlGDuGo1OIlL3LwpteLwtHJlc.ttf",
+        "regular": "https://fonts.gstatic.com/s/googlesans/v71/4UaGrENHsxJlGDuGo1OIlI3JyJ98KhtH.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-07-23",
-      "menu": "https://fonts.gstatic.com/s/googlesans/v70/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJljpyw.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/googlesans/v71/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrwEIJljpyw.ttf",
       "subsets": [
         "armenian",
         "bengali",
@@ -14267,7 +14299,7 @@
         "regular",
         "italic"
       ],
-      "version": "v70"
+      "version": "v71"
     },
     {
       "axes": [
@@ -14285,12 +14317,12 @@
       "category": "monospace",
       "family": "Google Sans Code",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/googlesanscode/v17/pxiZyogzv91QhV44Z_GQBHsGf5PuWEtkqkSsrvNXiA.ttf",
-        "regular": "https://fonts.gstatic.com/s/googlesanscode/v17/pxifyogzv91QhV44Z_GQBHsGf5PuaElurmapvvM.ttf"
+        "italic": "https://fonts.gstatic.com/s/googlesanscode/v22/pxiZyogzv91QhV44Z_GQBHsGf5PuWEtkqkSsrvNXiA.ttf",
+        "regular": "https://fonts.gstatic.com/s/googlesanscode/v22/pxifyogzv91QhV44Z_GQBHsGf5PuaElurmapvvM.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-04-14",
-      "menu": "https://fonts.gstatic.com/s/googlesanscode/v17/pxihyogzv91QhV44Z_GQBHsGf5PuckJMZfIVTPZaiXEp_ht12EVEHsN1sCQNcmTlsgkn.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/googlesanscode/v22/pxihyogzv91QhV44Z_GQBHsGf5PuckJMZfIVTPZaiXEp_ht12EVEHsN1sCQNcmTlsgkn.ttf",
       "subsets": [
         "adlam",
         "canadian-aboriginal",
@@ -14308,7 +14340,7 @@
         "regular",
         "italic"
       ],
-      "version": "v17"
+      "version": "v22"
     },
     {
       "axes": [
@@ -14346,11 +14378,11 @@
       "category": "sans-serif",
       "family": "Google Sans Flex",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/googlesansflex/v22/t5t7IQcYNIWbFgDgAAzZ34auoVyXipusfhcat2c.ttf"
+        "regular": "https://fonts.gstatic.com/s/googlesansflex/v23/t5t7IQcYNIWbFgDgAAzZ34auoVyXipusfhcat2c.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-07-30",
-      "menu": "https://fonts.gstatic.com/s/googlesansflex/v22/t5sJIQcYNIWbFgDgAAzZ34auoVyXkJCOvp3SFWJbN5hF8Ju1x6sKCyp0l9sI40swNJwInycYAJzz0m7kJ4qFQOJBOjLvDSndo0SKMpKSTzwliVdHAy4bxTDHg_ugnAakp8ub-cpgVw.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/googlesansflex/v23/t5sJIQcYNIWbFgDgAAzZ34auoVyXkJCOvp3SFWJbN5hF8Ju1x6sKCyp0l9sI40swNJwInycYAJzz0m7kJ4qFQOJBOjLvDSndo0SKMpKSTzwliVdHAy4bxTDHg_ugnAakp8ub-cpgVw.ttf",
       "subsets": [
         "canadian-aboriginal",
         "cherokee",
@@ -14366,7 +14398,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v22"
+      "version": "v23"
     },
     {
       "category": "display",
@@ -15235,11 +15267,11 @@
       "category": "sans-serif",
       "family": "Hedvig Letters Sans",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/hedvigletterssans/v2/CHy_V_PfGVjobSBkihHWDT98RVp37w8jQJ1N3Twgi1w.ttf"
+        "regular": "https://fonts.gstatic.com/s/hedvigletterssans/v5/CHy_V_PfGVjobSBkihHWDT98RVp37w8jQJ1N3Twgi1w.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-05-30",
-      "menu": "https://fonts.gstatic.com/s/hedvigletterssans/v2/CHy_V_PfGVjobSBkihHWDT98RVp37w8jcJxH2Q.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/hedvigletterssans/v5/CHy_V_PfGVjobSBkihHWDT98RVp37w8jcJxH2Q.ttf",
       "subsets": [
         "latin",
         "latin-ext",
@@ -15249,7 +15281,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v2"
+      "version": "v5"
     },
     {
       "axes": [
@@ -15262,11 +15294,11 @@
       "category": "serif",
       "family": "Hedvig Letters Serif",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/hedviglettersserif/v4/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDk_3iBYVfsc4.ttf"
+        "regular": "https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5cuN2I2mekHmyoU1Kj2AXOd5_7v7gIDk_3iBYVfsc4.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/hedviglettersserif/v4/OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApfr3Y.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/hedviglettersserif/v7/OD5puN2I2mekHmyoU1Kj2AXOd5_7v7gIDlX8quj7viQ_N1HixEApfr3Y.ttf",
       "subsets": [
         "latin",
         "latin-ext",
@@ -15276,7 +15308,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v4"
+      "version": "v7"
     },
     {
       "axes": [
@@ -15758,11 +15790,11 @@
       "category": "sans-serif",
       "family": "Huninn",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/huninn/v8/OpNNnoINg9bQ4xkpjiHQjittXw.ttf"
+        "regular": "https://fonts.gstatic.com/s/huninn/v9/OpNNnoINg9bQ4xkpjiHQjittXw.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/huninn/v8/OpNNnoINg9bQ4xkZjyvU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/huninn/v9/OpNNnoINg9bQ4xkZjyvU.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -15773,7 +15805,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v8"
+      "version": "v9"
     },
     {
       "category": "handwriting",
@@ -16023,17 +16055,17 @@
       "category": "sans-serif",
       "family": "IBM Plex Sans JP",
       "files": {
-        "100": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XLDn9KbTDf6_f7dISNqYf_tvPT7E7yjPB7twdmHQ.ttf",
-        "200": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7OLTrNpVuw5_BAM.ttf",
-        "300": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7IbQrNpVuw5_BAM.ttf",
-        "500": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7N7RrNpVuw5_BAM.ttf",
-        "600": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7PLWrNpVuw5_BAM.ttf",
-        "700": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7JbXrNpVuw5_BAM.ttf",
-        "regular": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XNDn9KbTDf6_f7dISNqYf_tvPT1Cr4iNJ-pwc.ttf"
+        "100": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XLDn9KbTDf6_f7dISNqYf_tvPT7E7yjPB7twdmHQ.ttf",
+        "200": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7OLTrNpVuw5_BAM.ttf",
+        "300": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7IbQrNpVuw5_BAM.ttf",
+        "500": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7N7RrNpVuw5_BAM.ttf",
+        "600": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7PLWrNpVuw5_BAM.ttf",
+        "700": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XKDn9KbTDf6_f7dISNqYf_tvPT7JbXrNpVuw5_BAM.ttf",
+        "regular": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XNDn9KbTDf6_f7dISNqYf_tvPT1Cr4iNJ-pwc.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/ibmplexsansjp/v7/Z9XNDn9KbTDf6_f7dISNqYf_tvPT5CvyjA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/ibmplexsansjp/v8/Z9XNDn9KbTDf6_f7dISNqYf_tvPT5CvyjA.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -16049,7 +16081,7 @@
         "600",
         "700"
       ],
-      "version": "v7"
+      "version": "v8"
     },
     {
       "category": "sans-serif",
@@ -16377,11 +16409,11 @@
       "category": "handwriting",
       "family": "Iansui",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/iansui/v13/w8gbH2UoTuUp5bOajSGD1FcXoQ.ttf"
+        "regular": "https://fonts.gstatic.com/s/iansui/v14/w8gbH2UoTuUp5bOajSGD1FcXoQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/iansui/v13/w8gbH2UoTuUp5bOqjCuH.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/iansui/v14/w8gbH2UoTuUp5bOqjCuH.ttf",
       "subsets": [
         "chinese-traditional",
         "latin",
@@ -16391,7 +16423,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v13"
+      "version": "v14"
     },
     {
       "axes": [
@@ -17053,6 +17085,24 @@
         "regular"
       ],
       "version": "v8"
+    },
+    {
+      "category": "serif",
+      "family": "Isometra",
+      "files": {
+        "regular": "https://fonts.gstatic.com/s/isometra/v3/Gg82N5ofdAjvCxbehmYbnA8DLXpe.ttf"
+      },
+      "kind": "webfonts#webfont",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/isometra/v3/Gg82N5ofdAjvCxbehlYalgs.ttf",
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variants": [
+        "regular"
+      ],
+      "version": "v3"
     },
     {
       "category": "sans-serif",
@@ -18019,13 +18069,13 @@
       "category": "serif",
       "family": "Kaisei Decol",
       "files": {
-        "500": "https://fonts.gstatic.com/s/kaiseidecol/v11/bMrvmSqP45sidWf3QmfFW6iKr3gr00i_qb57kA.ttf",
-        "700": "https://fonts.gstatic.com/s/kaiseidecol/v11/bMrvmSqP45sidWf3QmfFW6iK534r00i_qb57kA.ttf",
-        "regular": "https://fonts.gstatic.com/s/kaiseidecol/v11/bMrwmSqP45sidWf3QmfFW6iyW1EP22OjoA.ttf"
+        "500": "https://fonts.gstatic.com/s/kaiseidecol/v12/bMrvmSqP45sidWf3QmfFW6iKr3gr00i_qb57kA.ttf",
+        "700": "https://fonts.gstatic.com/s/kaiseidecol/v12/bMrvmSqP45sidWf3QmfFW6iK534r00i_qb57kA.ttf",
+        "regular": "https://fonts.gstatic.com/s/kaiseidecol/v12/bMrwmSqP45sidWf3QmfFW6iyW1EP22OjoA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/kaiseidecol/v11/bMrwmSqP45sidWf3QmfFW6iCWlsL.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kaiseidecol/v12/bMrwmSqP45sidWf3QmfFW6iCWlsL.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -18037,19 +18087,19 @@
         "500",
         "700"
       ],
-      "version": "v11"
+      "version": "v12"
     },
     {
       "category": "serif",
       "family": "Kaisei HarunoUmi",
       "files": {
-        "500": "https://fonts.gstatic.com/s/kaiseiharunoumi/v11/HI_WiZQSLqBQoAHhK_C6N_nzy_jcIj_QlMcFwmC9FAU.ttf",
-        "700": "https://fonts.gstatic.com/s/kaiseiharunoumi/v11/HI_WiZQSLqBQoAHhK_C6N_nzy_jcInfWlMcFwmC9FAU.ttf",
-        "regular": "https://fonts.gstatic.com/s/kaiseiharunoumi/v11/HI_RiZQSLqBQoAHhK_C6N_nzy_jcGsv5sM8u3mk.ttf"
+        "500": "https://fonts.gstatic.com/s/kaiseiharunoumi/v12/HI_WiZQSLqBQoAHhK_C6N_nzy_jcIj_QlMcFwmC9FAU.ttf",
+        "700": "https://fonts.gstatic.com/s/kaiseiharunoumi/v12/HI_WiZQSLqBQoAHhK_C6N_nzy_jcInfWlMcFwmC9FAU.ttf",
+        "regular": "https://fonts.gstatic.com/s/kaiseiharunoumi/v12/HI_RiZQSLqBQoAHhK_C6N_nzy_jcGsv5sM8u3mk.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/kaiseiharunoumi/v11/HI_RiZQSLqBQoAHhK_C6N_nzy_jcKsrztA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kaiseiharunoumi/v12/HI_RiZQSLqBQoAHhK_C6N_nzy_jcKsrztA.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -18061,19 +18111,19 @@
         "500",
         "700"
       ],
-      "version": "v11"
+      "version": "v12"
     },
     {
       "category": "serif",
       "family": "Kaisei Opti",
       "files": {
-        "500": "https://fonts.gstatic.com/s/kaiseiopti/v11/QldXNThJphYb8_g6c2nlIGGqxY1u7f34DYwn.ttf",
-        "700": "https://fonts.gstatic.com/s/kaiseiopti/v11/QldXNThJphYb8_g6c2nlIGHiw41u7f34DYwn.ttf",
-        "regular": "https://fonts.gstatic.com/s/kaiseiopti/v11/QldKNThJphYb8_g6c2nlIFle7KlmxuHx.ttf"
+        "500": "https://fonts.gstatic.com/s/kaiseiopti/v12/QldXNThJphYb8_g6c2nlIGGqxY1u7f34DYwn.ttf",
+        "700": "https://fonts.gstatic.com/s/kaiseiopti/v12/QldXNThJphYb8_g6c2nlIGHiw41u7f34DYwn.ttf",
+        "regular": "https://fonts.gstatic.com/s/kaiseiopti/v12/QldKNThJphYb8_g6c2nlIFle7KlmxuHx.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/kaiseiopti/v11/QldKNThJphYb8_g6c2nlIGlf5q0.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kaiseiopti/v12/QldKNThJphYb8_g6c2nlIGlf5q0.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -18085,20 +18135,20 @@
         "500",
         "700"
       ],
-      "version": "v11"
+      "version": "v12"
     },
     {
       "category": "serif",
       "family": "Kaisei Tokumin",
       "files": {
-        "500": "https://fonts.gstatic.com/s/kaiseitokumin/v11/Gg8vN5wdZg7xCwuMsylww2ZiQnqr_3khpMIzeI6v.ttf",
-        "700": "https://fonts.gstatic.com/s/kaiseitokumin/v11/Gg8vN5wdZg7xCwuMsylww2ZiQnrj-XkhpMIzeI6v.ttf",
-        "800": "https://fonts.gstatic.com/s/kaiseitokumin/v11/Gg8vN5wdZg7xCwuMsylww2ZiQnr_-nkhpMIzeI6v.ttf",
-        "regular": "https://fonts.gstatic.com/s/kaiseitokumin/v11/Gg8sN5wdZg7xCwuMsylww2ZiQkJf1l0pj946.ttf"
+        "500": "https://fonts.gstatic.com/s/kaiseitokumin/v12/Gg8vN5wdZg7xCwuMsylww2ZiQnqr_3khpMIzeI6v.ttf",
+        "700": "https://fonts.gstatic.com/s/kaiseitokumin/v12/Gg8vN5wdZg7xCwuMsylww2ZiQnrj-XkhpMIzeI6v.ttf",
+        "800": "https://fonts.gstatic.com/s/kaiseitokumin/v12/Gg8vN5wdZg7xCwuMsylww2ZiQnr_-nkhpMIzeI6v.ttf",
+        "regular": "https://fonts.gstatic.com/s/kaiseitokumin/v12/Gg8sN5wdZg7xCwuMsylww2ZiQkJf1l0pj946.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/kaiseitokumin/v11/Gg8sN5wdZg7xCwuMsylww2ZiQnJe3Fk.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kaiseitokumin/v12/Gg8sN5wdZg7xCwuMsylww2ZiQnJe3Fk.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -18111,7 +18161,7 @@
         "700",
         "800"
       ],
-      "version": "v11"
+      "version": "v12"
     },
     {
       "category": "handwriting",
@@ -18802,13 +18852,13 @@
       "category": "serif",
       "family": "Kiwi Maru",
       "files": {
-        "300": "https://fonts.gstatic.com/s/kiwimaru/v20/R70djykGkuuDep-hRg6gNCi0Vxn9R5ShnA.ttf",
-        "500": "https://fonts.gstatic.com/s/kiwimaru/v20/R70djykGkuuDep-hRg6gbCm0Vxn9R5ShnA.ttf",
-        "regular": "https://fonts.gstatic.com/s/kiwimaru/v20/R70YjykGkuuDep-hRg6YmACQXzLhTg.ttf"
+        "300": "https://fonts.gstatic.com/s/kiwimaru/v21/R70djykGkuuDep-hRg6gNCi0Vxn9R5ShnA.ttf",
+        "500": "https://fonts.gstatic.com/s/kiwimaru/v21/R70djykGkuuDep-hRg6gbCm0Vxn9R5ShnA.ttf",
+        "regular": "https://fonts.gstatic.com/s/kiwimaru/v21/R70YjykGkuuDep-hRg6YmACQXzLhTg.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/kiwimaru/v20/R70YjykGkuuDep-hRg6omQqU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kiwimaru/v21/R70YjykGkuuDep-hRg6omQqU.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -18820,18 +18870,18 @@
         "regular",
         "500"
       ],
-      "version": "v20"
+      "version": "v21"
     },
     {
       "category": "handwriting",
       "family": "Klee One",
       "files": {
-        "600": "https://fonts.gstatic.com/s/kleeone/v13/LDI2apCLNRc6A8oT4pbYF8Osc-bGkqIw.ttf",
-        "regular": "https://fonts.gstatic.com/s/kleeone/v13/LDIxapCLNRc6A8oT4q4AOeekWPrP.ttf"
+        "600": "https://fonts.gstatic.com/s/kleeone/v14/LDI2apCLNRc6A8oT4pbYF8Osc-bGkqIw.ttf",
+        "regular": "https://fonts.gstatic.com/s/kleeone/v14/LDIxapCLNRc6A8oT4q4AOeekWPrP.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-08",
-      "menu": "https://fonts.gstatic.com/s/kleeone/v13/LDIxapCLNRc6A8oT4p4BM-M.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kleeone/v14/LDIxapCLNRc6A8oT4p4BM-M.ttf",
       "subsets": [
         "cyrillic",
         "greek-ext",
@@ -18843,7 +18893,7 @@
         "regular",
         "600"
       ],
-      "version": "v13"
+      "version": "v14"
     },
     {
       "category": "display",
@@ -19155,6 +19205,33 @@
       "version": "v40"
     },
     {
+      "axes": [
+        {
+          "end": 900,
+          "start": 100,
+          "tag": "wght"
+        }
+      ],
+      "category": "sans-serif",
+      "family": "Kripa",
+      "files": {
+        "regular": "https://fonts.gstatic.com/s/kripa/v3/UMBcrPhJt2KyywhS4qw3ezL8.ttf"
+      },
+      "kind": "webfonts#webfont",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/kripa/v3/UMBPrPhJt2KyyxJZwFzv55H6E7s4IFRqIvoz.ttf",
+      "subsets": [
+        "devanagari",
+        "latin",
+        "latin-ext",
+        "vietnamese"
+      ],
+      "variants": [
+        "regular"
+      ],
+      "version": "v3"
+    },
+    {
       "category": "handwriting",
       "family": "Kristi",
       "files": {
@@ -19391,14 +19468,14 @@
       "category": "sans-serif",
       "family": "LINE Seed JP",
       "files": {
-        "100": "https://fonts.gstatic.com/s/lineseedjp/v5/MwQvbh7r89it6QsEXfZb-jMn6ZFOh361TW5b.ttf",
-        "700": "https://fonts.gstatic.com/s/lineseedjp/v5/MwQubh7r89it6QsEXfZb-jMnMbRurVC5RHdCZg.ttf",
-        "800": "https://fonts.gstatic.com/s/lineseedjp/v5/MwQubh7r89it6QsEXfZb-jMnLbdurVC5RHdCZg.ttf",
-        "regular": "https://fonts.gstatic.com/s/lineseedjp/v5/MwQxbh7r89it6QsEXfZb-jMfjZtKpXulTQ.ttf"
+        "100": "https://fonts.gstatic.com/s/lineseedjp/v6/MwQvbh7r89it6QsEXfZb-jMn6ZFOh361TW5b.ttf",
+        "700": "https://fonts.gstatic.com/s/lineseedjp/v6/MwQubh7r89it6QsEXfZb-jMnMbRurVC5RHdCZg.ttf",
+        "800": "https://fonts.gstatic.com/s/lineseedjp/v6/MwQubh7r89it6QsEXfZb-jMnLbdurVC5RHdCZg.ttf",
+        "regular": "https://fonts.gstatic.com/s/lineseedjp/v6/MwQxbh7r89it6QsEXfZb-jMfjZtKpXulTQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-25",
-      "menu": "https://fonts.gstatic.com/s/lineseedjp/v5/MwQxbh7r89it6QsEXfZb-jMvjJFO.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/lineseedjp/v6/MwQxbh7r89it6QsEXfZb-jMvjJFO.ttf",
       "subsets": [
         "cyrillic",
         "greek-ext",
@@ -19412,17 +19489,17 @@
         "700",
         "800"
       ],
-      "version": "v5"
+      "version": "v6"
     },
     {
       "category": "sans-serif",
       "family": "LXGW Marker Gothic",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/lxgwmarkergothic/v3/Gg8oN4AaXyDVTi_NlS1-xCtMQxY3lToBjuw_cZe26Q.ttf"
+        "regular": "https://fonts.gstatic.com/s/lxgwmarkergothic/v4/Gg8oN4AaXyDVTi_NlS1-xCtMQxY3lToBjuw_cZe26Q.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/lxgwmarkergothic/v3/Gg8oN4AaXyDVTi_NlS1-xCtMQxY3lToxj-Y7.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/lxgwmarkergothic/v4/Gg8oN4AaXyDVTi_NlS1-xCtMQxY3lToxj-Y7.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -19436,19 +19513,19 @@
       "variants": [
         "regular"
       ],
-      "version": "v3"
+      "version": "v4"
     },
     {
       "category": "monospace",
       "family": "LXGW WenKai Mono TC",
       "files": {
-        "300": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v10/pxiVyos4iPVgyWx9WtufHnsIf5nkaB0HssKqhvJljXmo2SA.ttf",
-        "700": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v10/pxiVyos4iPVgyWx9WtufHnsIf5nkaB0HstKthvJljXmo2SA.ttf",
-        "regular": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v10/pxiYyos4iPVgyWx9WtufHnsIf5nkaB0Him6CovpOkXA.ttf"
+        "300": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v11/pxiVyos4iPVgyWx9WtufHnsIf5nkaB0HssKqhvJljXmo2SA.ttf",
+        "700": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v11/pxiVyos4iPVgyWx9WtufHnsIf5nkaB0HstKthvJljXmo2SA.ttf",
+        "regular": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v11/pxiYyos4iPVgyWx9WtufHnsIf5nkaB0Him6CovpOkXA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v10/pxiYyos4iPVgyWx9WtufHnsIf5nkaB0Hum-Ipg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/lxgwwenkaimonotc/v11/pxiYyos4iPVgyWx9WtufHnsIf5nkaB0Hum-Ipg.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -19465,19 +19542,19 @@
         "regular",
         "700"
       ],
-      "version": "v10"
+      "version": "v11"
     },
     {
       "category": "handwriting",
       "family": "LXGW WenKai TC",
       "files": {
-        "300": "https://fonts.gstatic.com/s/lxgwwenkaitc/v10/w8gAH20td8wNsI3f40DmtXZb4_MmBfkpTClICyan.ttf",
-        "700": "https://fonts.gstatic.com/s/lxgwwenkaitc/v10/w8gAH20td8wNsI3f40DmtXZb4_M2AvkpTClICyan.ttf",
-        "regular": "https://fonts.gstatic.com/s/lxgwwenkaitc/v10/w8gDH20td8wNsI3f40DmtXZb48uKLd0hZzVB.ttf"
+        "300": "https://fonts.gstatic.com/s/lxgwwenkaitc/v11/w8gAH20td8wNsI3f40DmtXZb4_MmBfkpTClICyan.ttf",
+        "700": "https://fonts.gstatic.com/s/lxgwwenkaitc/v11/w8gAH20td8wNsI3f40DmtXZb4_M2AvkpTClICyan.ttf",
+        "regular": "https://fonts.gstatic.com/s/lxgwwenkaitc/v11/w8gDH20td8wNsI3f40DmtXZb48uKLd0hZzVB.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/lxgwwenkaitc/v10/w8gDH20td8wNsI3f40DmtXZb4_uLJ9k.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/lxgwwenkaitc/v11/w8gDH20td8wNsI3f40DmtXZb4_uLJ9k.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -19494,7 +19571,7 @@
         "regular",
         "700"
       ],
-      "version": "v10"
+      "version": "v11"
     },
     {
       "category": "handwriting",
@@ -20439,6 +20516,33 @@
       "version": "v9"
     },
     {
+      "axes": [
+        {
+          "end": 700,
+          "start": 400,
+          "tag": "wght"
+        }
+      ],
+      "category": "serif",
+      "family": "Libre Caslon Condensed",
+      "files": {
+        "italic": "https://fonts.gstatic.com/s/librecasloncondensed/v3/flUrRrasxYEyVwtcWIsbLunUPow3bHNaxvyEX60qYEyDBQWJ7Q.ttf",
+        "regular": "https://fonts.gstatic.com/s/librecasloncondensed/v3/flUpRrasxYEyVwtcWIsbLunUPow3bHNaxvyEb68gZG6GFQU.ttf"
+      },
+      "kind": "webfonts#webfont",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/librecasloncondensed/v3/flUURrasxYEyVwtcWIsbLunUPow3bHNaxvyEdaQClLYatgOE7C0S4xupgMg.ttf",
+      "subsets": [
+        "latin",
+        "latin-ext"
+      ],
+      "variants": [
+        "regular",
+        "italic"
+      ],
+      "version": "v3"
+    },
+    {
       "category": "serif",
       "family": "Libre Caslon Display",
       "files": {
@@ -20671,18 +20775,18 @@
       "category": "display",
       "family": "Linefont",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/linefont/v10/dg4m_pzpoqcLKUIzVetHpbglShon.ttf"
+        "regular": "https://fonts.gstatic.com/s/linefont/v11/dg4m_pzpoqcLKUIzVetHpbglShon.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-17",
-      "menu": "https://fonts.gstatic.com/s/linefont/v10/dg4I_pzpoqcLKUIzVfFMh1TF2rkhli25jn7CKTTWSumsFuSnY4UMXu_nnQ.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/linefont/v11/dg4I_pzpoqcLKUIzVfFMh1TF2rkhli25jn7CKTTWSumsFuSnY4UMXu_nnQ.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v10"
+      "version": "v11"
     },
     {
       "category": "serif",
@@ -21263,11 +21367,11 @@
       "category": "sans-serif",
       "family": "M PLUS 1",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/mplus1/v16/R70ZjygA28ymD4HgBVu4si6cViv4.ttf"
+        "regular": "https://fonts.gstatic.com/s/mplus1/v17/R70ZjygA28ymD4HgBVu4si6cViv4.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-05-13",
-      "menu": "https://fonts.gstatic.com/s/mplus1/v16/R70EjygA28ymD4HgBUGzkN5Eyoj-WpW5VSaL83xY.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/mplus1/v17/R70EjygA28ymD4HgBUGzkN5Eyoj-WpW5VSaL83xY.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -21277,7 +21381,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v16"
+      "version": "v17"
     },
     {
       "axes": [
@@ -21290,11 +21394,11 @@
       "category": "monospace",
       "family": "M PLUS 1 Code",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/mplus1code/v17/ypvfbXOOx2xFpzmYJS3N2_J2nhhYtUb0gZk.ttf"
+        "regular": "https://fonts.gstatic.com/s/mplus1code/v18/ypvfbXOOx2xFpzmYJS3N2_J2nhhYtUb0gZk.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-05-13",
-      "menu": "https://fonts.gstatic.com/s/mplus1code/v17/ypvMbXOOx2xFpzmYJS3N2_J2hBN6RZ5oIp8m_7iN0EHoYJg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/mplus1code/v18/ypvMbXOOx2xFpzmYJS3N2_J2hBN6RZ5oIp8m_7iN0EHoYJg.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -21304,7 +21408,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v17"
+      "version": "v18"
     },
     {
       "category": "sans-serif",
@@ -21354,11 +21458,11 @@
       "category": "sans-serif",
       "family": "M PLUS 2",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/mplus2/v16/7Au8p_Eq3gO_OGbGGgLW4EAFOUEH.ttf"
+        "regular": "https://fonts.gstatic.com/s/mplus2/v17/7Au8p_Eq3gO_OGbGGgLW4EAFOUEH.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-05-13",
-      "menu": "https://fonts.gstatic.com/s/mplus2/v16/7Auhp_Eq3gO_OGbGGhjdwrDdpeIBxlkwOa6lx1CD.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/mplus2/v17/7Auhp_Eq3gO_OGbGGhjdwrDdpeIBxlkwOa6lx1CD.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -21368,7 +21472,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v16"
+      "version": "v17"
     },
     {
       "axes": [
@@ -21449,11 +21553,11 @@
       "category": "sans-serif",
       "family": "M PLUS U",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/mplusu/v1/-W_9XJfyAgH86Tq6MtoYREcjeo0k.ttf"
+        "regular": "https://fonts.gstatic.com/s/mplusu/v2/-W_9XJfyAgH86Tq6MtoYREcjeo0k.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-05-13",
-      "menu": "https://fonts.gstatic.com/s/mplusu/v1/-W_gXJfyAgH86Tq6MsATZrf75i4iYyIxKkcOqx8K.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/mplusu/v2/-W_gXJfyAgH86Tq6MsATZrf75i4iYyIxKkcOqx8K.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -21464,7 +21568,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v1"
+      "version": "v2"
     },
     {
       "category": "handwriting",
@@ -22367,18 +22471,18 @@
       "category": "monospace",
       "family": "Material Symbols",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/materialsymbols/v95/d6lTkb-sS9m3-i1LgQNcsFOOuLQXpmVbPS7ihsk.ttf"
+        "regular": "https://fonts.gstatic.com/s/materialsymbols/v102/d6lTkb-sS9m3-i1LgQNcsFOOuLQXpmVbPS7ihsk.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-25",
-      "menu": "https://fonts.gstatic.com/s/materialsymbols/v95/d6kSkb-sS9m3-i1LgQNcsFOOuLQXvG559b5GLMxCWRtThFK5gn7xw7XblIl2peTfMb7ONaa2_wzcUHR1Ukiw2RYw2vadH3BFk0G4701x-cU0BaNVXEDeRLPz.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/materialsymbols/v102/d6kSkb-sS9m3-i1LgQNcsFOOuLQXvG559b5GLMxCWRtThFK5gn7xw7XblIl2peTfMb7ONaa2_wzcUHR1Ukiw2RYw2vadH3BFk0G4701x-cU0BaNVXEDeRLPz.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v95"
+      "version": "v102"
     },
     {
       "axes": [
@@ -22406,18 +22510,18 @@
       "category": "monospace",
       "family": "Material Symbols Outlined",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v368/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsfjAOVZBgs.ttf"
+        "regular": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v375/kJEhBvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oFsfjAOVZBgs.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-25",
-      "menu": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v368/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHNenZ9o.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/materialsymbolsoutlined/v375/kJF1BvYX7BgnkSrUwT8OhrdQw4oELdPIeeII9v6oDMzByHX9rA6RzaxHMPdY43zj-jCxv3fzvRNU22ZXGJpEpjC_1v-p_4MrImHCIJIZrDCvHNenZ9o.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v368"
+      "version": "v375"
     },
     {
       "axes": [
@@ -22445,18 +22549,18 @@
       "category": "monospace",
       "family": "Material Symbols Rounded",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/materialsymbolsrounded/v369/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzb6kLCeA_PQ.ttf"
+        "regular": "https://fonts.gstatic.com/s/materialsymbolsrounded/v376/sykg-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190Fjzb6kLCeA_PQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-25",
-      "menu": "https://fonts.gstatic.com/s/materialsymbolsrounded/v369/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOcbTCVpeRL2w5rwZu2rIelbxODLA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/materialsymbolsrounded/v376/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOcbTCVpeRL2w5rwZu2rIelbxODLA.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v369"
+      "version": "v376"
     },
     {
       "axes": [
@@ -22484,18 +22588,18 @@
       "category": "monospace",
       "family": "Material Symbols Sharp",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/materialsymbolssharp/v365/gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWTSTGlMyd8.ttf"
+        "regular": "https://fonts.gstatic.com/s/materialsymbolssharp/v372/gNMVW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4aWTSTGlMyd8.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-25",
-      "menu": "https://fonts.gstatic.com/s/materialsymbolssharp/v365/gNNBW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4c2_whPnoY9ruReaU4bHmz74m0ZkGH-VBYe1x0TV6x4yFH8F-H5OdzEL3sVTgJtfbYxOLogCPLVU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/materialsymbolssharp/v372/gNNBW2J8Roq16WD5tFNRaeLQk6-SHQ_R00k4c2_whPnoY9ruReaU4bHmz74m0ZkGH-VBYe1x0TV6x4yFH8F-H5OdzEL3sVTgJtfbYxOLogCPLVU.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v365"
+      "version": "v372"
     },
     {
       "axes": [
@@ -25066,18 +25170,18 @@
       ],
       "family": "Noto Color Emoji",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notocoloremoji/v40/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFab5s79iz64w.ttf"
+        "regular": "https://fonts.gstatic.com/s/notocoloremoji/v47/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFab5s79iz64w.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-08-10",
-      "menu": "https://fonts.gstatic.com/s/notocoloremoji/v40/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFWb9m6w.ttf",
+      "lastModified": "2026-09-16",
+      "menu": "https://fonts.gstatic.com/s/notocoloremoji/v47/Yq6P-KqIXTD0t4D9z1ESnKM3-HpFWb9m6w.ttf",
       "subsets": [
         "emoji"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v40"
+      "version": "v47"
     },
     {
       "axes": [
@@ -25090,18 +25194,18 @@
       "category": "sans-serif",
       "family": "Noto Emoji",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoemoji/v62/bMrymSyK7YY-MEu6aWjPFMS4X3MKy2M.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoemoji/v65/bMrymSyK7YY-MEu6aWjPFMS4X3MKy2M.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-11-26",
-      "menu": "https://fonts.gstatic.com/s/notoemoji/v62/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0gwuQeU.ttf",
+      "lastModified": "2026-09-17",
+      "menu": "https://fonts.gstatic.com/s/notoemoji/v65/bMrnmSyK7YY-MEu6aWjPDs-ar6uWaGWuob-r0gwuQeU.ttf",
       "subsets": [
         "emoji"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v62"
+      "version": "v65"
     },
     {
       "axes": [
@@ -26255,11 +26359,11 @@
       "category": "sans-serif",
       "family": "Noto Sans HK",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notosanshk/v35/nKKQ-GM_FYFRJvXzVXaAPe9hNHB3Eu7mOQ.ttf"
+        "regular": "https://fonts.gstatic.com/s/notosanshk/v36/nKKQ-GM_FYFRJvXzVXaAPe9hNHB3Eu7mOQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notosanshk/v35/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoSZjQ.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notosanshk/v36/nKKF-GM_FYFRJvXzVXaAPe97P1KHynJFP716qHB-yoSZjQ.ttf",
       "subsets": [
         "chinese-hongkong",
         "cyrillic",
@@ -26270,7 +26374,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v35"
+      "version": "v36"
     },
     {
       "axes": [
@@ -26456,11 +26560,11 @@
       "category": "sans-serif",
       "family": "Noto Sans JP",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notosansjp/v56/-F62fjtqLzI2JPCgQBnw7HFoxgIO2lZ9hg.ttf"
+        "regular": "https://fonts.gstatic.com/s/notosansjp/v57/-F62fjtqLzI2JPCgQBnw7HFoxgIO2lZ9hg.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notosansjp/v56/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35rS1g.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notosansjp/v57/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFBEj35rS1g.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -26471,7 +26575,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v56"
+      "version": "v57"
     },
     {
       "axes": [
@@ -26510,11 +26614,11 @@
       "category": "sans-serif",
       "family": "Noto Sans KR",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notosanskr/v39/PbykFmXiEBPT4ITbgNA5Cgm21nTs4JMMuA.ttf"
+        "regular": "https://fonts.gstatic.com/s/notosanskr/v40/PbykFmXiEBPT4ITbgNA5Cgm21nTs4JMMuA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notosanskr/v39/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLXg9A.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notosanskr/v40/PbyxFmXiEBPT4ITbgNA5Cgms3VYcOA-vvnIzzuoySLXg9A.ttf",
       "subsets": [
         "cyrillic",
         "korean",
@@ -26525,7 +26629,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v39"
+      "version": "v40"
     },
     {
       "category": "sans-serif",
@@ -27939,11 +28043,11 @@
       "category": "sans-serif",
       "family": "Noto Sans SC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notosanssc/v40/k3kXo84MPvpLmixcA63oeALhKYiJ-Q7m8w.ttf"
+        "regular": "https://fonts.gstatic.com/s/notosanssc/v41/k3kXo84MPvpLmixcA63oeALhKYiJ-Q7m8w.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notosanssc/v40/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrY1HaA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notosanssc/v41/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_FrY1HaA.ttf",
       "subsets": [
         "chinese-simplified",
         "cyrillic",
@@ -27954,7 +28058,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v40"
+      "version": "v41"
     },
     {
       "category": "sans-serif",
@@ -28366,11 +28470,11 @@
       "category": "sans-serif",
       "family": "Noto Sans TC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notosanstc/v39/-nF7OG829Oofr2wohFbTp9iFPysLA_ZJ1g.ttf"
+        "regular": "https://fonts.gstatic.com/s/notosanstc/v40/-nF7OG829Oofr2wohFbTp9iFPysLA_ZJ1g.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notosanstc/v39/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCtEsg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notosanstc/v40/-nFuOG829Oofr2wohFbTp9ifNAn722rq0MXz76CyzCtEsg.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -28381,7 +28485,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v39"
+      "version": "v40"
     },
     {
       "category": "sans-serif",
@@ -29267,11 +29371,11 @@
       "category": "serif",
       "family": "Noto Serif HK",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoserifhk/v12/BngOUXBETWXI6LwlBZGcqL-B5qCr5RCDY_k.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoserifhk/v13/BngOUXBETWXI6LwlBZGcqL-B5qCr5RCDY_k.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notoserifhk/v12/BngdUXBETWXI6LwlBZGcqL-B_KuJFcgfwP_9RMd-K1RnXdA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoserifhk/v13/BngdUXBETWXI6LwlBZGcqL-B_KuJFcgfwP_9RMd-K1RnXdA.ttf",
       "subsets": [
         "chinese-hongkong",
         "cyrillic",
@@ -29282,7 +29386,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v12"
+      "version": "v13"
     },
     {
       "axes": [
@@ -29352,11 +29456,11 @@
       "category": "serif",
       "family": "Noto Serif JP",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoserifjp/v33/xn7mYHs72GKoTvER4Gn3b5eMXN6kYkY0T84.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoserifjp/v34/xn7mYHs72GKoTvER4Gn3b5eMXN6kYkY0T84.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notoserifjp/v33/xn71YHs72GKoTvER4Gn3b5eMRtWGkp6o7MjQ2bwxOtbBKrc.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoserifjp/v34/xn71YHs72GKoTvER4Gn3b5eMRtWGkp6o7MjQ2bwxOtbBKrc.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -29367,7 +29471,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v33"
+      "version": "v34"
     },
     {
       "axes": [
@@ -29380,11 +29484,11 @@
       "category": "serif",
       "family": "Noto Serif KR",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoserifkr/v31/3Jn7SDn90Gmq2mr3blnHaTZXduBp1ONyKHQ.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoserifkr/v32/3Jn7SDn90Gmq2mr3blnHaTZXduBp1ONyKHQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notoserifkr/v31/3JnoSDn90Gmq2mr3blnHaTZXbOtLJDvui3JOncjmeP53658.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoserifkr/v32/3JnoSDn90Gmq2mr3blnHaTZXbOtLJDvui3JOncjmeP53658.ttf",
       "subsets": [
         "cyrillic",
         "korean",
@@ -29395,7 +29499,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v31"
+      "version": "v32"
     },
     {
       "axes": [
@@ -29708,11 +29812,11 @@
       "category": "serif",
       "family": "Noto Serif SC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoserifsc/v35/H4chBXePl9DZ0Xe7gG9cyOj7oqacbzhqDtg.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoserifsc/v36/H4chBXePl9DZ0Xe7gG9cyOj7oqacbzhqDtg.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/notoserifsc/v35/H4cyBXePl9DZ0Xe7gG9cyOj7uK2-n-D2rd4FY7SCqxWu-Yo.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoserifsc/v36/H4cyBXePl9DZ0Xe7gG9cyOj7uK2-n-D2rd4FY7SCqxWu-Yo.ttf",
       "subsets": [
         "chinese-simplified",
         "cyrillic",
@@ -29723,7 +29827,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v35"
+      "version": "v36"
     },
     {
       "axes": [
@@ -29767,11 +29871,11 @@
       "category": "serif",
       "family": "Noto Serif TC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoseriftc/v36/XLYgIZb5bJNDGYxLBibeHZ0BhncESXFtUsM.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoseriftc/v37/XLYgIZb5bJNDGYxLBibeHZ0BhncESXFtUsM.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/notoseriftc/v36/XLYzIZb5bJNDGYxLBibeHZ0BnHwmuanx8cUaGX9aMNpCM2I.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoseriftc/v37/XLYzIZb5bJNDGYxLBibeHZ0BnHwmuanx8cUaGX9aMNpCM2I.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -29782,7 +29886,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v36"
+      "version": "v37"
     },
     {
       "axes": [
@@ -29949,11 +30053,11 @@
       "category": "serif",
       "family": "Noto Serif Toto",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/notoseriftoto/v7/Ktk1ALSMeZjqPnXk1rCkHYHNtwv3F6mZVY9Y5w.ttf"
+        "regular": "https://fonts.gstatic.com/s/notoseriftoto/v10/Ktk1ALSMeZjqPnXk1rCkHYHNtwv3F6mZVY9Y5w.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/notoseriftoto/v7/Ktk6ALSMeZjqPnXk1rCkHYHNtwvtHItpjRP74dHhCy3Ip-ep4w.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/notoseriftoto/v10/Ktk6ALSMeZjqPnXk1rCkHYHNtwvtHItpjRP74dHhCy3Ip-ep4w.ttf",
       "subsets": [
         "latin",
         "latin-ext",
@@ -29962,7 +30066,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v7"
+      "version": "v10"
     },
     {
       "axes": [
@@ -35780,11 +35884,11 @@
       "category": "display",
       "family": "Rampart One",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/rampartone/v13/K2F1fZFGl_JSR1tAWNG9R6qgLS76ZHOM.ttf"
+        "regular": "https://fonts.gstatic.com/s/rampartone/v14/K2F1fZFGl_JSR1tAWNG9R6qgLS76ZHOM.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/rampartone/v13/K2F1fZFGl_JSR1tAWNG9R5qhJyo.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/rampartone/v14/K2F1fZFGl_JSR1tAWNG9R5qhJyo.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -35794,7 +35898,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v13"
+      "version": "v14"
     },
     {
       "category": "serif",
@@ -35881,12 +35985,12 @@
       "category": "serif",
       "family": "Rasa",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/rasa/v27/xn7hYHIn1mWmfqBUkiqVR9zEfQ.ttf",
-        "regular": "https://fonts.gstatic.com/s/rasa/v27/xn7vYHIn1mWmTqJelgiQV9w.ttf"
+        "italic": "https://fonts.gstatic.com/s/rasa/v28/xn7hYHIn1mWmfqBUkiqVR9zEfQ.ttf",
+        "regular": "https://fonts.gstatic.com/s/rasa/v28/xn7vYHIn1mWmTqJelgiQV9w.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/rasa/v27/xn76YHIn1mWmVKl8ZtAM9NrJfN5GJV40d88.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/rasa/v28/xn76YHIn1mWmVKl8ZtAM9NrJfN5GJV40d88.ttf",
       "subsets": [
         "gujarati",
         "latin",
@@ -35897,7 +36001,7 @@
         "regular",
         "italic"
       ],
-      "version": "v27"
+      "version": "v28"
     },
     {
       "category": "sans-serif",
@@ -36360,11 +36464,11 @@
       "category": "display",
       "family": "Reggae One",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/reggaeone/v19/7r3DqX5msMIkeuwJwOJt_a5L5uH-mts.ttf"
+        "regular": "https://fonts.gstatic.com/s/reggaeone/v20/7r3DqX5msMIkeuwJwOJt_a5L5uH-mts.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/reggaeone/v19/7r3DqX5msMIkeuwJwOJtza9B4g.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/reggaeone/v20/7r3DqX5msMIkeuwJwOJtza9B4g.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -36374,7 +36478,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v19"
+      "version": "v20"
     },
     {
       "axes": [
@@ -36853,11 +36957,11 @@
       "category": "sans-serif",
       "family": "RocknRoll One",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/rocknrollone/v16/kmK7ZqspGAfCeUiW6FFlmEC9guVhs7tfUxc.ttf"
+        "regular": "https://fonts.gstatic.com/s/rocknrollone/v17/kmK7ZqspGAfCeUiW6FFlmEC9guVhs7tfUxc.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/rocknrollone/v16/kmK7ZqspGAfCeUiW6FFlmEC9suRrtw.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/rocknrollone/v17/kmK7ZqspGAfCeUiW6FFlmEC9suRrtw.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -36866,7 +36970,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v16"
+      "version": "v17"
     },
     {
       "axes": [
@@ -40288,12 +40392,12 @@
       "category": "monospace",
       "family": "Source Code Pro",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/sourcecodepro/v31/HI_QiYsKILxRpg3hIP6sJ7fM7PqlOOvTnsMnx3C9.ttf",
-        "regular": "https://fonts.gstatic.com/s/sourcecodepro/v31/HI_SiYsKILxRpg3hIP6sJ7fM7PqVOuHXvMY3xw.ttf"
+        "italic": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_QiYsKILxRpg3hIP6sJ7fM7PqlOOvTnsMnx3C9.ttf",
+        "regular": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_SiYsKILxRpg3hIP6sJ7fM7PqVOuHXvMY3xw.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-08",
-      "menu": "https://fonts.gstatic.com/s/sourcecodepro/v31/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM9rSQ.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/sourcecodepro/v32/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtM9rSQ.ttf",
       "subsets": [
         "cyrillic",
         "cyrillic-ext",
@@ -40307,7 +40411,7 @@
         "regular",
         "italic"
       ],
-      "version": "v31"
+      "version": "v32"
     },
     {
       "axes": [
@@ -40320,12 +40424,12 @@
       "category": "sans-serif",
       "family": "Source Sans 3",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpMtKy2OAdR1K-IwhWudF-R3woaYOjZ5HZl8Q.ttf",
-        "regular": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpStKy2OAdR1K-IwhWudF-R7wgQZMrc9HY.ttf"
+        "italic": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpMtKy2OAdR1K-IwhWudF-R3woaYOjZ5HZl8Q.ttf",
+        "regular": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpStKy2OAdR1K-IwhWudF-R7wgQZMrc9HY.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/sourcesans3/v19/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8Ky462EM9C4.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/sourcesans3/v20/nwpBtKy2OAdR1K-IwhWudF-R9QMylBJAV3Bo8Ky462EM9C4.ttf",
       "subsets": [
         "cyrillic",
         "cyrillic-ext",
@@ -40339,7 +40443,7 @@
         "regular",
         "italic"
       ],
-      "version": "v19"
+      "version": "v20"
     },
     {
       "axes": [
@@ -40357,12 +40461,12 @@
       "category": "serif",
       "family": "Source Serif 4",
       "files": {
-        "italic": "https://fonts.gstatic.com/s/sourceserif4/v14/vEFK2_tTDB4M7-auWDN0ahZJW1ge8tK1W77HtMo.ttf",
-        "regular": "https://fonts.gstatic.com/s/sourceserif4/v14/vEFI2_tTDB4M7-auWDN0ahZJW2gc-NaXXq7H.ttf"
+        "italic": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFK2_tTDB4M7-auWDN0ahZJW1ge8tK1W77HtMo.ttf",
+        "regular": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFI2_tTDB4M7-auWDN0ahZJW2gc-NaXXq7H.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/sourceserif4/v14/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6OAVIJmeUDygwjihdqnh1dCw.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/sourceserif4/v15/vEFy2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6OAVIJmeUDygwjihdqnh1dCw.ttf",
       "subsets": [
         "cyrillic",
         "cyrillic-ext",
@@ -40375,7 +40479,7 @@
         "regular",
         "italic"
       ],
-      "version": "v14"
+      "version": "v15"
     },
     {
       "axes": [
@@ -40979,11 +41083,11 @@
       "category": "sans-serif",
       "family": "Stick",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/stick/v20/Qw3TZQpMCyTtJSvfvPVDMPoF.ttf"
+        "regular": "https://fonts.gstatic.com/s/stick/v21/Qw3TZQpMCyTtJSvfvPVDMPoF.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/stick/v20/Qw3TZQpMCyTtJRvetvE.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/stick/v21/Qw3TZQpMCyTtJRvetvE.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -40993,7 +41097,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v20"
+      "version": "v21"
     },
     {
       "axes": [
@@ -42641,11 +42745,11 @@
       "category": "display",
       "family": "Train One",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/trainone/v16/gyB-hwkiNtc6KnxUVjWHOqbZRY7JVQ.ttf"
+        "regular": "https://fonts.gstatic.com/s/trainone/v17/gyB-hwkiNtc6KnxUVjWHOqbZRY7JVQ.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/trainone/v16/gyB-hwkiNtc6KnxUVjW3O6zd.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/trainone/v17/gyB-hwkiNtc6KnxUVjW3O6zd.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -42655,7 +42759,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v16"
+      "version": "v17"
     },
     {
       "category": "display",
@@ -43346,11 +43450,11 @@
       "category": "serif",
       "family": "UoqMunThenKhung",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/uoqmunthenkhung/v3/Y4GTYa1nVTQLt-D5LoLChg5aJjIjwLL9Th8YYA.ttf"
+        "regular": "https://fonts.gstatic.com/s/uoqmunthenkhung/v4/Y4GTYa1nVTQLt-D5LoLChg5aJjIjwLL9Th8YYA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/uoqmunthenkhung/v3/Y4GTYa1nVTQLt-D5LoLChg5aJjITwbj5.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/uoqmunthenkhung/v4/Y4GTYa1nVTQLt-D5LoLChg5aJjITwbj5.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -43360,7 +43464,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v3"
+      "version": "v4"
     },
     {
       "category": "handwriting",
@@ -43913,11 +44017,11 @@
       "category": "sans-serif",
       "family": "WDXL Lubrifont JP N",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/wdxllubrifontjpn/v2/8At1GtSkFqazDiO949fzWta9_T-SVxJiIZctoLhFRNU.ttf"
+        "regular": "https://fonts.gstatic.com/s/wdxllubrifontjpn/v3/8At1GtSkFqazDiO949fzWta9_T-SVxJiIZctoLhFRNU.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/wdxllubrifontjpn/v2/8At1GtSkFqazDiO949fzWta9_T-SVxJiEZYnpA.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/wdxllubrifontjpn/v3/8At1GtSkFqazDiO949fzWta9_T-SVxJiEZYnpA.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -43928,17 +44032,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v2"
+      "version": "v3"
     },
     {
       "category": "sans-serif",
       "family": "WDXL Lubrifont SC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/wdxllubrifontsc/v2/gNMeW2VmY6acu0XtugFrduDciOOyfny5mD9ASHz5.ttf"
+        "regular": "https://fonts.gstatic.com/s/wdxllubrifontsc/v3/gNMeW2VmY6acu0XtugFrduDciOOyfny5mD9ASHz5.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-01-07",
-      "menu": "https://fonts.gstatic.com/s/wdxllubrifontsc/v2/gNMeW2VmY6acu0XtugFrduDciOOyfky4kjs.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/wdxllubrifontsc/v3/gNMeW2VmY6acu0XtugFrduDciOOyfky4kjs.ttf",
       "subsets": [
         "chinese-simplified",
         "cyrillic",
@@ -43949,17 +44053,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v2"
+      "version": "v3"
     },
     {
       "category": "sans-serif",
       "family": "WDXL Lubrifont TC",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/wdxllubrifonttc/v6/nKKN-H4mPq1yJurnWXfJE8svQHonWc_-EqxyqaA8.ttf"
+        "regular": "https://fonts.gstatic.com/s/wdxllubrifonttc/v7/nKKN-H4mPq1yJurnWXfJE8svQHonWc_-EqxyqaA8.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2026-03-11",
-      "menu": "https://fonts.gstatic.com/s/wdxllubrifonttc/v6/nKKN-H4mPq1yJurnWXfJE8svQHonWf__GKg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/wdxllubrifonttc/v7/nKKN-H4mPq1yJurnWXfJE8svQHonWf__GKg.ttf",
       "subsets": [
         "chinese-traditional",
         "cyrillic",
@@ -43970,7 +44074,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v6"
+      "version": "v7"
     },
     {
       "category": "handwriting",
@@ -44101,18 +44205,18 @@
       "category": "display",
       "family": "Wavefont",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/wavefont/v19/L0x-DF00m0cP6hefyPqiZyxEimK3.ttf"
+        "regular": "https://fonts.gstatic.com/s/wavefont/v20/L0x-DF00m0cP6hefyPqiZyxEimK3.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-17",
-      "menu": "https://fonts.gstatic.com/s/wavefont/v19/L0xFDF00m0cP6hefyOCpRezQNuizSrqDyx8FHbFu21B3L4m0SEzuQYwq-f_JJ8I1WI3V04DGVq8.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/wavefont/v20/L0xFDF00m0cP6hefyOCpRezQNuizSrqDyx8FHbFu21B3L4m0SEzuQYwq-f_JJ8I1WI3V04DGVq8.ttf",
       "subsets": [
         "latin"
       ],
       "variants": [
         "regular"
       ],
-      "version": "v19"
+      "version": "v20"
     },
     {
       "category": "serif",
@@ -44882,11 +44986,11 @@
       "category": "serif",
       "family": "Yuji Boku",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/yujiboku/v8/P5sAzZybeNzXsA9xj1Fkjb2r2dgvJA.ttf"
+        "regular": "https://fonts.gstatic.com/s/yujiboku/v9/P5sAzZybeNzXsA9xj1Fkjb2r2dgvJA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/yujiboku/v8/P5sAzZybeNzXsA9xj1FUjLev.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/yujiboku/v9/P5sAzZybeNzXsA9xj1FUjLev.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -44896,36 +45000,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v8"
+      "version": "v9"
     },
     {
       "category": "handwriting",
       "family": "Yuji Hentaigana Akari",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/yujihentaiganaakari/v14/cY9bfiyVT0VB6QuhWKOrpr6z58lnb_zYFnLIRTzODYALaA.ttf"
+        "regular": "https://fonts.gstatic.com/s/yujihentaiganaakari/v15/cY9bfiyVT0VB6QuhWKOrpr6z58lnb_zYFnLIRTzODYALaA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-11",
-      "menu": "https://fonts.gstatic.com/s/yujihentaiganaakari/v14/cY9bfiyVT0VB6QuhWKOrpr6z58lnb_zYFnL4RDbK.ttf",
-      "subsets": [
-        "japanese",
-        "latin",
-        "latin-ext"
-      ],
-      "variants": [
-        "regular"
-      ],
-      "version": "v14"
-    },
-    {
-      "category": "handwriting",
-      "family": "Yuji Hentaigana Akebono",
-      "files": {
-        "regular": "https://fonts.gstatic.com/s/yujihentaiganaakebono/v15/EJRGQhkhRNwM-RtitGUwh930GU_f5KAlkuL0wQy9NKXRzrrF.ttf"
-      },
-      "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/yujihentaiganaakebono/v15/EJRGQhkhRNwM-RtitGUwh930GU_f5KAlkuL0wTy8PqE.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/yujihentaiganaakari/v15/cY9bfiyVT0VB6QuhWKOrpr6z58lnb_zYFnL4RDbK.ttf",
       "subsets": [
         "japanese",
         "latin",
@@ -44937,14 +45022,33 @@
       "version": "v15"
     },
     {
+      "category": "handwriting",
+      "family": "Yuji Hentaigana Akebono",
+      "files": {
+        "regular": "https://fonts.gstatic.com/s/yujihentaiganaakebono/v16/EJRGQhkhRNwM-RtitGUwh930GU_f5KAlkuL0wQy9NKXRzrrF.ttf"
+      },
+      "kind": "webfonts#webfont",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/yujihentaiganaakebono/v16/EJRGQhkhRNwM-RtitGUwh930GU_f5KAlkuL0wTy8PqE.ttf",
+      "subsets": [
+        "japanese",
+        "latin",
+        "latin-ext"
+      ],
+      "variants": [
+        "regular"
+      ],
+      "version": "v16"
+    },
+    {
       "category": "serif",
       "family": "Yuji Mai",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/yujimai/v8/ZgNQjPxdJ7DEHrS0gC38hmHmNpCO.ttf"
+        "regular": "https://fonts.gstatic.com/s/yujimai/v9/ZgNQjPxdJ7DEHrS0gC38hmHmNpCO.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/yujimai/v8/ZgNQjPxdJ7DEHrS0gB39jGU.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/yujimai/v9/ZgNQjPxdJ7DEHrS0gB39jGU.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -44954,17 +45058,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v8"
+      "version": "v9"
     },
     {
       "category": "serif",
       "family": "Yuji Syuku",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/yujisyuku/v8/BngNUXdTV3vO6Lw5ApOPqPfgwqiA-Rk.ttf"
+        "regular": "https://fonts.gstatic.com/s/yujisyuku/v9/BngNUXdTV3vO6Lw5ApOPqPfgwqiA-Rk.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/yujisyuku/v8/BngNUXdTV3vO6Lw5ApOPmPbqxg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/yujisyuku/v9/BngNUXdTV3vO6Lw5ApOPmPbqxg.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -44974,7 +45078,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v8"
+      "version": "v9"
     },
     {
       "category": "sans-serif",
@@ -45210,11 +45314,11 @@
       "category": "serif",
       "family": "Zen Antique",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/zenantique/v14/AYCPpXPnd91Ma_Zf-Ri2JXJq7PKP5Z_G.ttf"
+        "regular": "https://fonts.gstatic.com/s/zenantique/v15/AYCPpXPnd91Ma_Zf-Ri2JXJq7PKP5Z_G.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-08",
-      "menu": "https://fonts.gstatic.com/s/zenantique/v14/AYCPpXPnd91Ma_Zf-Ri2JUJr5vY.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenantique/v15/AYCPpXPnd91Ma_Zf-Ri2JUJr5vY.ttf",
       "subsets": [
         "cyrillic",
         "greek",
@@ -45225,17 +45329,17 @@
       "variants": [
         "regular"
       ],
-      "version": "v14"
+      "version": "v15"
     },
     {
       "category": "serif",
       "family": "Zen Antique Soft",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/zenantiquesoft/v14/DtV4JwqzSL1q_KwnEWMc_3xfgW6ihwBmkui5HNg.ttf"
+        "regular": "https://fonts.gstatic.com/s/zenantiquesoft/v15/DtV4JwqzSL1q_KwnEWMc_3xfgW6ihwBmkui5HNg.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/zenantiquesoft/v14/DtV4JwqzSL1q_KwnEWMc_3xfgW6itwFslg.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenantiquesoft/v15/DtV4JwqzSL1q_KwnEWMc_3xfgW6itwFslg.ttf",
       "subsets": [
         "cyrillic",
         "greek",
@@ -45246,7 +45350,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v14"
+      "version": "v15"
     },
     {
       "category": "display",
@@ -45270,15 +45374,15 @@
       "category": "sans-serif",
       "family": "Zen Kaku Gothic Antique",
       "files": {
-        "300": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22cM9TarWJtyZyGU.ttf",
-        "500": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22dU9DarWJtyZyGU.ttf",
-        "700": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22cc8jarWJtyZyGU.ttf",
-        "900": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22ck8DarWJtyZyGU.ttf",
-        "regular": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLQKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB21-g3RKjc4d7.ttf"
+        "300": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22cM9TarWJtyZyGU.ttf",
+        "500": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22dU9DarWJtyZyGU.ttf",
+        "700": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22cc8jarWJtyZyGU.ttf",
+        "900": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLVKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22ck8DarWJtyZyGU.ttf",
+        "regular": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLQKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB21-g3RKjc4d7.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-05",
-      "menu": "https://fonts.gstatic.com/s/zenkakugothicantique/v18/6qLQKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22-h1xY.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenkakugothicantique/v19/6qLQKYkHvh-nlUpKPAdoVFBtfxDzIn1eCzpB22-h1xY.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -45292,21 +45396,21 @@
         "700",
         "900"
       ],
-      "version": "v18"
+      "version": "v19"
     },
     {
       "category": "sans-serif",
       "family": "Zen Kaku Gothic New",
       "files": {
-        "300": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqpdKaWTSTGlMyd8.ttf",
-        "500": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqs9LaWTSTGlMyd8.ttf",
-        "700": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWTSTGlMyd8.ttf",
-        "900": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqr9PaWTSTGlMyd8.ttf",
-        "regular": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkjtiTWz5UGA.ttf"
+        "300": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqpdKaWTSTGlMyd8.ttf",
+        "500": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqs9LaWTSTGlMyd8.ttf",
+        "700": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqodNaWTSTGlMyd8.ttf",
+        "900": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMVW2drQpDw0GjzrVNFf_valaDBcznOqr9PaWTSTGlMyd8.ttf",
+        "regular": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOkjtiTWz5UGA.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-16",
-      "menu": "https://fonts.gstatic.com/s/zenkakugothicnew/v18/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojpoSQ.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenkakugothicnew/v19/gNMYW2drQpDw0GjzrVNFf_valaDBcznOojpoSQ.ttf",
       "subsets": [
         "cyrillic",
         "japanese",
@@ -45320,17 +45424,17 @@
         "700",
         "900"
       ],
-      "version": "v18"
+      "version": "v19"
     },
     {
       "category": "sans-serif",
       "family": "Zen Kurenaido",
       "files": {
-        "regular": "https://fonts.gstatic.com/s/zenkurenaido/v19/3XFsEr0515BK2u6UUptu_gWJZfz22PRLd0U.ttf"
+        "regular": "https://fonts.gstatic.com/s/zenkurenaido/v20/3XFsEr0515BK2u6UUptu_gWJZfz22PRLd0U.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-10",
-      "menu": "https://fonts.gstatic.com/s/zenkurenaido/v19/3XFsEr0515BK2u6UUptu_gWJVf383A.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenkurenaido/v20/3XFsEr0515BK2u6UUptu_gWJVf383A.ttf",
       "subsets": [
         "cyrillic",
         "greek",
@@ -45341,7 +45445,7 @@
       "variants": [
         "regular"
       ],
-      "version": "v19"
+      "version": "v20"
     },
     {
       "category": "display",
@@ -45367,15 +45471,15 @@
       "category": "sans-serif",
       "family": "Zen Maru Gothic",
       "files": {
-        "300": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0XIpIxzW5b-RxT-6A8jWAtCp-cQWpCPJqa_ajlvw.ttf",
-        "500": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0XIpIxzW5b-RxT-6A8jWAtCp-cGWtCPJqa_ajlvw.ttf",
-        "700": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0XIpIxzW5b-RxT-6A8jWAtCp-cUW1CPJqa_ajlvw.ttf",
-        "900": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0XIpIxzW5b-RxT-6A8jWAtCp-caW9CPJqa_ajlvw.ttf",
-        "regular": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0SIpIxzW5b-RxT-6A8jWAtCp-k7UJmNLGG9A.ttf"
+        "300": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0XIpIxzW5b-RxT-6A8jWAtCp-cQWpCPJqa_ajlvw.ttf",
+        "500": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0XIpIxzW5b-RxT-6A8jWAtCp-cGWtCPJqa_ajlvw.ttf",
+        "700": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0XIpIxzW5b-RxT-6A8jWAtCp-cUW1CPJqa_ajlvw.ttf",
+        "900": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0XIpIxzW5b-RxT-6A8jWAtCp-caW9CPJqa_ajlvw.ttf",
+        "regular": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0SIpIxzW5b-RxT-6A8jWAtCp-k7UJmNLGG9A.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-06-25",
-      "menu": "https://fonts.gstatic.com/s/zenmarugothic/v19/o-0SIpIxzW5b-RxT-6A8jWAtCp-U7Ehi.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenmarugothic/v20/o-0SIpIxzW5b-RxT-6A8jWAtCp-U7Ehi.ttf",
       "subsets": [
         "cyrillic",
         "greek",
@@ -45390,21 +45494,21 @@
         "700",
         "900"
       ],
-      "version": "v19"
+      "version": "v20"
     },
     {
       "category": "serif",
       "family": "Zen Old Mincho",
       "files": {
-        "500": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss3ApVaYytLwxTqcxfMyBveyb4Dqlla8dMgPgBu.ttf",
-        "600": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss3ApVaYytLwxTqcxfMyBveyb4vrVla8dMgPgBu.ttf",
-        "700": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss3ApVaYytLwxTqcxfMyBveyb5LrFla8dMgPgBu.ttf",
-        "900": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss3ApVaYytLwxTqcxfMyBveyb5zrlla8dMgPgBu.ttf",
-        "regular": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss0ApVaYytLwxTqcxfMyBveyYb3g31S2s8p.ttf"
+        "500": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss3ApVaYytLwxTqcxfMyBveyb4Dqlla8dMgPgBu.ttf",
+        "600": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss3ApVaYytLwxTqcxfMyBveyb4vrVla8dMgPgBu.ttf",
+        "700": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss3ApVaYytLwxTqcxfMyBveyb5LrFla8dMgPgBu.ttf",
+        "900": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss3ApVaYytLwxTqcxfMyBveyb5zrlla8dMgPgBu.ttf",
+        "regular": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss0ApVaYytLwxTqcxfMyBveyYb3g31S2s8p.ttf"
       },
       "kind": "webfonts#webfont",
-      "lastModified": "2025-09-02",
-      "menu": "https://fonts.gstatic.com/s/zenoldmincho/v13/tss0ApVaYytLwxTqcxfMyBveybb2iXk.ttf",
+      "lastModified": "2026-10-01",
+      "menu": "https://fonts.gstatic.com/s/zenoldmincho/v14/tss0ApVaYytLwxTqcxfMyBveybb2iXk.ttf",
       "subsets": [
         "cyrillic",
         "greek",
@@ -45419,7 +45523,7 @@
         "700",
         "900"
       ],
-      "version": "v13"
+      "version": "v14"
     },
     {
       "category": "display",
