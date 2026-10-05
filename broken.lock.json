@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-31T13:23:37.235026+00:00",
-  "vendor_google_sha": "ade3d1533e06b2b1462ffcde8e08b129627ca360",
+  "generated_at": "2026-10-05T14:18:42.008313+00:00",
+  "vendor_google_sha": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
   "counts": {
-    "families_in_api": 1955,
-    "families_in_metadata": 1937,
+    "families_in_api": 1959,
+    "families_in_metadata": 1943,
     "broken": 129,
-    "missing_from_metadata": 18,
-    "pre_validate_invalid": 111,
+    "missing_from_metadata": 16,
+    "pre_validate_invalid": 113,
     "svg_render_failed": 1
   },
   "broken": [
@@ -362,24 +362,6 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
-    },
-    {
-      "family": "Google Sans",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
-    },
-    {
-      "family": "Google Sans Flex",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
     },
     {
       "family": "Gulim",
@@ -960,6 +942,26 @@
         "pre-validate"
       ],
       "folder": "thabit"
+    },
+    {
+      "family": "Tiny5 Duo",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "tiny5duo"
+    },
+    {
+      "family": "Xmind",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "xmind"
     },
     {
       "family": "Yaldevi Colombo",
