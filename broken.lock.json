@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-08-31T13:23:37.235026+00:00",
-  "vendor_google_sha": "ade3d1533e06b2b1462ffcde8e08b129627ca360",
+  "generated_at": "2026-10-12T15:06:53.252841+00:00",
+  "vendor_google_sha": "bd8f81ddb5c74d5c8897b36ad88b440266245103",
   "counts": {
-    "families_in_api": 1955,
-    "families_in_metadata": 1937,
-    "broken": 129,
-    "missing_from_metadata": 18,
-    "pre_validate_invalid": 111,
+    "families_in_api": 1959,
+    "families_in_metadata": 1942,
+    "broken": 130,
+    "missing_from_metadata": 17,
+    "pre_validate_invalid": 114,
     "svg_render_failed": 1
   },
   "broken": [
@@ -362,24 +362,6 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
-    },
-    {
-      "family": "Google Sans",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
-    },
-    {
-      "family": "Google Sans Flex",
-      "reasons": [
-        "missing_from_metadata"
-      ],
-      "sources": [
-        "map"
-      ]
     },
     {
       "family": "Gulim",
@@ -960,6 +942,38 @@
         "pre-validate"
       ],
       "folder": "thabit"
+    },
+    {
+      "family": "Tiny5",
+      "reasons": [
+        "missing_from_metadata",
+        "pre_validate:Variant italic not found in API for Tiny5-Italic[BLED,JITT,ROND,wdth,wght].ttf"
+      ],
+      "sources": [
+        "map",
+        "pre-validate"
+      ],
+      "folder": "tiny5"
+    },
+    {
+      "family": "Tiny5 Duo",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "tiny5duo"
+    },
+    {
+      "family": "Xmind",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "xmind"
     },
     {
       "family": "Yaldevi Colombo",
