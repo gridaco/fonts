@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-12T15:06:53.252841+00:00",
-  "vendor_google_sha": "bd8f81ddb5c74d5c8897b36ad88b440266245103",
+  "generated_at": "2026-10-26T12:42:49.409204+00:00",
+  "vendor_google_sha": "e7db6ca603fd4862010383ff17ffd6cc4ffac1c0",
   "counts": {
     "families_in_api": 1959,
     "families_in_metadata": 1942,
-    "broken": 130,
+    "broken": 139,
     "missing_from_metadata": 17,
-    "pre_validate_invalid": 114,
+    "pre_validate_invalid": 123,
     "svg_render_failed": 1
   },
   "broken": [
@@ -29,6 +29,16 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
+    },
+    {
+      "family": "Agrave Pro",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "agravepro"
     },
     {
       "family": "Allkin",
@@ -352,6 +362,16 @@
         "pre-validate"
       ],
       "folder": "finlandica"
+    },
+    {
+      "family": "Firjar",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "firjar"
     },
     {
       "family": "Fragment Mono SC",
@@ -862,6 +882,76 @@
         "pre-validate"
       ],
       "folder": "pushster"
+    },
+    {
+      "family": "Redaction",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction"
+    },
+    {
+      "family": "Redaction 10",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction10"
+    },
+    {
+      "family": "Redaction 100",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction100"
+    },
+    {
+      "family": "Redaction 20",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction20"
+    },
+    {
+      "family": "Redaction 35",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction35"
+    },
+    {
+      "family": "Redaction 50",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction50"
+    },
+    {
+      "family": "Redaction 70",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "redaction70"
     },
     {
       "family": "Rubik One",
