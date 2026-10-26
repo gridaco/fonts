@@ -1,6 +1,7 @@
 folder,domain,font family name,reason(s)
 42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
+agravepro,ofl,Agrave Pro,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
@@ -30,6 +31,7 @@ dotum,ofl,Dotum,Family not found in webfonts.json
 dotumche,ofl,DotumChe,Family not found in webfonts.json
 ekmukta,ofl,Ek Mukta,Family not found in webfonts.json
 finlandica,ofl,Finlandica,Family not found in webfonts.json
+firjar,ofl,Firjar,Family not found in webfonts.json
 fragmentmonosc,ofl,Fragment Mono SC,Family not found in webfonts.json
 gulim,ofl,Gulim,Family not found in webfonts.json
 gulimche,ofl,GulimChe,Family not found in webfonts.json
@@ -96,6 +98,13 @@ otomanopeeone,ofl,Otomanopee One,Family not found in webfonts.json
 podkovavfbeta,ofl,,METADATA.pb not found
 portersansblock,ofl,Porter Sans Block,Family not found in webfonts.json
 pushster,ofl,Pushster,Family not found in webfonts.json
+redaction,ofl,Redaction,Family not found in webfonts.json
+redaction10,ofl,Redaction 10,Family not found in webfonts.json
+redaction100,ofl,Redaction 100,Family not found in webfonts.json
+redaction20,ofl,Redaction 20,Family not found in webfonts.json
+redaction35,ofl,Redaction 35,Family not found in webfonts.json
+redaction50,ofl,Redaction 50,Family not found in webfonts.json
+redaction70,ofl,Redaction 70,Family not found in webfonts.json
 rokkittvfbeta,ofl,,METADATA.pb not found
 roundedmplus1c,ofl,,METADATA.pb not found
 rubikone,ofl,Rubik One,Family not found in webfonts.json
