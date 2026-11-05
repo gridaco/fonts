@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-12T15:06:53.252841+00:00",
-  "vendor_google_sha": "bd8f81ddb5c74d5c8897b36ad88b440266245103",
+  "generated_at": "2026-11-02T15:28:12.358268+00:00",
+  "vendor_google_sha": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
   "counts": {
-    "families_in_api": 1959,
-    "families_in_metadata": 1942,
+    "families_in_api": 1968,
+    "families_in_metadata": 1952,
     "broken": 130,
-    "missing_from_metadata": 17,
+    "missing_from_metadata": 16,
     "pre_validate_invalid": 114,
     "svg_render_failed": 1
   },
@@ -29,6 +29,16 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
+    },
+    {
+      "family": "Agrave Pro",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "agravepro"
     },
     {
       "family": "Allkin",
@@ -354,6 +364,16 @@
       "folder": "finlandica"
     },
     {
+      "family": "Firjar",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "firjar"
+    },
+    {
       "family": "Fragment Mono SC",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -481,6 +501,16 @@
         "pre-validate"
       ],
       "folder": "lohittamil"
+    },
+    {
+      "family": "Madhuban",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "madhuban"
     },
     {
       "family": "Material Icons",
@@ -942,38 +972,6 @@
         "pre-validate"
       ],
       "folder": "thabit"
-    },
-    {
-      "family": "Tiny5",
-      "reasons": [
-        "missing_from_metadata",
-        "pre_validate:Variant italic not found in API for Tiny5-Italic[BLED,JITT,ROND,wdth,wght].ttf"
-      ],
-      "sources": [
-        "map",
-        "pre-validate"
-      ],
-      "folder": "tiny5"
-    },
-    {
-      "family": "Tiny5 Duo",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "tiny5duo"
-    },
-    {
-      "family": "Xmind",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "xmind"
     },
     {
       "family": "Yaldevi Colombo",
