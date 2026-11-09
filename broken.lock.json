@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-02T15:28:12.358268+00:00",
-  "vendor_google_sha": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+  "generated_at": "2026-11-09T15:54:45.138613+00:00",
+  "vendor_google_sha": "5bb28733cec313b63fbd415b574b5ae35c8aa8b8",
   "counts": {
     "families_in_api": 1968,
     "families_in_metadata": 1952,
-    "broken": 130,
+    "broken": 131,
     "missing_from_metadata": 16,
-    "pre_validate_invalid": 114,
+    "pre_validate_invalid": 115,
     "svg_render_failed": 1
   },
   "broken": [
@@ -382,6 +382,16 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
+    },
+    {
+      "family": "Geist Serif",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "geistserif"
     },
     {
       "family": "Gulim",
