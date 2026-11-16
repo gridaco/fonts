@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-02T15:28:12.358268+00:00",
-  "vendor_google_sha": "6c1dbe27dcf7d817d4b62cec033ba77fa8e2a5ec",
+  "generated_at": "2026-11-16T15:29:22.384779+00:00",
+  "vendor_google_sha": "7af0d90b4d532ffa4b041937b560c6df4e7b1e95",
   "counts": {
-    "families_in_api": 1968,
-    "families_in_metadata": 1952,
-    "broken": 130,
+    "families_in_api": 1970,
+    "families_in_metadata": 1954,
+    "broken": 129,
     "missing_from_metadata": 16,
-    "pre_validate_invalid": 114,
+    "pre_validate_invalid": 113,
     "svg_render_failed": 1
   },
   "broken": [
@@ -29,16 +29,6 @@
         "pre-validate"
       ],
       "folder": "adobeblank"
-    },
-    {
-      "family": "Agrave Pro",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "agravepro"
     },
     {
       "family": "Allkin",
@@ -364,16 +354,6 @@
       "folder": "finlandica"
     },
     {
-      "family": "Firjar",
-      "reasons": [
-        "pre_validate:Family not found in webfonts.json"
-      ],
-      "sources": [
-        "pre-validate"
-      ],
-      "folder": "firjar"
-    },
-    {
       "family": "Fragment Mono SC",
       "reasons": [
         "pre_validate:Family not found in webfonts.json"
@@ -382,6 +362,16 @@
         "pre-validate"
       ],
       "folder": "fragmentmonosc"
+    },
+    {
+      "family": "Geist Serif",
+      "reasons": [
+        "pre_validate:Family not found in webfonts.json"
+      ],
+      "sources": [
+        "pre-validate"
+      ],
+      "folder": "geistserif"
     },
     {
       "family": "Gulim",
