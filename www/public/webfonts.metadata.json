@@ -234,6 +234,27 @@
       "Agdasima-Regular": "regular"
     }
   },
+  "Agrave Pro": {
+    "family": "Agrave Pro",
+    "files": {
+      "100": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plVRRA5cEr8zXcyx.ttf",
+      "200": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plXRRQ5cEr8zXcyx.ttf",
+      "300": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plUPRQ5cEr8zXcyx.ttf",
+      "500": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plVjRQ5cEr8zXcyx.ttf",
+      "600": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plWPQg5cEr8zXcyx.ttf",
+      "700": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plW2Qg5cEr8zXcyx.ttf",
+      "regular": "https://fonts.gstatic.com/s/agravepro/v1/q5uXsoe7JuBj6YLv6lsHOR9UdVTNs822plVRRQ5cEr8zXcyx.ttf"
+    },
+    "post_script_names": {
+      "AgravePro-Bold": "700",
+      "AgravePro-ExtraLight": "200",
+      "AgravePro-Light": "300",
+      "AgravePro-Medium": "500",
+      "AgravePro-Regular": "regular",
+      "AgravePro-SemiBold": "600",
+      "AgravePro-Thin": "100"
+    }
+  },
   "Agu Display": {
     "family": "Agu Display",
     "files": {
@@ -8016,6 +8037,29 @@
       "FiraSansExtraCondensed-ThinItalic": "100italic"
     }
   },
+  "Firjar": {
+    "family": "Firjar",
+    "files": {
+      "100": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2Xrx3YvlCm5fcIHdc.ttf",
+      "200": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2Xrz3Y_lCm5fcIHdc.ttf",
+      "300": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2XrwpY_lCm5fcIHdc.ttf",
+      "500": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2XrxFY_lCm5fcIHdc.ttf",
+      "600": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2XrypZPlCm5fcIHdc.ttf",
+      "700": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2XryQZPlCm5fcIHdc.ttf",
+      "800": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2Xrz3ZPlCm5fcIHdc.ttf",
+      "regular": "https://fonts.gstatic.com/s/firjar/v1/zOLX4pnEn71A-obA6b9jAVX_vPVGiCKiRhyjE_DCMxM2Xrx3Y_lCm5fcIHdc.ttf"
+    },
+    "post_script_names": {
+      "Firjar-Bold": "700",
+      "Firjar-ExtraBold": "800",
+      "Firjar-ExtraLight": "200",
+      "Firjar-Light": "300",
+      "Firjar-Medium": "500",
+      "Firjar-Regular": "regular",
+      "Firjar-SemiBold": "600",
+      "Firjar-Thin": "100"
+    }
+  },
   "Fjalla One": {
     "family": "Fjalla One",
     "files": {
@@ -10198,20 +10242,20 @@
   "IBM Plex Mono": {
     "family": "IBM Plex Mono",
     "files": {
-      "100": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n3kwq0n1hj-sNFQ.ttf",
-      "100italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6rfjptAgt5VM-kVkqdyU8n1ioStndlre4dFcFh.ttf",
-      "200": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3uAL8ldPg-IUDNg.ttf",
-      "200italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSGlZFh8ARHNh4zg.ttf",
-      "300": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3oQI8ldPg-IUDNg.ttf",
-      "300italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSflVFh8ARHNh4zg.ttf",
-      "500": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJ8ldPg-IUDNg.ttf",
-      "500italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlRFh8ARHNh4zg.ttf",
-      "600": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAO8ldPg-IUDNg.ttf",
-      "600italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSClNFh8ARHNh4zg.ttf",
-      "700": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3pQP8ldPg-IUDNg.ttf",
-      "700italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6sfjptAgt5VM-kVkqdyU8n1ioSblJFh8ARHNh4zg.ttf",
-      "italic": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6pfjptAgt5VM-kVkqdyU8n1ioq0n1hj-sNFQ.ttf",
-      "regular": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n5igg1l9kn-s.ttf"
+      "100": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6pfjptAgt5VM-kVkqdyU8n3kwq0n1hj-sNFQ.ttf",
+      "100italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6rfjptAgt5VM-kVkqdyU8n1ioStndlre4dFcFh.ttf",
+      "200": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3uAL8ldPg-IUDNg.ttf",
+      "200italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6sfjptAgt5VM-kVkqdyU8n1ioSGlZFh8ARHNh4zg.ttf",
+      "300": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3oQI8ldPg-IUDNg.ttf",
+      "300italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6sfjptAgt5VM-kVkqdyU8n1ioSflVFh8ARHNh4zg.ttf",
+      "500": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3twJ8ldPg-IUDNg.ttf",
+      "500italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6sfjptAgt5VM-kVkqdyU8n1ioSJlRFh8ARHNh4zg.ttf",
+      "600": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3vAO8ldPg-IUDNg.ttf",
+      "600italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6sfjptAgt5VM-kVkqdyU8n1ioSClNFh8ARHNh4zg.ttf",
+      "700": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6qfjptAgt5VM-kVkqdyU8n3pQP8ldPg-IUDNg.ttf",
+      "700italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6sfjptAgt5VM-kVkqdyU8n1ioSblJFh8ARHNh4zg.ttf",
+      "italic": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F6pfjptAgt5VM-kVkqdyU8n1ioq0n1hj-sNFQ.ttf",
+      "regular": "https://fonts.gstatic.com/s/ibmplexmono/v23/-F63fjptAgt5VM-kVkqdyU8n5igg1l9kn-s.ttf"
     },
     "post_script_names": {
       "IBMPlexMono-Bold": "700",
@@ -17455,7 +17499,7 @@
   "Noto Sans Mongolian": {
     "family": "Noto Sans Mongolian",
     "files": {
-      "regular": "https://fonts.gstatic.com/s/notosansmongolian/v23/VdGCAYADGIwE0EopZx8xQfHlgEAMsrToxLsg6-av1x0.ttf"
+      "regular": "https://fonts.gstatic.com/s/notosansmongolian/v24/VdGCAYADGIwE0EopZx8xQfHlgEAMsrToxLsg6-av1x0.ttf"
     },
     "post_script_names": {
       "NotoSansMongolian-Regular": "regular"
@@ -23663,7 +23707,7 @@
   "Roboto Flex": {
     "family": "Roboto Flex",
     "files": {
-      "regular": "https://fonts.gstatic.com/s/robotoflex/v30/NaNnepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuUZQMsPJtUsR4DEK6cULNeUx9XgTnH37Ha_FIAp4Fm0PP1hw45DntW2x0wZGzhPmr1YNMYKYn9_1IQXGwJAiUJVUMdN5YUW4O8HtSoXjC1z3QSabshNFVe3e0O5j3ZjrZCu23Qd4G0EBysQNK-QKavMl1cKq3tHXtXi8mzLjaAQbGunCNCKMY.ttf"
+      "regular": "https://fonts.gstatic.com/s/robotoflex/v31/NaNnepOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuUZQMsPJtUsR4DEK6cULNeUx9XgTnH37Ha_FIAp4Fm0PP1hw45DntW2x0wZGzhPmr1YNMYKYn9_1IQXGwJAiUJVUMdN5YUW4O8HtSoXjC1z3QSabshNFVe3e0O5j3ZjrZCu23Qd4G0EBysQNK-QKavMl1cKq3tHXtXi8mzLjaAQbGunCNCKMY.ttf"
     },
     "post_script_names": {
       "RobotoFlex-Regular": "regular"

@@ -1,7 +1,6 @@
 folder,domain,font family name,reason(s)
 42dotsans,ofl,42dot Sans,Family not found in webfonts.json
 adobeblank,ofl,Adobe Blank,Family not found in webfonts.json
-agravepro,ofl,Agrave Pro,Family not found in webfonts.json
 aksarabaligalang,ofl,,METADATA.pb not found
 alumnisanscollegiateonesc,ofl,Alumni Sans Collegiate One SC,Family not found in webfonts.json
 amstelvaralpha,ofl,,METADATA.pb not found
@@ -31,8 +30,8 @@ dotum,ofl,Dotum,Family not found in webfonts.json
 dotumche,ofl,DotumChe,Family not found in webfonts.json
 ekmukta,ofl,Ek Mukta,Family not found in webfonts.json
 finlandica,ofl,Finlandica,Family not found in webfonts.json
-firjar,ofl,Firjar,Family not found in webfonts.json
 fragmentmonosc,ofl,Fragment Mono SC,Family not found in webfonts.json
+geistserif,ofl,Geist Serif,Family not found in webfonts.json
 gulim,ofl,Gulim,Family not found in webfonts.json
 gulimche,ofl,GulimChe,Family not found in webfonts.json
 gungsuh,ofl,Gungsuh,Family not found in webfonts.json
